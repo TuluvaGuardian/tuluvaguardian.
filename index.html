@@ -3,68 +3,73 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tuluva Guardian | Independent Voice of Tulu Nadu</title>
+    <title>Tuluva Guardian | Investigative Journalism for Tulu Nadu</title>
     <style>
-        body { font-family: 'Georgia', serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #111; }
-        .masthead { text-align: center; padding: 30px 10px; background: #fff; border-bottom: 4px solid #000; }
-        .logo-box img { max-width: 180px; height: auto; } /* Adjust filename below */
-        .site-title { font-size: 3rem; font-weight: 900; text-transform: uppercase; margin: 10px 0; letter-spacing: -1px; }
-        .date-line { border-top: 1px solid #333; border-bottom: 1px solid #333; padding: 5px 0; font-size: 0.8rem; font-weight: bold; }
+        body { font-family: 'Georgia', serif; margin: 0; padding: 0; background-color: #f0f0f0; color: #1a1a1a; }
+        .masthead { text-align: center; padding: 40px 15px; background: #fff; border-bottom: 5px solid #000; }
+        .logo-box img { max-width: 220px; height: auto; margin-bottom: 15px; }
+        .site-title { font-size: 3.5rem; font-weight: 900; text-transform: uppercase; margin: 0; letter-spacing: -2px; line-height: 1; }
+        .date-line { border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 8px 0; margin-top: 15px; font-size: 0.85rem; font-weight: bold; text-transform: uppercase; }
         
-        .container { max-width: 1000px; margin: auto; background: #fff; padding: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .main-container { max-width: 1100px; margin: 20px auto; display: grid; grid-template-columns: 2fr 1fr; gap: 30px; padding: 0 20px; }
+        .article { background: #fff; padding: 25px; border: 1px solid #ddd; }
         
-        /* News Layout */
-        .main-story { border-bottom: 2px solid #eee; margin-bottom: 30px; padding-bottom: 20px; }
-        .category { color: #800000; font-weight: bold; text-transform: uppercase; font-size: 0.9rem; display: block; margin-bottom: 10px; }
-        .headline { font-size: 2.2rem; line-height: 1.1; margin: 0 0 15px 0; }
-        .news-img { width: 100%; height: auto; border-radius: 4px; margin: 15px 0; border: 1px solid #ddd; }
-        .caption { font-size: 0.85rem; color: #666; margin-bottom: 15px; font-style: italic; }
+        .category-tag { color: #800000; font-weight: bold; text-transform: uppercase; font-size: 0.9rem; border-bottom: 2px solid #800000; display: inline-block; margin-bottom: 15px; }
+        .headline { font-size: 2.8rem; line-height: 1.1; margin: 0 0 20px 0; font-weight: 800; color: #000; }
+        .lead-img { width: 100%; height: auto; margin: 20px 0; border: 1px solid #ccc; padding: 5px; background: #fff; }
+        .caption { font-size: 0.9rem; color: #555; font-style: italic; margin-top: -10px; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
         
-        .article-content { line-height: 1.7; font-size: 1.15rem; text-align: justify; }
-        .highlight-box { background: #fff8e1; border-left: 5px solid #ffcc00; padding: 15px; margin: 20px 0; }
+        .drop-cap { float: left; font-size: 4rem; line-height: 0.8; padding-top: 4px; padding-right: 8px; font-weight: bold; color: #800000; }
+        .article-body { font-size: 1.2rem; line-height: 1.8; text-align: justify; color: #333; }
+        .sub-header { color: #800000; font-size: 1.5rem; margin: 30px 0 15px 0; border-left: 5px solid #800000; padding-left: 15px; }
+        
+        .sidebar { background: #fff; padding: 20px; border: 1px solid #ddd; height: fit-content; }
+        .sidebar-title { border-bottom: 2px solid #000; padding-bottom: 5px; margin-bottom: 15px; text-transform: uppercase; font-size: 1.1rem; }
 
-        @media (max-width: 600px) {
-            .site-title { font-size: 1.8rem; }
-            .headline { font-size: 1.6rem; }
+        @media (max-width: 850px) {
+            .main-container { grid-template-columns: 1fr; }
+            .site-title { font-size: 2.2rem; }
+            .headline { font-size: 2rem; }
         }
     </style>
 </head>
 <body>
 
-<div class="masthead">
+<header class="masthead">
     <div class="logo-box">
-        <img src="logo.png" alt="Tuluva Guardian Logo">
+        <img src="file_00000000160071fab75cf15e43ce52c4 (1).png" alt="Tuluva Guardian Logo">
     </div>
     <h1 class="site-title">Tuluva Guardian</h1>
     <div class="date-line">UDUPI | WEDNESDAY, APRIL 22, 2026 | TULUVAGUARDIAN.ONLINE</div>
-</div>
+</header>
 
-<div class="container">
-    <article class="main-story">
-        <span class="category">Special Investigation: Language Rights</span>
+<div class="main-container">
+    <main class="article">
+        <span class="category-tag">Legislative Focus</span>
         <h2 class="headline">The Gayathri Report: A Legislative Blueprint for Tulu Official Status</h2>
         
-        <img src="assembly.jpg" class="news-img" alt="Karnataka Legislative Assembly">
-        <p class="caption">The Karnataka Assembly in Bengaluru, where the resolution for Tulu's official status is expected to be debated.</p>
+        <img src="ka_V_jpg-442x260-4g (1).webp" class="lead-img" alt="Karnataka Legislative Assembly">
+        <p class="caption">LEGAL MILESTONE: The K.M. Gayathri Committee report provides the evidentiary bedrock for an Article 345 resolution.</p>
 
-        <div class="article-content">
-            <p><strong>BENGALURU/UDUPI:</strong> The submission of the <strong>K.M. Gayathri Committee report</strong> on March 4, 2026, has provided the first definitive legal roadmap for Tulu's inclusion as an additional official language. Using the "Andhra Model," the report outlines how local MLAs can move a resolution under <strong>Article 345</strong>.</p>
+        <div class="article-body">
+            <p><span class="drop-cap">T</span>he submission of the <strong>K.M. Gayathri Committee report</strong> on March 4, 2026, has fundamentally shifted the battle for Tulu's recognition from a cultural movement to a technical administrative process. By analyzing the "Andhra Model," the committee has provided local MLAs with the exact legal script needed to amend the <em>Karnataka Official Languages Act, 1963</em>.</p>
             
-            <div class="highlight-box">
-                <strong>Key Mechanism:</strong> An MLA must propose an amendment to the <em>Karnataka Official Languages Act, 1963</em>. The Gayathri report provides the necessary administrative proof that Tulu recognition will not disrupt existing Kannada-medium systems.
-            </div>
+            <p>During a high-level field study in January 2026, the commission observed the seamless integration of Urdu as an additional official language in Andhra Pradesh. This model proves that Tulu can be officialised in Udupi and Dakshina Kannada without creating a financial burden on the state exchequer or displacing the primary status of Kannada.</p>
 
-            <p>Field studies conducted in early 2026 confirmed that declaring Tulu as a second additional official language in Udupi and Dakshina Kannada would allow for government circulars, bus destination boards, and official announcements to be printed in Tulu-Tigalari script, ensuring the script's survival for future generations.</p>
+            <h3 class="sub-header">The Article 345 Resolution</h3>
+            <p>Constitutional experts note that <strong>Article 345</strong> empowers the State Legislature to adopt any language "in use in the State" for official purposes. With the Gayathri report serving as expert testimony, an MLA can now move a resolution that would legally mandate the use of Tulu in government circulars, public announcements, and transport destination boards within the coastal districts.</p>
+            
+            <p>This recognition would specifically revive the use of the <strong>Tulu-Tigalari script</strong> in administrative contexts, ensuring that the 3,000-year historical heritage of the Alupa dynasty is preserved not just in museums, but in daily governance.</p>
         </div>
-    </article>
+    </main>
 
-    <article class="main-story">
-        <span class="category">Regional News: Transportation</span>
-        <h2 class="headline">Private vs. State: The Efficiency of the Coastal Bus Model</h2>
-        <div class="article-content">
-            <p>While the rest of the state struggles with government-run transportation monopolies, Udupi and Mangaluru continue to showcase the success of the private enterprise model. Local data suggests that the competitive frequency of private operators offers significantly better connectivity for rural Tulu Nadu compared to state-run alternatives.</p>
-        </div>
-    </article>
+    <aside class="sidebar">
+        <h3 class="sidebar-title">Historical Research</h3>
+        <p><strong>Alupa Inscriptions:</strong> New research into the Pelattur Tulu inscription confirms the linguistic depth of the coastal dynasty, providing key historical weight to current legislative demands.</p>
+        <hr>
+        <h3 class="sidebar-title">Regional Efficiency</h3>
+        <p><strong>Transport Model:</strong> Udupi’s private bus network continues to outperform state monopolies, serving as a model for decentralized enterprise in Tulu Nadu.</p>
+    </aside>
 </div>
 
 </body>
