@@ -3,73 +3,80 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tuluva Guardian | Defending Heritage</title>
+    <title>Tuluva Guardian | Investigative Voice of Tulu Nadu</title>
     <style>
         body { font-family: 'Georgia', serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #111; }
-        header { text-align: center; padding: 30px 10px; background: #fff; border-bottom: 5px solid #000; }
-        .logo-box img { max-width: 180px; height: auto; }
-        .site-title { font-size: 3.5rem; font-weight: 900; text-transform: uppercase; margin: 10px 0; letter-spacing: -1px; }
-        .date-line { border-top: 1px solid #333; border-bottom: 1px solid #333; padding: 5px 0; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; }
+        header { text-align: center; padding: 40px 10px; background: #fff; border-bottom: 5px solid #000; }
+        .logo-box img { max-width: 220px; height: auto; }
+        .site-title { font-size: 3.8rem; font-weight: 900; text-transform: uppercase; margin: 10px 0; letter-spacing: -2px; }
+        .date-line { border-top: 1px solid #333; border-bottom: 1px solid #333; padding: 8px 0; font-size: 0.9rem; font-weight: bold; text-transform: uppercase; margin-bottom: 20px; }
         
-        .main-grid { max-width: 1200px; margin: 20px auto; display: grid; grid-template-columns: 1.8fr 1fr; gap: 30px; padding: 0 15px; }
-        .hero-article { background: #fff; padding: 25px; border: 1px solid #ddd; }
+        .main-grid { max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr; gap: 40px; padding: 0 20px; }
         
-        .category-tag { color: #800000; font-weight: bold; text-transform: uppercase; font-size: 0.85rem; border-bottom: 2px solid #800000; display: inline-block; margin-bottom: 10px; }
-        .headline { font-size: 2.8rem; line-height: 1.1; margin: 0 0 15px 0; font-weight: 800; color: #000; text-decoration: none; display: block; }
-        .headline:hover { color: #800000; }
-        
-        .sidebar { background: #1a1a1a; color: #eee; padding: 25px; border: 1px solid #000; height: fit-content; }
-        .sidebar-title { border-bottom: 2px solid #ffcc00; padding-bottom: 5px; margin-bottom: 15px; text-transform: uppercase; font-weight: bold; color: #ffcc00; }
-        .archive-list { list-style: none; padding: 0; }
-        .archive-item { margin-bottom: 25px; border-bottom: 1px solid #333; padding-bottom: 15px; }
-        .archive-link { color: #ffcc00; text-decoration: none; font-weight: bold; font-size: 1.1rem; }
-        .archive-link:hover { color: #fff; }
-        .archive-desc { font-size: 0.85rem; color: #bbb; display: block; margin-top: 5px; }
+        /* Main Article Styling */
+        .featured-news { background: #fff; padding: 30px; border: 1px solid #ddd; margin-bottom: 30px; box-shadow: 5px 5px 0px #e0e0e0; }
+        .category-tag { color: #800000; font-weight: bold; text-transform: uppercase; font-size: 0.9rem; border-bottom: 2px solid #800000; display: inline-block; margin-bottom: 15px; }
+        .main-headline { font-size: 3rem; line-height: 1.1; margin: 0 0 20px 0; font-weight: 800; color: #000; text-decoration: none; display: block; }
+        .main-headline:hover { color: #800000; }
+        .lead-para { font-size: 1.3rem; line-height: 1.6; color: #333; margin-bottom: 20px; }
 
-        @media (max-width: 850px) { .main-grid { grid-template-columns: 1fr; } .site-title { font-size: 2.2rem; } }
+        /* Expanded Sidebar Menu */
+        .sidebar { background: #1a1a1a; color: #fff; padding: 30px; height: fit-content; position: sticky; top: 20px; }
+        .sidebar-title { font-size: 1.5rem; border-bottom: 2px solid #ffcc00; padding-bottom: 10px; margin-bottom: 25px; text-transform: uppercase; color: #ffcc00; }
+        .menu-item { margin-bottom: 30px; border-bottom: 1px solid #333; padding-bottom: 20px; }
+        .menu-link { color: #ffcc00; text-decoration: none; font-weight: bold; font-size: 1.3rem; display: block; margin-bottom: 8px; }
+        .menu-link:hover { color: #fff; text-decoration: underline; }
+        .menu-meta { font-size: 0.9rem; color: #bbb; line-height: 1.4; display: block; }
+        
+        @media (max-width: 900px) { .main-grid { grid-template-columns: 1fr; } .site-title { font-size: 2.5rem; } }
     </style>
 </head>
 <body>
 
 <header>
     <div class="logo-box">
-        <img src="file_00000000160071fab75cf15e43ce52c4 (1).png" alt="Tuluva Guardian">
+        <img src="file_00000000160071fab75cf15e43ce52c4 (1).png" alt="Tuluva Guardian Logo">
     </div>
     <h1 class="site-title">Tuluva Guardian</h1>
-    <div class="date-line">UDUPI | REGIONAL WATCHDOG | TULUVAGUARDIAN.ONLINE</div>
+    <div class="date-line">UDUPI | INDEPENDENT REGIONAL WATCHDOG | EST. 2025</div>
 </header>
 
 <div class="main-grid">
     <main>
-        <div class="hero-article">
-            <span class="category-tag">Mission Statement</span>
-            <a href="#" class="headline">Breaking the "Media Dark" Zone: Why Tulu Nadu Needs Coded Media</a>
-                Mainstream media ignores our data and erases our history. The Tuluva Guardian exists to document the truth—from 100% SSLC success to the 1,500-year-old Alupa legacy. We don't ask for permission; we provide the evidence.
-            </p>
-            <hr>
-            <p><em>Select a report from the Archive to begin your investigation.</em></p>
+        <div class="featured-news">
+            <span class="category-tag">Mission Control</span>
+            <a href="sslc-results-2025.html" class="main-headline">The Negligence Wall: Why Tulu Nadu Stopped Waiting for Permission</a>
+            <p class="lead-para">State media sees us through a narrow lens of festivals and tourism. We see the structural gaps. From Article 345 to the 100% SSLC success rate, the Tuluva Guardian documents the data that mainstream media ignores.</p>
+            <p>Independent, Tulu-first, and data-driven. This is our response to decades of silence. Defending Heritage. Defining the Future.</p>
+        </div>
+
+        <div class="featured-news" style="background: #fdfdfd;">
+            <span class="category-tag">Historical Research</span>
+            <h2 style="font-size: 1.8rem;">Alupa Maritime Mapping</h2>
+            <p>Our team is currently tracing the ancient trade routes of the "Tulu Sea." This digital archive will soon host the first interactive map of Alupa-era maritime influence.</p>
         </div>
     </main>
 
     <aside class="sidebar">
         <h3 class="sidebar-title">Investigative Archives</h3>
-        <ul class="archive-list">
-            <li class="archive-item">
-                <a href="sslc-results-2025.html" class="archive-link">SSLC 2025: The 100% Pass Rate</a>
-                <span class="archive-desc">Evidence of linguistic academic superiority in the coastal belt.</span>
-            </li>
-            <li class="archive-item"><a href="gayathri-report.html" class="archive-link">The Gayathri Report Analysis</a<span class="archive-desc">A deep dive into the 200-page legislative blueprint for Article 345.</span>
-            </li>
-            
-            <li class="archive-item">
-
-                
-                <a <a href="alupa-maritime.html" class="archive-link">Alupa Maritime Trade</a>
-            </li>
-        </ul>
         
-        <div style="text-align: center; margin-top: 40px; opacity: 0.6; font-size: 0.7rem;">
-            Tuluva Guardian | Tiger-Headed Fish Authority
+        <div class="menu-item">
+            <a href="sslc-results-2025.html" class="menu-link">SSLC 2025: The 100% Verdict</a>
+            <span class="menu-meta">Evidence of linguistic academic superiority in coastal blocks. Politicians fail while students pass.</span>
+        </div>
+
+        <div class="menu-item">
+            <a href="gayathri-report.html" class="menu-link">The Gayathri Blueprint</a>
+            <span class="menu-meta">A deep dive into the 200-page legislative report. Exploring the "Andhra Model" for Article 345.</span>
+        </div>
+
+        <div class="menu-item">
+            <a href="alupa-maritime.html" class="menu-link">Alupa Maritime Legacy</a>
+            <span class="menu-meta">STATUS: INVESTIGATION IN PROGRESS. Documenting the 5th-century trade routes.</span>
+        </div>
+
+        <div style="text-align: center; margin-top: 50px;">
+            <p style="color: #ffcc00; font-size: 0.8rem; letter-spacing: 2px;">TIGER-HEADED FISH AUTHORITY</p>
         </div>
     </aside>
 </div>
