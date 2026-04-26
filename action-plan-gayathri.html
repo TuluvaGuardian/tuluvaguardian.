@@ -5,66 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Tuluva Guardian | Investigative Hub</title>
     <style>
-        /* CORE BROADSHEET STYLING */
         body { font-family: 'Georgia', serif; line-height: 1.6; color: #1a1a1a; margin: 0; padding: 0; background: #fff; }
-        
-        .top-nav { background: #000; color: #fff; padding: 8px 0; font-family: sans-serif; font-size: 10px; text-transform: uppercase; text-align: center; letter-spacing: 2px; }
-        
-        .masthead { text-align: center; padding: 30px 0 10px; border-bottom: 4px double #000; margin: 0 3%; }
-        .masthead h1 { font-size: 55px; margin: 0; font-family: 'Times New Roman', serif; font-weight: 900; letter-spacing: -1px; text-transform: uppercase; }
-        
-        .sub-header { display: flex; justify-content: space-between; border-bottom: 1px solid #000; margin: 0 3% 30px; padding: 8px 0; font-size: 12px; font-weight: bold; font-family: sans-serif; }
+        .top-nav { background: #000; color: #fff; padding: 10px 0; font-family: sans-serif; font-size: 11px; text-transform: uppercase; text-align: center; letter-spacing: 2px; }
+        .masthead { text-align: center; padding: 40px 0 20px; border-bottom: 5px double #000; margin: 0 4%; }
+        .main-logo { height: 110px; margin-bottom: 10px; display: block; margin-left: auto; margin-right: auto; }
+        .masthead h1 { font-size: 60px; margin: 0; font-family: 'Times New Roman', serif; font-weight: 900; text-transform: uppercase; }
+        .sub-header { display: flex; justify-content: space-between; border-bottom: 1px solid #000; margin: 0 4% 30px; padding: 10px 0; font-size: 13px; font-weight: bold; font-family: sans-serif; }
 
-        /* THE INVESTIGATIVE GRID - FORCED 3 COLUMNS */
-        .main-grid { 
-            display: grid; 
-            grid-template-columns: 240px 1fr 300px; 
-            gap: 40px; 
-            margin: 0 3%; 
-            align-items: start;
-        }
+        /* THE TRIPLE THREAT GRID */
+        .main-grid { display: grid; grid-template-columns: 260px 1fr 320px; gap: 45px; margin: 0 4%; align-items: start; }
+        .section-label { border-top: 3px solid #800000; color: #800000; font-weight: bold; font-family: sans-serif; font-size: 11px; padding-top: 8px; margin-bottom: 15px; display: block; text-transform: uppercase; }
 
-        .section-label { border-top: 2px solid #800000; color: #800000; font-weight: bold; font-family: sans-serif; font-size: 11px; padding-top: 5px; margin-bottom: 15px; display: block; text-transform: uppercase; }
+        /* COLUMN 1: ARCHIVE RECORDS */
+        .archive-col { border-right: 1px solid #eee; padding-right: 25px; }
+        .sidebar-item { margin-bottom: 30px; border-bottom: 1px solid #f4f4f4; padding-bottom: 15px; }
+        .sidebar-item h4 { margin: 0 0 5px; font-family: 'Times New Roman', serif; font-size: 17px; }
+        .sidebar-item p { font-size: 13px; color: #444; margin-bottom: 10px; }
+        .btn-link { font-size: 10px; color: #800000; text-decoration: none; font-weight: bold; text-transform: uppercase; border: 1px solid #800000; padding: 4px 8px; }
 
-        /* COLUMN 1: ARCHIVE DIRECTIVES (PREVIOUS ARTICLES) */
-        .archive-col { border-right: 1px solid #eee; padding-right: 20px; }
-        .archive-item { margin-bottom: 30px; }
-        .archive-item h4 { margin: 0 0 8px; font-size: 16px; font-family: 'Times New Roman', serif; }
-        .archive-item p { font-size: 13px; color: #444; margin-bottom: 10px; }
-        .btn-link { font-size: 11px; color: #800000; text-decoration: none; font-weight: bold; text-transform: uppercase; border: 1px solid #800000; padding: 4px 8px; border-radius: 3px; }
+        /* COLUMN 2: INVESTIGATION */
+        .investigation-col h2 { font-size: 48px; line-height: 1.1; margin: 0 0 20px; font-weight: 900; }
+        .byline { font-family: sans-serif; font-size: 12px; border-bottom: 1px solid #eee; padding-bottom: 12px; margin-bottom: 30px; color: #666; }
+        .dropcap { float: left; font-size: 80px; line-height: 65px; padding-top: 4px; padding-right: 12px; font-weight: bold; font-family: 'Times New Roman', serif; }
+        .featured-img { width: 100%; border: 1px solid #000; margin-bottom: 12px; }
+        .caption { background: #f9f9f9; padding: 12px; border-left: 5px solid #800000; font-size: 13px; font-family: sans-serif; margin-bottom: 35px; line-height: 1.4; }
 
-        /* COLUMN 2: THE 1,000 LINE INVESTIGATION */
-        .investigation-col h2 { font-size: 44px; line-height: 1.1; margin: 0 0 20px; font-weight: 900; letter-spacing: -0.5px; }
-        .byline { font-family: sans-serif; font-size: 12px; border-bottom: 1px solid #eee; padding-bottom: 10px; margin-bottom: 30px; text-transform: uppercase; color: #666; }
-        <img src="logo.png" alt="Tuluva Guardian Logo">
-               
-        .dropcap { float: left; font-size: 85px; line-height: 70px; padding-top: 4px; padding-right: 12px; font-weight: bold; font-family: 'Times New Roman', serif; }
-        .investigation-text { font-size: 18px; line-height: 1.7; }
-        
-        .featured-img { width: 100%; border: 1px solid #000; margin-bottom: 10px; }
-        .caption { background: #f4f4f4; padding: 12px; border-left: 5px solid #800000; font-size: 13px; font-family: sans-serif; margin-bottom: 30px; }
+        /* COLUMN 3: COMMAND CENTER */
+        .command-center { background: #800000; color: #fff; padding: 25px; position: sticky; top: 15px; text-align: center; }
+        .command-center h3 { text-transform: uppercase; font-size: 20px; margin-top: 0; letter-spacing: 1px; }
+        .command-center p { font-size: 14px; margin-bottom: 20px; opacity: 0.9; }
+        .rti-box { background: #111; color: #00ff00; padding: 15px; font-family: monospace; font-size: 12px; border-radius: 3px; margin: 15px 0; text-align: left; line-height: 1.4; border-left: 3px solid #00ff00; }
+        .btn-join { display: block; background: #fff; color: #800000; text-align: center; padding: 15px; text-decoration: none; font-weight: bold; border-radius: 4px; text-transform: uppercase; font-size: 13px; }
 
-        /* COLUMN 3: ACTION SIDEBAR (TTT COMMAND) */
-        .action-sidebar { background: #fafafa; border: 1px solid #ddd; padding: 25px; position: sticky; top: 10px; }
-        .action-header { background: #800000; color: #fff; padding: 12px; text-align: center; font-weight: bold; margin-bottom: 20px; font-family: sans-serif; }
-        
-        .rti-box { background: #1a1a1a; color: #00ff00; padding: 15px; font-family: monospace; font-size: 13px; border-radius: 4px; margin: 15px 0; line-height: 1.4; border-left: 4px solid #00ff00; }
-        
-        .btn-whatsapp { display: block; background: #25D366; color: #fff; text-align: center; padding: 16px; text-decoration: none; font-weight: bold; border-radius: 5px; margin-top: 25px; font-family: sans-serif; box-shadow: 0 4px 12px rgba(37,211,102,0.3); transition: 0.3s; }
-        .btn-whatsapp:hover { background: #128C7E; transform: translateY(-2px); }
-
-        /* RESPONSIVE - STACKS ON SMALL PHONES */
-        @media (max-width: 1000px) { 
-            .main-grid { grid-template-columns: 1fr; }
-            .archive-col { border-right: none; border-bottom: 1px solid #eee; margin-bottom: 30px; }
-        }
+        @media (max-width: 1000px) { .main-grid { grid-template-columns: 1fr; } .archive-col { border: none; } }
     </style>
 </head>
 <body>
 
-    <div class="top-nav">NATIONAL EDITION | SUNDAY, APRIL 26, 2026 | UDUPI | TULUNAD SOVEREIGNTY</div>
+    <div class="top-nav">NATIONAL EDITION | SUNDAY, APRIL 26, 2026 | UDUPI | KARNATAKA</div>
 
     <header class="masthead">
+        <img src="logo.png" class="main-logo" alt="THE TULUVA GUARDIAN Logo">
         <h1>THE TULUVA GUARDIAN</h1>
     </header>
 
@@ -77,74 +58,58 @@
     <main class="main-grid">
         
         <aside class="archive-col">
-            <span class="section-label">Historical Directives</span>
-            
-            <div class="archive-item">
-                <h4>7th-Century Evidence</h4>
-              <img src="assembly.webp" class="featured-img" alt="Karnataka Legislative Assembly">
-<div class="caption">
-    <strong>THE SILENT ASSEMBLY:</strong> The Karnataka Legislative Assembly, where the Gayathri Report (Submitted March 4, 2026) remains "under review" fifty-three days later. (Photo: TTT Archive)
-</div>
-                       <p>The Pelattur stone inscription remains the "smoking gun" for Tulu administrative history.</p>
-                <a href="pelattur-inscription.html" class="btn-link">Read Archives &rarr;</a>
+            <span class="section-label">Archive Records</span>
+            <div class="sidebar-item">
+                <h4>The Pelattur Record</h4>
+                <p>Photographic evidence from the 7th-century stone confirms Tulu administrative roots.</p>
+                <a href="pelattur.html" class="btn-link">Read Archives &rarr;</a>
             </div>
-
-            <div class="archive-item">
-                <h4>Legal Briefing</h4>
-                <p>A summary of the Article 345 requirements that the Gayathri Report fulfills.</p>
-                <a href="gayathri-report.html" class="btn-link">View Brief &rarr;</a>
+            <div class="sidebar-item">
+                <h4>Article 345 Criteria</h4>
+                <p>How the Gayathri Report fulfills all constitutional requirements for Official Status.</p>
+                <a href="legal.html" class="btn-link">View Brief &rarr;</a>
             </div>
-
-            <div class="archive-item">
-                <h4>Digital Progress</h4>
-                <p>The transition to Unicode 16.0 for the Tulu-Tigalari script is now underway.</p>
+            <div class="sidebar-item">
+                <h4>Demographic Shift</h4>
+                <p>100% pass rates in recent Tulu exams create a legislative mandate the state cannot ignore.</p>
             </div>
         </aside>
 
         <article class="investigation-col">
             <span class="section-label">Investigation</span>
             <h2>Fifty Days of Bureaucratic Inertia: The Clock is Ticking on Tuluva Rights</h2>
-            
-            <div class="byline">
-                BY KABI ALUPENDRA | Investigative Desk
-            </div>
+            <div class="byline">BY KABI ALUPENDRA | Investigative Desk | Bengaluru Bureau</div>
 
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Vidhana_Soudha_-_panoramio.jpg" class="featured-img" alt="Assembly">
+            <img src="assembly.webp" class="featured-img" alt="Karnataka Legislative Assembly">
             <div class="caption">
-                <strong>THE SILENT ASSEMBLY:</strong> The Karnataka Legislative Assembly, where the Gayathri Report (Submitted March 4, 2026) remains "under review" fifty-three days later. (Photo: TTT Archive)
+                <strong>THE SILENT ASSEMBLY:</strong> The Karnataka Legislative Assembly, where the Gayathri Report remains "under review" fifty-three days after submission.
             </div>
 
             <div class="investigation-text">
-                <p><span class="dropcap">I</span>n the high-security corridors of the Vidhana Soudha, a 200-page document is currently gathering dust. Since its formal submission on March 4, 2026, the Gayathri Report—a comprehensive roadmap for Tulu's official status—has been met with strategic silence. This "60-Day Silence" is now being viewed by legal analysts not as a technical delay, but as a political evasion.</p>
-
-                <p>The report details the linguistic, historical, and economic viability of Tulu. According to administrative norms, once a committee submits a report, the state must present an <strong>Action Taken Report (ATR)</strong> in the Assembly. By remaining silent, the administration is bypassing its duty to the people of Tulunad.</p>
-                
-                <p><em>(The story continues for 1,000 lines detailing the administrative bottleneck and coastal pressure...)</em></p>
+                <p><span class="dropcap">I</span>n the high-security corridors of the Vidhana Soudha, a 200-page document is currently gathering dust. Since its formal submission on March 4, 2026, the Gayathri Report has been met with strategic silence. Legal analysts suggest this is no longer a technical delay, but a political evasion.</p>
+                <p>According to administrative norms, once a report is submitted, the state must present an <strong>Action Taken Report (ATR)</strong>. By remaining silent, the administration is bypassing its duty to the people of Tulunad.</p>
             </div>
         </article>
 
-        <aside class="action-sidebar">
-            <div class="action-header">TTT COMMAND CENTER</div>
+        <aside class="command-center">
+            <h3>Command Center</h3>
+            <p>Join 15,000+ Tuluvas in the TTT WhatsApp Community.</p>
             
-            <h3 style="margin-top: 0; font-size: 18px;">Break the Silence</h3>
-            <p style="font-size: 13px;">Every Tuluva must become a digital watchdog today.</p>
-
-            <span class="section-label" style="border-top-color: #000; color: #000;">STRIKE 1: THE RTI WEAPON</span>
+            <span class="section-label" style="border-top-color: #fff; color: #fff;">Strike 1: The RTI Weapon</span>
             <div class="rti-box">
-                "Under the RTI Act 2005, provide the current status of the Gayathri Report submitted on March 4, 2026, and a copy of any correspondence regarding its implementation date in the Assembly."
+                "Provide certified 'Note File' copies for the Gayathri Report and the date for ATR presentation."
             </div>
 
-            <span class="section-label" style="border-top-color: #000; color: #000; margin-top: 25px;">STRIKE 2: MLA PRESSURE</span>
-            <p style="font-size: 13px;">Tell your MLA: <strong>"Will you raise a Point of Order on the Gayathri Report in the next house session?"</strong></p>
+            <span class="section-label" style="border-top-color: #fff; color: #fff; margin-top: 20px;">Strike 2: MLA Pressure</span>
+            <p style="font-size: 13px;">Ask your MLA: "Will you raise a Point of Order on the report in the next house session?"</p>
 
-            <a href="https://whatsapp.com/channel/0029Vb7Yxsg7Noa9O0Ik2k3b" class="btn-whatsapp">JOIN WHATSAPP CHANNEL</a>
-            <p style="font-size: 11px; text-align: center; margin-top: 10px; color: #666;">Get RTI templates and real-time updates.</p>
+            <a href="https://whatsapp.com/channel/0029Vb7Yxsg7Noa9O0Ik2k3b" class="btn-join">Join Channel &rarr;</a>
         </aside>
 
     </main>
 
-    <footer style="background: #000; color: #fff; text-align: center; padding: 40px; margin-top: 60px; font-family: sans-serif; font-size: 11px; letter-spacing: 1px;">
-        &copy; 2026 THE TULUVA GUARDIAN | UDUPI, KARNATAKA | INVESTIGATIVE VOICE OF TULU NADU
+    <footer style="background: #000; color: #fff; text-align: center; padding: 50px; margin-top: 60px; font-family: sans-serif; font-size: 11px; letter-spacing: 2px;">
+        &copy; 2026 THE TULUVA GUARDIAN | UDUPI | INVESTIGATIVE VOICE OF TULUNAD
     </footer>
 
 </body>
