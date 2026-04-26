@@ -1,190 +1,95 @@
-            <!DOCTYPE html>
+           <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Tuluva Guardian | Investigative Report: The 60-Day Silence</title>
+    <title>TTT Action Plan: The Gayathri Report | Tuluva Guardian</title>
     <style>
-        /* TRADITIONAL BROADSHEET FRAMEWORK */
         body { font-family: 'Georgia', serif; line-height: 1.6; color: #1a1a1a; margin: 0; padding: 0; background: #fff; }
         
-        /* TOP BAR */
-        .top-nav { background: #000; color: #fff; padding: 6px 0; font-family: sans-serif; font-size: 10px; text-transform: uppercase; text-align: center; letter-spacing: 2px; border-bottom: 1px solid #444; }
+        /* HEADER & NAVIGATION */
+        .top-nav { background: #800000; color: #fff; padding: 8px 0; font-family: sans-serif; font-size: 10px; text-transform: uppercase; text-align: center; letter-spacing: 2px; }
+        .masthead { text-align: center; padding: 30px 0; border-bottom: 4px double #000; margin: 0 5%; }
+        .masthead h1 { font-size: 40px; margin: 0; font-family: 'Times New Roman', serif; text-transform: uppercase; }
         
-        /* MASTHEAD */
-        .masthead { text-align: center; padding: 40px 0 10px; border-bottom: 4px double #000; margin: 0 5%; }
-        .masthead img { height: 100px; margin-bottom: 10px; }
-        .masthead h1 { font-size: 58px; margin: 0; font-family: 'Times New Roman', serif; font-weight: 900; letter-spacing: -1.5px; text-transform: uppercase; }
+        .container { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+        .btn-back { display: inline-block; margin-bottom: 25px; color: #800000; text-decoration: none; font-weight: bold; font-family: sans-serif; font-size: 13px; }
         
-        /* SUB-HEADER INFO */
-        .sub-header { display: flex; justify-content: space-between; border-bottom: 1px solid #000; margin: 0 5% 30px; padding: 8px 0; font-size: 13px; font-weight: bold; font-family: sans-serif; }
-
-        /* THREE-COLUMN GRID */
-        .main-grid { display: grid; grid-template-columns: 220px 1fr 280px; gap: 35px; margin: 0 5%; align-items: start; }
+        /* ACTION CARDS */
+        .action-card { border: 1px solid #ddd; padding: 30px; margin-bottom: 30px; background: #fdfdfd; position: relative; overflow: hidden; }
+        .action-number { position: absolute; top: -10px; right: 10px; font-size: 80px; font-weight: 900; color: rgba(128, 0, 0, 0.05); font-family: sans-serif; }
+        .action-label { color: #800000; font-weight: bold; font-family: sans-serif; font-size: 12px; text-transform: uppercase; display: block; margin-bottom: 10px; }
         
-        .section-label { border-top: 2px solid #800000; color: #800000; font-weight: bold; font-family: sans-serif; font-size: 11px; padding-top: 5px; margin-bottom: 15px; display: block; text-transform: uppercase; }
-
-        /* COLUMN 1: THE RECORDS */
-        .left-col { border-right: 1px solid #eee; padding-right: 20px; }
-        .sidebar-item { margin-bottom: 25px; font-size: 14px; border-bottom: 1px solid #f4f4f4; padding-bottom: 15px; }
-        .sidebar-item h4 { margin: 0 0 5px; font-family: sans-serif; font-size: 13px; }
-
-        /* COLUMN 2: THE MAIN INVESTIGATION */
-        .center-col h2 { font-size: 42px; line-height: 1.1; margin: 0 0 15px; font-weight: 900; }
-        .byline { font-family: sans-serif; font-weight: bold; font-size: 12px; color: #555; border-bottom: 1px solid #eee; padding-bottom: 10px; margin-bottom: 25px; display: flex; justify-content: space-between; }
-        .dropcap { float: left; font-size: 80px; line-height: 65px; padding-top: 4px; padding-right: 10px; font-family: 'Times New Roman', serif; font-weight: bold; }
+        h2 { font-size: 28px; margin-top: 0; font-family: 'Times New Roman', serif; }
         
-        .featured-image { margin-bottom: 25px; border: 1px solid #000; width: 100%; }
-        .caption { font-family: sans-serif; font-size: 12px; color: #555; margin-top: 5px; line-height: 1.4; padding: 10px; background: #f9f9f9; border-left: 4px solid #800000; }
-
-        .pull-quote { font-size: 24px; font-style: italic; color: #800000; border-top: 1px solid #800000; border-bottom: 1px solid #800000; padding: 25px 0; margin: 35px 0; text-align: center; font-weight: bold; }
-
-        /* COLUMN 3: THE ACTION SIDEBAR (REBUILT FOR WHATSAPP) */
-        .right-col { background: #fdfdfd; padding: 20px; border: 1px solid #ccc; position: sticky; top: 10px; }
-        .action-header { background: #800000; color: #ffcc00; padding: 10px; text-align: center; font-weight: bold; font-family: sans-serif; margin-bottom: 20px; }
+        /* CODE/RTI BOX */
+        .copy-box { background: #1a1a1a; color: #00ff00; padding: 20px; font-family: monospace; font-size: 14px; border-radius: 4px; margin: 15px 0; position: relative; border-left: 5px solid #00ff00; }
+        .copy-hint { font-size: 10px; color: #aaa; text-transform: uppercase; margin-top: 5px; display: block; }
         
-        .rti-box { background: #1a1a1a; color: #00ff00; padding: 15px; font-family: monospace; font-size: 12px; margin: 15px 0; border-radius: 4px; }
-        
-        /* WHATSAPP BUTTON RESTORED */
-        .btn-whatsapp { display: block; background: #25D366; color: white; padding: 15px; text-align: center; text-decoration: none; font-weight: bold; font-family: sans-serif; border-radius: 5px; margin-top: 20px; box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3); }
-        .btn-whatsapp:hover { background: #1ebd5b; transform: translateY(-2px); }
+        /* CALL TO ACTION */
+        .whatsapp-section { background: #25D366; color: #fff; padding: 40px; text-align: center; border-radius: 8px; margin-top: 50px; }
+        .btn-whatsapp { display: inline-block; background: #fff; color: #25D366; padding: 15px 35px; border-radius: 5px; text-decoration: none; font-weight: bold; font-size: 18px; margin-top: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: 0.3s; }
+        .btn-whatsapp:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0,0,0,0.15); }
 
-        /* FOOTER GRID */
-        .footer-grid { grid-column: 1 / span 3; border-top: 3px solid #000; margin-top: 50px; padding: 30px 0; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 40px; }
-
-        @media (max-width: 950px) { .main-grid { grid-template-columns: 1fr; } .left-col, .right-col { display: none; } }
+        footer { background: #000; color: #fff; text-align: center; padding: 20px; font-size: 11px; margin-top: 60px; }
     </style>
 </head>
 <body>
 
-    <div class="top-nav">
-        NATIONAL EDITION | SUNDAY, APRIL 26, 2026 | UDUPI | MANGALURU | KASARAGOD
-    </div>
+    <div class="top-nav">TTT STRATEGIC COMMAND | OPERATIONAL DIRECTIVE 2026-04</div>
 
     <header class="masthead">
-        <img src="logo.png" alt="Tuluva Guardian Logo">
         <h1>THE TULUVA GUARDIAN</h1>
     </header>
 
-    <div class="sub-header">
-        <span>VOL. II NO. 114</span>
-        <span style="letter-spacing: 1px;">THE GAYATHRI REPORT: LINGUISTIC SOVEREIGNTY WATCH</span>
-        <span>PRICE: ₹10.00</span>
-    </div>
-
-    <main class="main-grid">
+    <div class="container">
+        <a href="index.html" class="btn-back">&larr; RETURN TO INVESTIGATION</a>
         
-        <aside class="left-col">
-            <span class="section-label">Archive Records</span>
-            
-            <div class="sidebar-item">
-                <h4>The Pelattur Record</h4>
-                <aside class="left-col">
-    <span class="section-label">Archive Records</span>
-    
-    <div class="sidebar-item">
-        <h4><a href="pelattur-inscription.html" style="color: #000; text-decoration: none;">The Pelattur Record</a></h4>
-        <p>New photographic evidence from the 7th-century stone inscription confirms Tulu as the primary administrative tongue of the early Alupa kings.</p>
-        <a href="pelattur-inscription.html" style="font-size: 11px; color: #800000; font-weight: bold; text-decoration: none;">VIEW TRANSCRIPT &rarr;</a>
-    </div>
-
-    <div class="sidebar-item">
-        <h4><a href="gayathri-report.html" style="color: #000; text-decoration: none;">Article 345 Criteria</a></h4>
-        <p>The Gayathri Report fulfills all scientific requirements for Tulu to be declared an Official State Language, matching the 'Andhra Model'.</p>
-    </div>
-
-    <div class="sidebar-item" style="border: none;">
-        <h4><a href="sslc-results-2025.html" style="color: #000; text-decoration: none;">Demographic Shift</a></h4>
-        <p>With a 100% pass rate in the 2025 Tulu exams, the youth demand is at an all-time high, creating a legislative mandate the state cannot ignore.</p>
-        <a href="sslc-results-2025.html" style="font-size: 11px; color: #800000; font-weight: bold; text-decoration: none;">READ DATA SUMMARY &rarr;</a>
-    </div>
-                </aside>
-                        
-            <div class="sidebar-item">
-                <h4>Article 345 Criteria</h4>
-                <p>The Gayathri Report fulfills all scientific requirements for Tulu to be declared an Official State Language, matching the 'Andhra Model'.</p>
-            </div>
-
-            <div class="sidebar-item" style="border: none;">
-                <h4>Demographic Shift</h4>
-                <p>With a 100% pass rate in the 2025 Tulu exams, the youth demand is at an all-time high, creating a legislative mandate the state cannot ignore.</p>
-            </div>
-        </aside>
-
-        <article class="center-col">
-            <span class="section-label">Investigation</span>
-            <h2>Fifty Days of Bureaucratic Inertia: The Clock is Ticking on Tuluva Rights</h2>
-            
-            <div class="byline">
-                <span>By KABI ALUPENDRA | Investigative Desk</span>
-                <span>Bengaluru Bureau</span>
-            </div>
-
-            <img src="assembly.webp" alt="Vidhana Soudha" class="featured-image">
-            <div class="caption">
-                <strong>THE SILENT ASSEMBLY:</strong> The Karnataka Legislative Assembly, where the Gayathri Report (Submitted March 4) remains "Under Review" fifty-three days later.
-            </div>
-
-            <p><span class="dropcap">I</span>n the high-security corridors of the Vidhana Soudha, a 200-page document is currently gathering dust. Since its formal submission on March 4, 2026, the Gayathri Report—a comprehensive roadmap for Tulu's official status—has been met with strategic silence from the state administration. This "60-Day Silence" is now being viewed by legal analysts not as a technical delay, but as a political evasion.</p>
-This scientific roadmap doesn't just ask for recognition; it demands a restoration of a status that has existed since the 7th century. By remaining silent, the administration is ignoring 1,400 years of documented Tuluva governance. From the Alupa Dynasty to the detailed administrative records found in the Pelattur inscription, Tulu has served as the language of law and court long before modern bureaucratic delays."
-            <p>The report, which details the linguistic, historical, and economic viability of Tulu as a second official language, was expected to trigger an immediate Action Taken Report (ATR). However, as we approach the two-month mark, no Cabinet Note has been circulated, and the Department of Kannada and Culture remains tight-lipped about the scheduling of a legislative debate.</p>
-
-            <div class="pull-quote">
-                "The government's refusal to table the ATR is an active erasure of Tuluva administrative identity. We are no longer asking; we are demanding the release of the report."
-            </div>
-
-          <p>This scientific roadmap doesn't just ask for recognition; it demands a restoration of a status that has existed since the 7th century. By remaining silent, the administration is ignoring 1,400 years of documented Tuluva governance. From the Alupa Dynasty of the 2nd century to the detailed administrative records found in the 7th-century Pelattur inscription, Tulu has served as the language of the court and law.</p>
-
-<p>The Gayathri Report provides undeniable evidence of this pedigree, proving that Tulu is structurally and historically prepared for immediate official use under Article 345. For a millennium, the Alupa kings governed this land with Tulu as their administrative backbone; the modern state's 60-day silence is a direct insult to that sovereign history.</p>
-                    <h3>The Administrative Bottleneck</h3>
-            <p>Our investigative desk has confirmed that the report has passed through the initial vetting stage but is currently stalled at the Secretariat level. Sources suggest that the administration is wary of the precedent it sets for other linguistic movements, ignoring the unique "Classical" status and historical court-language pedigree that Tulu holds.</p>
-
-            <p>For the Tuluva community, this isn't just about a name on a paper; it's about administrative access. Without official status, Tuluva citizens are often treated as strangers in their own government offices. The Gayathri Report provides the legal "key" to fix this, yet the door remains locked from the inside.</p>
-
-            <h3>The Rising Coast</h3>
-            <p>From Udupi to Kasaragod, the sentiment is shifting. The TTT (Tulu, Tulunad, Tuluvas) movement is preparing for a massive RTI-driven accountability phase. If the ATR is not presented by the next session, activists plan to flood the Secretariat with thousands of individual inquiries, forcing a response through sheer volume.</p>
-        </article>
-
-        <aside class="right-col">
-            <div class="action-header">TTT COMMAND CENTER</div>
-            
-            <h3 style="margin-top: 0; font-size: 18px;">Break the Silence</h3>
-            <p style="font-size: 13px;">Don't let the report die in a drawer. Every Tuluva must become a digital watchdog today.</p>
-
-            <span class="section-label" style="border-top-color: #000; color: #000;">STRIKE 1: THE RTI HAMMER</span>
-            <p style="font-size: 12px; margin-bottom: 5px;">File an RTI today. Use this specific query:</p>
-            <div class="rti-box">
-                "Provide the certified 'Note File' copies for the Gayathri Report submitted on March 4, 2026, and the date for ATR presentation."
-            </div>
-
-            <span class="section-label" style="border-top-color: #000; color: #000; margin-top: 20px;">STRIKE 2: MLA PRESSURE</span>
-            <p style="font-size: 12px;">Contact your local MLA and ask: <em>"Will you raise a Point of Order on the Gayathri Report in the next house session?"</em></p>
-
-            <div style="margin-top: 30px; padding: 15px; background: #f0f0f0; border-radius: 5px; text-align: center;">
-                <h4 style="margin: 0; font-size: 14px;">JOIN THE MOVEMENT</h4>
-                <p style="font-size: 11px; margin: 10px 0;">Get templates, field reports, and real-time TTT updates.</p>
-                <a href="https://whatsapp.com/channel/0029Vb7Yxsg7Noa9O0Ik2k3b" class="btn-whatsapp">JOIN WHATSAPP CHANNEL</a>
-            </div>
-        </aside>
-
-        <div class="footer-grid">
-            <div>
-                <span class="section-label">Historical Record</span>
-                <p style="font-size: 13px;">Tulu has been a language of the coast for 1,400 years. The Guardian is committed to documenting its transition from a 'dialect' to a 'state language'.</p>
-            </div>
-            <div>
-                <span class="section-label">Economic Outlook</span>
-                <p style="font-size: 13px;">Official status unlocks localized governance, meaning more efficient administrative services and central funding for heritage preservation.</p>
-            </div>
-            <div>
-                <span class="section-label">Community Mission</span>
-                <p style="font-size: 13px;">The Tuluva Guardian is a data-driven, TTT-first advocatory media outlet based in Udupi. We speak the truth to power.</p>
-            </div>
+        <div style="text-align: center; margin-bottom: 50px;">
+            <span class="action-label" style="border-bottom: 2px solid #800000; display: inline-block; padding-bottom: 5px;">Citizen Sovereignty</span>
+            <h2 style="font-size: 36px;">Action Plan: Breaking the 60-Day Silence</h2>
+            <p>The Gayathri Report (Submitted March 4) represents 1,400 years of administrative weight. Use these steps to force the Action Taken Report (ATR) into the Legislative Assembly.</p>
         </div>
-    </main>
 
-    <footer style="background: #000; color: #fff; text-align: center; padding: 25px; font-size: 12px; font-family: sans-serif; margin-top: 40px;">
-        &copy; 2026 THE TULUVA GUARDIAN | INVESTIGATIVE VOICE OF TULUNAD | REGISTERED UDUPI
+        <div class="action-card">
+            <span class="action-number">01</span>
+            <span class="action-label">The Legal Hammer</span>
+            <h2>File a Digital RTI</h2>
+            <p>Target the <strong>Department of Kannada and Culture</strong>. Silence is only possible when there is no formal inquiry. Copy and paste the following query into the RTI Online portal:</p>
+            
+            <div class="copy-box">
+                "Subject: Status of the Gayathri Report (Submitted March 4, 2026). <br><br>
+                1. Provide certified copies of all 'Note Files' related to this report. <br>
+                2. State the scheduled date for the presentation of the Action Taken Report (ATR) in the House."
+            </div>
+            <span class="copy-hint">Copy this text for your RTI Application</span>
+        </div>
+
+        <div class="action-card">
+            <span class="action-number">02</span>
+            <span class="action-label">The Political Injunction</span>
+            <h2>MLA Accountability</h2>
+            <p>Every coastal MLA must be questioned. Use your local TTT block to send a formal memorandum. Demands must focus on <strong>Article 345</strong> implementation and the <strong>Alupa historical lineage</strong>.</p>
+            <p><strong>The Question:</strong> "Will you raise a 'Point of Order' regarding the stalling of the Gayathri Report in the upcoming session?"</p>
+        </div>
+
+        <div class="action-card">
+            <span class="action-number">03</span>
+            <span class="action-label">Digital Sovereignty</span>
+            <h2>The Tulu-Tigalari Keyboard</h2>
+            <p>While the government stalls, our development doesn't. Install the latest <strong>Unicode 16.0</strong> compliant keyboard. Administrative recognition starts with digital usage.</p>
+        </div>
+
+        <div class="whatsapp-section">
+            <h3 style="margin: 0; font-size: 24px;">Join the TTT Command Center</h3>
+            <p style="margin: 10px 0 0;">Receive RTI filing templates, regional field reports, and real-time Gayathri Report updates directly on your phone.</p>
+            <a href="https://whatsapp.com/channel/0029Vb7Yxsg7Noa9O0Ik2k3b" class="btn-whatsapp">JOIN WHATSAPP CHANNEL</a>
+        </div>
+
+    </div>
+
+    <footer>
+        &copy; 2026 THE TULUVA GUARDIAN | UDUPI, KARNATAKA | A UNIT OF TTT ADVOCACY
     </footer>
 
 </body>
