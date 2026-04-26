@@ -3,75 +3,99 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tuluva Guardian | Defending Heritage</title>
+    <title>Tuluva Guardian | Investigative Voice of Tulu Nadu</title>
     <style>
         body { font-family: 'Georgia', serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #111; }
-        header { text-align: center; padding: 30px 10px; background: #fff; border-bottom: 5px solid #000; }
-        .logo-box img { max-width: 180px; height: auto; }
-        .site-title { font-size: 3.5rem; font-weight: 900; text-transform: uppercase; margin: 10px 0; letter-spacing: -1px; }
-        .date-line { border-top: 1px solid #333; border-bottom: 1px solid #333; padding: 5px 0; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; }
+        .ticker { background: #800000; color: #fff; padding: 10px; text-transform: uppercase; font-size: 0.8rem; font-weight: bold; overflow: hidden; white-space: nowrap; border-bottom: 2px solid #000; }
         
-        .main-grid { max-width: 1200px; margin: 20px auto; display: grid; grid-template-columns: 1.8fr 1fr; gap: 30px; padding: 0 15px; }
-        .hero-article { background: #fff; padding: 25px; border: 1px solid #ddd; }
+        .masthead { text-align: center; padding: 30px 10px; background: #fff; border-bottom: 5px solid #000; }
+        .logo-box img { max-width: 200px; height: auto; }
+        .site-title { font-size: 3rem; font-weight: 900; text-transform: uppercase; margin: 10px 0; letter-spacing: -1px; }
+        .date-line { border-top: 1px solid #333; border-bottom: 1px solid #333; padding: 5px 0; font-size: 0.8rem; font-weight: bold; }
         
+        /* Two-Column Grid */
+        .main-grid { max-width: 1200px; margin: 20px auto; display: grid; grid-template-columns: 1.5fr 1fr; gap: 30px; padding: 0 15px; }
+        .article { background: #fff; padding: 25px; border: 1px solid #ddd; margin-bottom: 20px; }
+        
+        /* Typographical Styles */
         .category-tag { color: #800000; font-weight: bold; text-transform: uppercase; font-size: 0.85rem; border-bottom: 2px solid #800000; display: inline-block; margin-bottom: 10px; }
-        .headline { font-size: 2.8rem; line-height: 1.1; margin: 0 0 15px 0; font-weight: 800; color: #000; text-decoration: none; display: block; }
-        .headline:hover { color: #800000; }
+        .headline { font-size: 2.2rem; line-height: 1.1; margin: 0 0 15px 0; font-weight: 800; color: #000; }
+        .lead-img { width: 100%; height: auto; margin-bottom: 10px; border: 1px solid #ccc; }
+        .caption { font-size: 0.85rem; color: #666; margin-bottom: 20px; font-style: italic; border-bottom: 1px solid #eee; padding-bottom: 10px; }
         
-        .sidebar { background: #1a1a1a; color: #eee; padding: 25px; border: 1px solid #000; height: fit-content; }
-        .sidebar-title { border-bottom: 2px solid #ffcc00; padding-bottom: 5px; margin-bottom: 15px; text-transform: uppercase; font-weight: bold; color: #ffcc00; }
-        .archive-list { list-style: none; padding: 0; }
-        .archive-item { margin-bottom: 25px; border-bottom: 1px solid #333; padding-bottom: 15px; }
-        .archive-link { color: #ffcc00; text-decoration: none; font-weight: bold; font-size: 1.1rem; }
-        .archive-link:hover { color: #fff; }
-        .archive-desc { font-size: 0.85rem; color: #bbb; display: block; margin-top: 5px; }
+        .article-body { line-height: 1.8; font-size: 1.1rem; text-align: justify; color: #333; }
+        .sub-header { color: #800000; font-size: 1.4rem; margin-top: 25px; font-weight: bold; }
+        
+        /* Analysis Box */
+        .analysis-box { background: #fff8e1; border-left: 5px solid #ffcc00; padding: 15px; margin: 20px 0; font-size: 1rem; }
+        
+        .sidebar { background: #fff; padding: 20px; border: 1px solid #ddd; height: fit-content; }
+        .sidebar-title { border-bottom: 2px solid #000; padding-bottom: 5px; margin-bottom: 15px; text-transform: uppercase; font-weight: bold; }
 
-        @media (max-width: 850px) { .main-grid { grid-template-columns: 1fr; } .site-title { font-size: 2.2rem; } }
+        @media (max-width: 850px) {
+            .main-grid { grid-template-columns: 1fr; }
+            .headline { font-size: 1.8rem; }
+        }
     </style>
 </head>
 <body>
 
-<header>
+<div class="ticker">
+    LATEST: GAYATHRI COMMISSION SUBMITS IMPACT STUDY • TULU-TIGALARI KEYBOARD DEVELOPMENT REACHES FINAL TESTING • TULU NADU MARITIME HISTORY DOCUMENTARY PROPOSED • PELATTUR INSCRIPTION VERIFIED
+</div>
+
+<header class="masthead">
     <div class="logo-box">
         <img src="file_00000000160071fab75cf15e43ce52c4 (1).png" alt="Tuluva Guardian">
     </div>
     <h1 class="site-title">Tuluva Guardian</h1>
-    <div class="date-line">UDUPI | REGIONAL WATCHDOG | TULUVAGUARDIAN.ONLINE</div>
+    <div class="date-line">UDUPI | WEDNESDAY, APRIL 22, 2026 | TULUVAGUARDIAN.ONLINE</div>
 </header>
 
 <div class="main-grid">
-    <main>
-        <div class="hero-article">
-            <span class="category-tag">Mission Statement</span>
-            <a href="#" class="headline">Breaking the "Media Dark" Zone: Why Tulu Nadu Needs Coded Media</a>
-            <p style="font-size: 1.2rem; line-height: 1.6; color: #333;">
-                Mainstream media ignores our data and erases our history. The Tuluva Guardian exists to document the truth—from 100% SSLC success to the 1,500-year-old Alupa legacy. We don't ask for permission; we provide the evidence.
-            </p>
-            <hr>
-            <p><em>Select a report from the Archive to begin your investigation.</em></p>
-        </div>
+    <main class="left-column">
+        <article class="article">
+            <span class="category-tag">Legislative Focus</span>
+            <h2 class="headline">The Gayathri Report: A Legislative Blueprint for Tulu Official Status</h2>
+            
+            <img src="assembly.webp" class="lead-img" alt="Karnataka Legislative Assembly">
+            <p class="caption">LEGAL MILESTONE: The K.M. Gayathri Committee report provides the evidentiary bedrock for an Article 345 resolution. (Photo: Tuluva Guardian Archive)</p>
+
+            <div class="article-body">
+                <p><strong>BENGALURU:</strong> The March 4, 2026 submission of the Gayathri report has fundamentally changed the conversation regarding the official status of Tulu. This 200-page document acts as the technical "War Manual" local legislators have required for decades to successfully invoke Article 345 of the Constitution.</p>
+                
+                <h3 class="sub-header">The Andhra Secretariat Model</h3>
+                <p>In January 2026, the commission conducted key field research in the Andhra Pradesh Secretariat to study the practical integration of Urdu as an additional language. Their findings confirm that declaring Tulu as a "Second Additional Official Language" is administratively feasible and financially manageable. This "Andhra Model" ensures that Tulu recognition will not disrupt current state systems or the primary status of Kannada.</p>
+            </div>
+        </article>
+
+        <article class="article">
+            <span class="category-tag">Language Policy Analysis</span>
+            <h2 class="headline">The Student Catalyst: Rewriting Tulu’s Future & Why Strategy Trumps Speed</h2>
+            
+            <div class="article-body">
+                <p><strong>UDUPI:</strong> While high-level commissions dominate the headlines, the modern drive for Tulu recognition can be traced back to a decisive grassroots moment: a formal appeal by three students to receive numerical marks instead of symbolic grades for their Tulu studies.</p>
+                
+                <div class="analysis-box">
+                    <strong>Tuluva Guardian Analysis:</strong> By demanding parity with standardized competitive subjects, these students forced the administrative proof required to validate Tulu as a discipline. This initial academic catalyst paved the way for the historical evidence eventually used by the Gayathri Commission.
+                </div>
+
+                <h3 class="sub-header">Strategic Patience: Why We Should Not Rush the "Delay"</h3>
+                <p> Frustration over the perceived government delay in finalizing Tulu's official status is understandable. However, from a strategic perspective, this "delay" is an asset. A measured timeline ensures the resolution is both legally sound and administratively complete:</p>
+                <ul>
+                    <li><strong>Building a Legal Shield:</strong> Rushing an Article 345 resolution before every administrative cost is mapped out would make it vulnerable to High Court challenges.</li>
+                    <li><strong>Technical Precision:</strong> The time is being used to finalize standardized Tulu-Tigalari script integration for all government boards and circulars, preserving the Alupa dynasty heritage for modern governance.</li>
+                }
+            </div>
+        </article>
     </main>
 
     <aside class="sidebar">
-        <h3 class="sidebar-title">Investigative Archives</h3>
-        <ul class="archive-list">
-            <li class="archive-item">
-                <a href="sslc-results-2025.html" class="archive-link">SSLC 2025: The 100% Pass Rate</a>
-                <span class="archive-desc">Evidence of linguistic academic superiority in the coastal belt.</span>
-            </li>
-            <li class="archive-item">
-                <a href="gayathri-report.html" class="archive-link">The Gayathri Report Analysis</a>
-                <span class="archive-desc">A deep dive into the 200-page legislative blueprint for Article 345.</span>
-            </li>
-            <li class="archive-item">
-                <a href="#" class="archive-link">Alupa Maritime Trade</a>
-                <span class="archive-desc">Forthcoming: Documentation of the 5th-century Tulu Sea routes.</span>
-            </li>
-        </ul>
-        
-        <div style="text-align: center; margin-top: 40px; opacity: 0.6; font-size: 0.7rem;">
-            Tuluva Guardian | Tiger-Headed Fish Authority
-        </div>
+        <h3 class="sidebar-title">Historical Research</h3>
+        <p><strong>Pelattur Inscription:</strong> New analysis of the unique Alupa dynasty script confirms ancient linguistic depth, providing significant weight to current legislative demands.</p>
+        <hr>
+        <h3 class="sidebar-title">Regional Efficiency</h3>
+        <p><strong>Transport Model:</strong> Udupi’s private bus network continues to outperform state monopolies, offering a decentralized benchmark for enterprise efficiency in Tulu Nadu.</p>
     </aside>
 </div>
 
