@@ -6,9 +6,32 @@
         <title>Tuluva Guardian | Investigative Voice of Tulu Nadu</title>
     <style>
         body { font-family: 'Georgia', serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #111; }
-        header { text-align: center; padding: 40px 10px; background: #fff; border-bottom: 5px solid #000; }
-        .logo-box img { max-width: 220px; height: auto; }
-        .site-title { font-size: 3.8rem; font-weight: 900; text-transform: uppercase; margin: 10px 0; letter-spacing: -2px; }
+        .logo-box { 
+    text-align: center; 
+    padding: 20px 0 10px 0; 
+}
+
+.logo-box img { 
+    max-width: 280px; /* Increased size for priority */
+    height: auto; 
+    /* Optional: Adds a subtle gold glow to signify high respect */
+    filter: drop-shadow(0 0 5px rgba(255, 204, 0, 0.3)); 
+    transition: transform 0.3s ease;
+}
+
+.logo-box img:hover {
+    transform: scale(1.02); /* Slight lift on hover */
+}
+
+.site-title { 
+    font-size: 3.8rem; 
+    font-weight: 900; 
+    text-transform: uppercase; 
+    margin: 5px 0; 
+    letter-spacing: -1px;
+    color: #000; /* Deep black for authority */
+}
+        
         .date-line { border-top: 1px solid #333; border-bottom: 1px solid #333; padding: 8px 0; font-size: 0.9rem; font-weight: bold; text-transform: uppercase; margin-bottom: 20px; }
         
         .main-grid { max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr; gap: 40px; padding: 0 20px; }
@@ -35,11 +58,14 @@
 
 <header>
     <div class="logo-box">
-        <img src="file_00000000160071fab75cf15e43ce52c4 (1).png" alt="Tuluva Guardian Logo">
+        <a href="index.html">
+            <img src="logo.png" alt="Tuluva Guardian Logo">
+        </a>
     </div>
     <h1 class="site-title">Tuluva Guardian</h1>
-    <div class="date-line">UDUPI | INDEPENDENT REGIONAL WATCHDOG | EST. 2025</div>
+    <div class="date-line">UDUPI |Mangalore|Kasaragod|INDEPENDENT REGIONAL WATCHDOG | EST. 2025</div>
 </header>
+    
 
 <div class="main-grid">
     <main>
