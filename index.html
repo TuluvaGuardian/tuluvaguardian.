@@ -65,25 +65,55 @@
         .menu-link:hover { color: #fff; text-decoration: underline; }
         .menu-meta { font-size: 0.9rem; color: #bbb; line-height: 1.4; display: block; }
         
+                @media (max-width: 900px) { 
+            .main-grid { grid-template-columns: 1fr; } 
+            .site-title { font-size: 2.5rem; letter-spacing: 0; } 
+                }
+        .site-title { 
+            font-family: 'Old English Text MT', 'Playfair Display', 'Georgia', serif;
+            font-size: 5.5rem; 
+            font-weight: 900; 
+            text-transform: uppercase; 
+            margin: 10px 0 0 0; 
+            letter-spacing: -2px; 
+            color: #000;
+            line-height: 0.9;
+            text-align: center;
+            display: block;
+        }
+
+        .site-title::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 4px;
+            border-top: 1px solid #000;
+            border-bottom: 2px solid #000;
+            margin-top: 5px;
+                          }
         @media (max-width: 900px) { .main-grid { grid-template-columns: 1fr; } .site-title { font-size: 2.5rem; } }
     </style>
 </head>
 <body>
 
-<header>
+<header style="padding-bottom: 0;">
     <div class="logo-box">
         <a href="index.html">
-            <img src="logo.png" alt="Tuluva Guardian Logo">
+            <img src="logo.png" alt="Tuluva Guardian Logo" style="max-width: 500px; width: 100%; height: auto;">
+            
         </a>
     </div>
     
     <h1 class="site-title">TULUVA GUARDIAN</h1>
     
-    <div class="date-line">
+    <div class="date-line" style="margin-top: 10px; border-top: none;">
         UDUPI | MANGALORE | KASARAGOD | 
-        <span class="slogan-gold">INDEPENDENT REGIONAL WATCHDOG</span> | EST. 2025
+        <span class="slogan-gold" style="color: #FFD700; font-weight: bold;">
+            INDEPENDENT REGIONAL WATCHDOG
+        </span> | EST. 2025
     </div>
 </header>
+    
     
     
 
