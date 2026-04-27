@@ -11,18 +11,32 @@
     padding: 20px 0 10px 0; 
 }
 
+.style> tag */
+
+.logo-box { 
+    text-align: center; 
+    padding: 30px 0 10px 0; /* Increased top padding for breathing room */
+    width: 100%;
+}
+
 .logo-box img { 
-    max-width: 280px; /* Increased size for priority */
+    width: 100%; 
+    max-width: 450px; /* Increased from 220px to occupy more bar space */
     height: auto; 
-    /* Optional: Adds a subtle gold glow to signify high respect */
-    filter: drop-shadow(0 0 5px rgba(255, 204, 0, 0.3)); 
-    transition: transform 0.3s ease;
+    display: block;
+    margin: 0 auto;
+    /* Subtle glow to emphasize the 'Authority' of the logo */
+    filter: drop-shadow(0px 0px 8px rgba(255, 215, 0, 0.4));
 }
 
-.logo-box img:hover {
-    transform: scale(1.02); /* Slight lift on hover */
-}
-
+/* New style for the Bright Golden Slogan */
+.slogan-gold {
+    color: #FFD700; /* Bright Golden */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5); /*
 .site-title { 
     font-size: 3.8rem; 
     font-weight: 900; 
@@ -62,9 +76,15 @@
             <img src="logo.png" alt="Tuluva Guardian Logo">
         </a>
     </div>
-    <h1 class="site-title">Tuluva Guardian</h1>
-    <div class="date-line">UDUPI |Mangalore|Kasaragod|INDEPENDENT REGIONAL WATCHDOG | EST. 2025</div>
+    
+    <h1 class="site-title">TULUVA GUARDIAN</h1>
+    
+    <div class="date-line">
+        UDUPI | MANGALORE | KASARAGOD | 
+        <span class="slogan-gold">INDEPENDENT REGIONAL WATCHDOG</span> | EST. 2025
+    </div>
 </header>
+    
     
 
 <div class="main-grid">
