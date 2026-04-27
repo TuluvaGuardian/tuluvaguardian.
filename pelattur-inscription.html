@@ -1,177 +1,221 @@
-   <!DOCTYPE html>
+       <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Tuluva Guardian | Investigative Report: The 60-Day Silence</title>
+    <title>FIELD REPORT: Pelattur Inscription | Tuluva Guardian</title>
     <style>
-        /* TRADITIONAL BROADSHEET FRAMEWORK */
-        body { font-family: 'Georgia', serif; line-height: 1.6; color: #1a1a1a; margin: 0; padding: 0; background: #fff; }
-        
-        /* TOP BAR */
-        .top-nav { background: #000; color: #fff; padding: 6px 0; font-family: sans-serif; font-size: 10px; text-transform: uppercase; text-align: center; letter-spacing: 2px; }
-        
-        /* MASTHEAD */
-        .masthead { text-align: center; padding: 40px 0 10px; border-bottom: 4px double #000; margin: 0 5%; }
-        .masthead img { height: 100px; margin-bottom: 10px; }
-        .masthead h1 { font-size: 58px; margin: 0; font-family: 'Times New Roman', serif; font-weight: 900; letter-spacing: -1.5px; text-transform: uppercase; }
-        
-        /* SUB-HEADER INFO */
-        .sub-header { display: flex; justify-content: space-between; border-bottom: 1px solid #000; margin: 0 5% 30px; padding: 8px 0; font-size: 13px; font-weight: bold; font-family: sans-serif; }
-        
-        /* THREE-COLUMN GRID */
-        .main-grid { display: grid; grid-template-columns: 220px 1fr 280px; gap: 35px; margin: 0 5%; align-items: start; }
-        
-        .section-label { border-top: 2px solid #800000; color: #800000; font-weight: bold; font-family: sans-serif; font-size: 11px; padding-top: 5px; margin-bottom: 15px; display: block; text-transform: uppercase; }
-
-        /* COLUMN 1: THE RECORDS */
-        .left-col { border-right: 1px solid #eee; padding-right: 20px; }
-        .sidebar-item { margin-bottom: 25px; font-size: 14px; border-bottom: 1px solid #f4f4f4; padding-bottom: 15px; }
-        .sidebar-item h4 { margin: 0 0 5px; font-family: sans-serif; font-size: 13px; }
-        .archive-link { font-size: 11px; color: #800000; font-weight: bold; text-decoration: none; display: block; margin-top: 8px; text-transform: uppercase; }
-
-        /* COLUMN 2: THE MAIN INVESTIGATION */
-        .center-col h2 { font-size: 42px; line-height: 1.1; margin: 0 0 15px; font-weight: 900; }
-        .byline { font-family: sans-serif; font-weight: bold; font-size: 12px; color: #555; border-bottom: 1px solid #eee; padding-bottom: 10px; margin-bottom: 25px; display: flex; justify-content: space-between; }
-        .dropcap { float: left; font-size: 80px; line-height: 65px; padding-top: 4px; padding-right: 10px; font-family: 'Times New Roman', serif; font-weight: bold; }
-        
-        .featured-image { margin-bottom: 25px; border: 1px solid #000; width: 100%; display: block; }
-        .caption { font-family: sans-serif; font-size: 12px; color: #555; margin-top: 5px; line-height: 1.4; padding: 10px; background: #f9f9f9; border-left: 4px solid #800000; margin-bottom: 25px; }
-        
-        .pull-quote { font-size: 24px; font-style: italic; color: #800000; border-top: 1px solid #800000; border-bottom: 1px solid #800000; padding: 25px 0; margin: 35px 0; text-align: center; font-weight: bold; }
-
-        /* COLUMN 3: THE ACTION SIDEBAR (REBUILT FOR WHATSAPP) */
-        .right-col { background: #fdfdfd; padding: 20px; border: 1px solid #ccc; position: sticky; top: 10px; }
-        .action-header { background: #800000; color: #ffcc00; padding: 10px; text-align: center; font-weight: bold; font-family: sans-serif; margin-bottom: 20px; }
-        
-        .rti-box { background: #1a1a1a; color: #00ff00; padding: 15px; font-family: monospace; font-size: 12px; margin: 15px 0; border-radius: 4px; }
-        
-        /* WHATSAPP BUTTON RESTORED */
-        .btn-whatsapp { display: block; background: #25D366; color: white; padding: 15px; text-align: center; text-decoration: none; font-weight: bold; font-family: sans-serif; border-radius: 5px; margin-top: 20px; box-shadow: 0 4px 10px rgba(37,211,102, 0.3); }
-        .btn-whatsapp:hover { background: #1ebd5b; transform: translateY(-2px); }
-
-        /* FOOTER GRID */
-        .footer-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; border-top: 3px solid #000; margin-top: 50px; padding: 30px 0; font-size: 12px; }
-
-        @media (max-width: 950px) { .main-grid { grid-template-columns: 1fr; } .left-col, .right-col { display: none; } }
+        body { font-family: 'Georgia', serif; line-height: 1.8; margin: 0; background: #fdfdfd; color: #111; }
+        header { background: #1a1a1a; color: #ffcc00; padding: 30px; text-align: center; border-bottom: 5px solid #800000; }
+        .container { max-width: 900px; margin: 30px auto; padding: 20px; background: #fff; border: 1px solid #ddd; }
+        .tag { background: #800000; color: white; padding: 5px 15px; font-weight: bold; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; }
+        h1 { font-size: 2.8rem; margin: 20px 0; border-bottom: 3px solid #1a1a1a; padding-bottom: 10px; line-height: 1.1; }
+        .visual-archive { margin: 40px 0; border: 1px solid #1a1a1a; padding: 20px; box-shadow: 10px 10px 0px #eee; }
+        .stage-box { margin-bottom: 40px; text-align: center; }
+        .stage-label { font-weight: bold; background: #1a1a1a; color: #fff; padding: 5px 15px; display: inline-block; margin-bottom: 10px; text-transform: uppercase; }
+        .stage-img { width: 100%; height: auto; border: 2px solid #000; margin-bottom: 10px; }
+        .inscription-text { background: #fdfaf3; border-left: 5px solid #800000; padding: 20px; font-family: 'Courier New', monospace; font-size: 1.1rem; margin: 30px 0; }
+        .back-link { display: inline-block; margin-top: 50px; color: #800000; text-decoration: none; font-weight: bold; border: 1px solid #800000; padding: 10px 20px; }
+        .back-link:hover { background: #800000; color: #fff; }
     </style>
 </head>
 <body>
 
-    <div class="top-nav">
-        NATIONAL EDITION | SUNDAY, APRIL 26, 2026 | UDUPI | MANGALURU | KASARAGOD
+<header>
+    <h2 style="margin:0; letter-spacing: 4px;">TULUVA GUARDIAN ARCHIVE</h2>
+    <p style="margin:5px 0 0 0; font-size: 0.9rem;">DOCUMENTING THE ALUPA LEGACY</p>
+</header>
+
+<div class="container">
+    <span class="tag">Epigraphy & Heritage</span>
+    <h1>Deciphering Pelattur: The Alupa Dynasty’s 7th–8th Century Inscription</h1>
+
+    <p><strong>PELATTUR:</strong> While modern political efforts focus on the future, the Pelattur inscription reminds us of a grounded, historical past. This stone record is proof of a sophisticated administrative system that functioned in our native script over 1,400 years ago.</p>
+
+    <div class="visual-archive">
+        <div class="stage-box">
+            <span class="stage-label">Stage I: Original Artifact</span>
+            <img src="Screenshot_20260425-092235~2.png" class="stage-img" alt="Original Stone Inscription">
+            <p style="font-size: 0.85rem; color: #666;">The 7th-century slab discovered at Pelattur.</p>
+        </div>
+
+        <div class="stage-box">
+            <span class="stage-label">Stage II: Roman Transliteration</span>
+            <img src="Screenshot_20241229-120212~2.png" class="stage-img" alt="Roman Transliteration">
+            <p style="font-size: 0.85rem; color: #666;">Standardized reading of the ancient phonetics.</p>
+        </div>
+
+        <div class="stage-box">
+            <span class="stage-label" style="background:#800000;">Stage III: Modern Tulu Script</span>
+            <img src="Screenshot_20260425-093314~2.png" class="stage-img" style="border-color:#800000;" alt="Modern Tulu Font">
+            <p style="font-size: 0.85rem; color: #666;">Reconstruction for Unicode 16.0 / Gboard integration.</p>
+        </div>
     </div>
 
-    <header class="masthead">
-        <img src="logo.png" alt="Tuluva Guardian Logo">
-        <h1>THE TULUVA GUARDIAN</h1>
-    </header>
+    <h3>Full Text of the Inscription</h3>
+    <div class="inscription-text">
+        "Swastîsri Vrushbhantû brahaspathi tṻle tiga t iruvatta eNma postanata adityavaratāni. Arasu moodillaya kilatura iruvatta naluveren tatthu ijistanadekaaperunarasuku samudaya iruv adikarigu astanatutu eraboduvendhu arasu adhikari upuppanata varandeva perbappena bāmana pervarasanu kerustu bramher utti varanasitdu sara kabilen kerustu pasunu ade kuntattanayagu."
+    </div>
+<section style="margin-top: 50px; border-top: 2px solid #1a1a1a; padding-top: 30px;">
+    <h2 style="font-family: 'Times New Roman', serif; text-transform: uppercase; color: #800000;">The Administrative Autopsy: 1,400 Years of Governance</h2>
+    
+    <div style="line-height: 1.8; color: #222;">
+        <p><strong>1. The Council of 24: Pre-Modern Democracy</strong><br>
+        The mention of 24 representatives from Kilattur is not a minor detail—it is evidence of a **forward-thinking administrative apparatus.** While other regions were under absolute autocracy, the Alupa dynasty utilized a participatory model. This council acted as a legislative bridge between the King (Arasu) and the people, proving that Tuluva society was structurally organized centuries before modern municipal systems were conceived.</p>
 
-    <div class="sub-header">
-        <span>VOL. II NO. 114</span>
-        <span style="letter-spacing: 1px;">THE GAYATHRI REPORT: LINGUISTIC SOVEREIGNTY WATCH</span>
-        <span>PRICE: ₹10.00</span>
+        <p><strong>2. The Identity of Perbappena Bamanna Pervarasa</strong><br>
+        In this inscription, we encounter the name **Varandeva Perbappena Bamanna Pervarasa.** This is arguably the longest and most complex Tulu name recorded in early epigraphy. The length and titles attached to the name indicate a highly stratified social and official hierarchy. It reflects a culture where lineage, title, and duty were meticulously documented.</p>
+
+        <p><strong>3. Judicial Sovereignty: The Sentencing</strong><br>
+        The most striking revelation is the legal record of sentencing. The inscription details the punishment of a high-ranking individual for a capital crime. This confirms that 1,400 years ago, Tulu was the **Language of Law.** For a sentence to be etched in stone, the language used must have been the official medium of the court. This shatters the myth that Tulu was never an administrative language.</p>
     </div>
 
-    <main class="main-grid">
-        
-        <aside class="left-col">
-            <span class="section-label">Archive Records</span>
-            
-            <div class="sidebar-item">
-                <h4>The Pelattur Record</h4>
-                <p>New photographic evidence from the 7th-century stone inscription confirms Tulu as the primary administrative tongue of the early Alupa kings.</p>
-                <a href="pelattur-inscription.html" class="archive-link">View Full Transcript &rarr;</a>
-            </div>
+    <blockquote style="background: #f9f9f9; border-left: 10px solid #ccc; margin: 1.5em 10px; padding: 0.5em 10px; font-style: italic;">
+        "If Tulu was used to sentence royalty and organize councils in 700 AD, there is no technical or historical excuse to deny its official status under Article 345 in 2026."
+    </blockquote>
+</section> <section style="margin-top: 50px; border-top: 2px solid #1a1a1a; padding-top: 30px;">
+    <h2 style="font-family: 'Times New Roman', serif; text-transform: uppercase; color: #800000;">The Administrative Autopsy: 1,400 Years of Governance</h2>
+    <section style="margin-top: 40px; padding: 25px; background: #f4f4f4; border: 1px solid #ddd;">
+    <h2 style="font-family: 'Times New Roman', serif; color: #1a1a1a;">The Uruppana Cross-Reference: Verifying the Alupa Timeline</h2>
+    
+    <p>The historical validity of the Pelattur stone is solidified by the mention of <strong>Uruppana</strong>. This high-ranking officer does not appear in isolation; his name and title are mirrored in both the <strong>Vaddarse</strong> and <strong>Belman</strong> inscriptions. This triple-point verification confirms that under Alupa II, a standardized administrative network was in place across the coastal belt.</p>
 
-            <div class="sidebar-item">
-                <h4>Article 345 Criteria</h4>
-                <p>The Gayathri Report fulfills all scientific requirements for Tulu to be declared an Official State Language, matching the 'Andhra Model'.</p>
-                <a href="gayathri-report.html" class="archive-link">Legal Brief &rarr;</a>
-            </div>
+    <h3 style="color: #800000;">Archaic Tulu: The Linguistic Frontier</h3>
+    <p>While a modern Tulu speaker might recognize the "soul" of the words, the 7th-century syntax contains archaic features that have since evolved. These "Archaic Markers" are critical for linguistic research:</p>
 
-            <div class="sidebar-item" style="border: none;">
-                <h4>Demographic Shift</h4>
-                <p>With a 100% pass rate in the 2025 Tulu exams, the youth demand is at an all-time high, creating a legislative mandate the state cannot ignore.</p>
-            </div>
-        </aside>
+    <table style="width: 100%; border-collapse: collapse; margin: 20px 0; background: #fff;">
+        <thead>
+            <tr style="background: #1a1a1a; color: #fff;">
+                <th style="padding: 10px; border: 1px solid #333;">Archaic Form (7th c.)</th>
+                <th style="padding: 10px; border: 1px solid #333;">Modern Interpretation</th>
+                <th style="padding: 10px; border: 1px solid #333;">Significance</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="padding: 10px; border: 1px solid #ddd;">Arasu</td>
+                <td style="padding: 10px; border: 1px solid #ddd;">Arasu / Rajae</td>
+                <td style="padding: 10px; border: 1px solid #ddd;">Standardized title for Sovereignty.</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border: 1px solid #ddd;">Adikari</td>
+                <td style="padding: 10px; border: 1px solid #ddd;">Adhikari</td>
+                <td style="padding: 10px; border: 1px solid #ddd;">Continuity of administrative roles.</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border: 1px solid #ddd;">Tatthu</td>
+                <td style="padding: 10px; border: 1px solid #ddd;">Selected / Positioned</td>
+                <td style="padding: 10px; border: 1px solid #ddd;">Archaic verb conjugation.</td>
+            </tr>
+        </tbody>
+    </table>
 
-        <article class="center-col">
-            <span class="section-label">Investigation</span>
-            <h2>Fifty Days of Bureaucratic Inertia: The Clock is Ticking on Tuluva Rights</h2>
-            
-            <div class="byline">
-                <span>By KABI ALUPENDRA | Investigative Desk</span>
-                <span>Bengaluru Bureau</span>
-            </div>
+    <p style="font-style: italic; color: #555;">Note: The struggle modern speakers face in deciphering these lines is not a sign of a "dead" language, but proof of a living one that has survived and adapted over 1,400 years of continuous use.</p>
+    </section>
+   
+    <section style="margin-top: 50px; padding: 30px; border: 1px solid #1a1a1a; background: #fff;">
+    <h2 style="font-family: 'Times New Roman', serif; text-transform: uppercase; border-bottom: 2px solid #800000; padding-bottom: 10px;">
+        The Council of 24: A 7th-Century Tuluva Parliament
+    </h2>
+    
+    <p>The mention of the <strong>"Iruvatta Naluveren"</strong> (Twenty-Four) is perhaps the most significant political revelation in the Pelattur archive. This was not a mere gathering of elders; it was a structured <strong>Administrative Council</strong>. In an era where many global empires relied on centralized autocracy, the Alupa state under Alupa II practiced a form of decentralized governance that pre-dates modern parliamentary systems by a millennium.</p>
 
-            <img src="assembly.webp" alt="Karnataka Legislative Assembly" class="featured-image">
-            <div class="caption"><strong>THE SILENT ASSEMBLY:</strong> The Karnataka Legislative Assembly, where the Gayathri Report (Submitted March 4) remains "Under Review" fifty-three days later. (Photo: TTT Advocacy Archive)</div>
-
-            <div class="article-body">
-                <p><span class="dropcap">I</span>n the high-security corridors of the Vidhana Soudha, a 200-page document is currently gathering dust. Since its formal submission on March 4, 2026, the Gayathri Report—a comprehensive roadmap for Tulu's official status—has been met with strategic silence from the state administration. This "60-Day Silence" is now being viewed by legal analysts not as a technical delay, but as a political evasion.</p>
-
-                <p>The report, which details the linguistic, historical, and economic viability of Tulu as a second official language, was expected to trigger an immediate Action Taken Report (ATR). However, as we approach the two-month mark, no Cabinet Note has been circulated, and the Department of Kannada and Culture remains tight-lipped about the scheduling of a legislative debate.</p>
-
-                <div class="pull-quote">
-                    "The government's refusal to table the ATR is an active erasure of Tuluva administrative identity. We are no longer asking; we are demanding the release of the report."
-                </div>
-
-                <p><strong>The Administrative Bottleneck</strong><br>
-                Our investigative desk has confirmed that the report has passed through the initial vetting stage but is currently stalled at the Secretariat level. Sources suggest that the administration is wary of the precedent it sets for other linguistic movements, ignoring the unique "Classical" status and historical court-language pedigree that Tulu holds.</p>
-
-                <p>For the Tuluva community, this isn't just about a name on a paper; it's about administrative access. Without official status, Tuluva citizens are often treated as strangers in their own government offices. The Gayathri Report provides the legal "key" to fix this, yet the door remains locked from the inside.</p>
-
-                <p><strong>The Rising Coast</strong><br>
-                From Udupi to Kasaragod, the sentiment is shifting. The TTT (Tulu, Tulunad, Tuluvas) movement is preparing for a massive RTI-driven accountability phase. If the ATR is not presented by the next session, activists plan to flood the Secretariat with thousands of individual inquiries, forcing a response through sheer volume.</p>
-                
-                <p><em>(Story continues for 1,000 lines in full archive edition...)</em></p>
-            </div>
-        </article>
-
-        <aside class="right-col">
-            <div class="action-header">TTT COMMAND CENTER</div>
-            
-            <h3 style="margin-top: 0; font-size: 18px;">Break the Silence</h3>
-            <p style="font-size: 13px;">Don't let the report die in a drawer. Every Tuluva must become a digital watchdog today.</p>
-
-            <span class="section-label" style="border-top-color: #000; color: #000;">STRIKE 1: THE RTI HAMMER</span>
-            <div class="rti-box">
-                "Provide the certified 'Note File' copies for the Gayathri Report submitted on March 4, 2026, and the date for ATR presentation."
-            </div>
-
-            <span class="section-label" style="border-top-color: #000; color: #000; margin-top: 25px;">STRIKE 2: MLA PRESSURE</span>
-            <p style="font-size: 13px;">Contact your local MLA and ask: <strong>"Will you raise a Point of Order on the Gayathri Report in the next house session?"</strong></p>
-
-            <div style="margin-top: 30px; padding: 20px; background: #fff; border: 2px solid #25D366; text-align: center; border-radius: 8px;">
-                <h4 style="margin: 0; color: #128C7E; font-size: 15px;">JOIN THE MOVEMENT</h4>
-                <p style="font-size: 11px; margin: 5px 0 15px;">Get templates, field reports, and real-time TTT updates.</p>
-                <a href="https://whatsapp.com/channel/0029Vb7Yxsg7Noa9O0Ik2k3b" class="btn-whatsapp">JOIN WHATSAPP CHANNEL</a>
-            </div>
-        </aside>
-
-    </main>
-
-    <footer class="footer-grid">
-        <div style="margin: 0 5%;">
-            <h4 style="text-transform: uppercase;">Historical Record</h4>
-            <p>From the Alupa Dynasty of the 2nd century to the 7th-century Pelattur record, Tulu remains the administrative heartbeat of the coast.</p>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0;">
+        <div style="background: #f9f9f9; padding: 15px; border-top: 3px solid #1a1a1a;">
+            <strong>Check & Balance System</strong><br>
+            The Council functioned as a check on royal power. For a king to convene 24 representatives for a judicial sentencing proves that law was a collective responsibility, not a royal whim.
         </div>
-        <div>
-            <h4 style="text-transform: uppercase;">Advocacy Goals</h4>
-            <ul style="list-style: none; padding: 0;">
-                <li>• Official Status under Article 345</li>
-                <li>• Release of the Gayathri ATR</li>
-                <li>• Digital Tulu-Tigalari Sovereignty</li>
-            </ul>
+        <div style="background: #f9f9f9; padding: 15px; border-top: 3px solid #1a1a1a;">
+            <strong>Local Sovereignty</strong><br>
+            These representatives likely hailed from the "Kilattur" block, indicating that local districts had a direct seat at the table of the <em>Arasu</em> (King).
         </div>
-        <div style="margin: 0 5%;">
-            <h4 style="text-transform: uppercase;">About the Guardian</h4>
-            <p>The Tuluva Guardian is an independent regional watchdog dedicated to linguistic justice and state accountability.</p>
-        </div>
-    </footer>
+    </div>
+
+    <p>This administrative richness proves that the coastal belt was not a "frontier" but a highly sophisticated political center. The presence of <strong>Uruppana</strong> across the Vaddarse and Belman inscriptions with the same authoritative title suggests a "Civil Service" model where officers were rotated or held consistent jurisdiction over the Tulu-speaking provinces.</p>
+    </section>
+   <section style="margin-top: 40px; line-height: 1.9;">
+    <h2 style="font-family: 'Times New Roman', serif; color: #800000;">Tulu: The Medium of Imperial Administration</h2>
+    
+    <p>A common misconception in modern linguistics is that Tulu was "merely a spoken folk language." The Pelattur inscription effectively shatters this narrative. For a language to be used in a legal sentencing involving a high official like <strong>Varandeva Perbappena Bamanna Pervarasa</strong>, it must possess three critical attributes that Tulu clearly displayed 1,400 years ago:</p>
+
+    <ul style="list-style-type: square; padding-left: 20px;">
+        <li><strong>Legal Precision:</strong> The inscription uses specific archaic Tulu terms to define crimes and punishments. To "sentence" someone in writing requires a standardized vocabulary that all 24 council members and the <em>Adhikari</em> understood.</li>
+        <li><strong>Public Record:</strong> Stone inscriptions were the "Official Gazettes" of the 7th century. By carving these decrees in Tulu-Tigalari script, the Alupa state recognized Tulu as the language of the <strong>Public Record</strong>.</li>
+        <li><strong>Diplomatic Consistency:</strong> The fact that the same administrative titles and scriptural styles appear in Vaddarse and Pelattur shows that Tulu was the <strong>Standardized Administrative Language</strong> of the Alupa Dynasty.</li>
+    </ul>
+
+    <div style="background: #1a1a1a; color: #fff; padding: 25px; margin-top: 30px; font-style: italic; border-radius: 5px;">
+        "The Pelattur stone is not just an artifact; it is a 1,400-year-old Constitution. It proves that our ancestors didn't just speak Tulu at home—they ruled kingdoms, settled disputes, and recorded history in it. This is the ultimate evidence for Article 345 recognition."
+    </div>
+   </section>
+   <section style="margin-top: 50px; padding: 35px; border: 2px solid #1a1a1a; background: #fffaf0; position: relative;">
+    <div style="position: absolute; top: -15px; left: 20px; background: #800000; color: #fff; padding: 5px 15px; font-weight: bold; font-size: 0.9rem;">
+        ELITE NAME ANALYSIS
+    </div>
+
+    <h2 style="font-family: 'Times New Roman', serif; margin-top: 10px;">Beyond Phonetics: Names as Constitutional Titles</h2>
+    
+    <p>The names found in the Pelattur inscription—specifically <strong>Uruppana</strong> and <strong>Varandeva Perbappena Bamanna Pervarasa</strong>—serve as linguistic fossils. They reveal a Tulu Nadu that was culturally confident and administratively distinct long before the linguistic reorganizations of modern India.</p>
+
+    <div style="margin-bottom: 30px;">
+        <h3 style="color: #800000; font-size: 1.4rem; border-bottom: 1px solid #ccc; padding-bottom: 5px;">1. The Enigma of Uruppana</h3>
+        <p><strong>Uruppana</strong> appears as a recurring figure of authority. The consistency of this name across the <strong>Vaddarse</strong>, <strong>Belman</strong>, and <strong>Pelattur</strong> inscriptions suggests that "Uruppana" might have been more than a personal name—it may have been a high-ranking <strong>Designation</strong> or a <strong>Sovereign Title</strong> within the Alupa administrative framework.</p>
+        <p style="padding-left: 20px; border-left: 3px solid #800000; font-style: italic;">
+            "If the same official signature appears across multiple districts, it proves a centralized Tuluva bureaucracy. This is the hallmark of a Kingdom, not a tribal cluster."
+        </p>
+    </div>
+
+    <div style="margin-bottom: 30px;">
+        <h3 style="color: #800000; font-size: 1.4rem; border-bottom: 1px solid #ccc; padding-bottom: 5px;">2. Varandeva Perbappena Bamanna Pervarasa: The Linguistic Giant</h3>
+        <p>This is arguably one of the most historically significant names in South Indian epigraphy. Its length—<strong>Varandeva Perbappena Bamanna Pervarasa</strong>—is not accidental. It is a 'Compound Title' that reflects a sophisticated naming convention:</p>
+        <ul style="line-height: 2;">
+            <li><strong>Varandeva:</strong> Likely a divine or honorific prefix.</li>
+            <li><strong>Perbappena:</strong> A descriptor of lineage or high-priestly connection.</li>
+            <li><strong>Bamanna:</strong> A personal identifier connecting to local Tulu roots.</li>
+            <li><strong>Pervarasa:</strong> Literally 'Great King' or 'Grand Officer' (Per + Arasa), indicating a rank just below the Alupa Sovereign himself.</li>
+        </ul>
+        <p>For a name this complex to be used in a legal sentence, it proves that the <strong>Council of 24</strong> operated with high protocol. You do not use 'Pervarasa' titles in casual speech; you use them in formal, written, administrative Tulu.</p>
+    </div>section style="margin-top: 50px; border-top: 3px solid #1a1a1a; padding-top: 30px;">
+        <h2 style="font-family: 'Times New Roman', serif; text-transform: uppercase; color: #800000;">Elite Names: Titles of Command</h2>
+        <p>The names <strong>Uruppana</strong> and <strong>Varandeva Perbappena Bamanna Pervarasa</strong> are historical "heavyweights." 
+        The title <em>Pervarasa</em> (Great King/Officer) confirms a high-protocol court environment where Tulu was the primary medium of address. 
+        Uruppana’s signature across Vaddarse, Belman, and Pelattur serves as a 7th-century "Civil Service" verification.</p>
+
+        <h3 style="color: #1a1a1a; border-bottom: 1px solid #ddd; padding-bottom: 5px;">Evolution of Authority: Thatthu vs. Nēmaka</h3>
+        <p>A key archaic feature in this inscription is the word <strong>Thatthu</strong>, used in the context of selection or positioning. In modern Tulu, an administrative appointment would likely use:</p>
+        <ul style="line-height: 1.8;">
+            <li><strong>Nēmaka (ನೇಮಕ):</strong> The modern standardized term for appointment.</li>
+            <li><strong>Serpavune (ಸೇರ್ಪಾವುನೆ):</strong> Used in the sense of 'joining' or 'inducting' into a role.</li>
+        </ul>
+        <p>The transition from <em>Thatthu</em> to <em>Nēmaka</em> shows how the language has moved from its raw, ancient roots to a more formal, Sanskrit-integrated administrative register, yet the core power of the <strong>Council of 24</strong> remains the foundation of our regional identity.</p>
+    </section>
+    ```
+
+
+
+   
+
+    <div style="background: #1a1a1a; color: #ffcc00; padding: 20px; text-align: center; font-weight: bold;">
+        THE VERDICT: Tulu was the Language of Command. From Uruppana’s decrees to Pervarasa’s sentencing, the script was the vehicle of the Alupa State’s will.
+    </div>
+   </section>
+   
+    
+   
+   
+    <h3>Closing Thoughts</h3>
+    <p>The Alupa inscription is more than just a historical document; it is a bridge to a bygone era, offering a profound connection to the rich tapestry of Tulu heritage. By preserving and interpreting such inscriptions, we honor the legacy of the Alupa dynasty and celebrate the timeless wisdom they impart.</p>
+    
+    <p>Let us continue to explore and cherish these remnants of history, for they hold the keys to understanding our past and shaping our future.</p>
+
+    <div style="background: #eee; padding: 15px; border-radius: 8px; text-align: center; font-weight: bold; border: 1px solid #ccc;">
+        ✨ MISSION: May this 1,400-year-old Tulu script find its place in Gboard this year.
+    </div>
+
+    <a href="index.html" class="back-link">← RETURN TO MISSION CONTROL</a>
+</div>
 
 </body>
 </html>
 
-            
+       
