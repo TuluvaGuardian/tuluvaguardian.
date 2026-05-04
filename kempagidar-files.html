@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+            <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -23,36 +23,58 @@
             margin: 0 auto; 
             padding: 20px;
         }
+        
+        /* STANDARDIZED CENTERED HEADER */
         header { 
             text-align: center; 
             border-bottom: 4px double var(--kemp-red); 
             margin-bottom: 40px; 
-            padding: 40px 0;
+            padding: 60px 20px; /* Increased padding for better breathing room */
+        }
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 25px;
         }
         .logo {
-            max-width: 150px;
+            max-width: 120px; /* Standardized logo size */
             height: auto;
-            margin-bottom: 20px;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
         }
         h1 { 
             text-transform: uppercase; 
-            letter-spacing: 1px; 
-            margin: 10px 0;
-            font-size: 2.5rem;
+            letter-spacing: 2px; 
+            margin: 15px 0 5px 0;
+            font-size: 2.8rem;
+            color: var(--dark);
         }
+        .dossier-tag {
+            color: var(--kemp-red); 
+            font-weight: bold; 
+            font-style: italic; 
+            font-size: 1.1rem;
+            letter-spacing: 0.5px;
+        }
+
+        /* IMAGE STANDARDIZATION */
         h2 { 
             color: var(--kemp-red); 
             border-left: 5px solid var(--kemp-red); 
             padding-left: 15px; 
             margin-top: 50px; 
-            font-family: sans-serif;
+            font-family: 'Arial', sans-serif;
+            font-size: 1.6rem;
+        }
+        .media-block {
+            margin: 30px 0;
         }
         img { 
             width: 100%; 
-            height: auto; 
-            border-radius: 4px; 
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
-            margin: 20px 0; 
+            max-height: 500px; /* Prevents portraits from becoming too tall on desktop */
+            object-fit: cover; /* Ensures image fills the area without distortion */
+            border-radius: 2px; 
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15); 
             display: block;
         }
         figcaption { 
@@ -60,15 +82,18 @@
             font-size: 0.9rem; 
             color: #666; 
             font-style: italic; 
-            margin-bottom: 40px;
+            margin-top: 15px;
+            padding-bottom: 20px;
             border-bottom: 1px solid #eee;
-            padding-bottom: 10px;
         }
+
+        /* TEXT STYLING */
         .dropcap { 
             float: left; 
-            font-size: 4rem; 
-            line-height: 0.8; 
+            font-size: 4.5rem; 
+            line-height: 0.7; 
             padding-right: 12px; 
+            padding-top: 10px;
             color: var(--kemp-red); 
             font-weight: bold; 
         }
@@ -77,32 +102,28 @@
             background: #fff; 
             padding: 30px; 
             font-style: italic; 
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             margin: 50px 0; 
-            box-shadow: 4px 4px 10px rgba(0,0,0,0.05);
-        }
-        .nav-section {
-            text-align: center;
-            margin-top: 60px;
+            box-shadow: 4px 4px 15px rgba(0,0,0,0.05);
+            color: var(--dark);
         }
         .nav-btn { 
             display: inline-block; 
             background: var(--dark); 
             color: #fff; 
-            padding: 12px 25px; 
+            padding: 15px 30px; 
             text-decoration: none; 
             border-radius: 4px; 
             font-weight: bold; 
-            transition: background 0.3s;
+            margin-top: 40px;
         }
-        .nav-btn:hover { background: var(--kemp-red); }
         footer { 
             text-align: center; 
             margin-top: 80px; 
             padding: 40px 0;
             font-size: 0.85rem; 
-            color: #777;
-            border-top: 1px solid #ddd;
+            color: #888;
+            border-top: 1px dotted #ccc;
         }
     </style>
 </head>
@@ -110,52 +131,60 @@
 
 <div class="container">
     <header>
-        <img src="logo.png" alt="Tuluva Guardian Logo" class="logo">
+        <div class="logo-container">
+            <img src="logo.png" alt="Tuluva Guardian Logo" class="logo">
+        </div>
         <h1>The Kempagidar Files</h1>
-        <p style="color: var(--kemp-red); font-weight: bold; font-style: italic; font-size: 1.1rem;">
-            Dossier 2026-001: The Economic Assassination of S.U. Paniyadi
-        </p>
+        <p class="dossier-tag">Dossier 2026-001: The Economic Assassination of S.U. Paniyadi</p>
     </header>
 
     <article>
         <section>
             <h2>I. The Man in the Red Shirt</h2>
-            <img src="kempagidar-portrait.jpg" alt="S.U. Paniyadi Kempagidar">
-            <figcaption>S.U. Paniyadi (1897–1942), known as 'Kempagidar' for his defiant red shirt.</figcaption>
-            <p><span class="dropcap">I</span>n the 1920s, a figure known as <strong>"Kempagidar"</strong> (The Guy in the Red Shirt) became the living nightmare of the regional administrative elite. Srinivasa Upadhyaya Paniyadi used his <strong>Voltairean wit</strong> to strike back at those who mocked Tulu. Trained in Baroda, he knew that a culture without its own bank and press was a culture marked for death.</p>
+            <div class="media-block">
+                <img src="kempagidar-portrait.jpg" alt="S.U. Paniyadi Kempagidar">
+                <figcaption>S.U. Paniyadi (1897–1942), known as 'Kempagidar' for his defiant red shirt and Voltairean wit.</figcaption>
+            </div>
+            <p><span class="dropcap">I</span>n the 1920s, Srinivasa Upadhyaya Paniyadi used his signature red shirt to signal total defiance against the "Shudra Bhasha" stigma. Trained in Baroda, he recognized that without a sovereign bank and press, Tuluva culture would be silenced by regional monopolies. He was the intellectual architect of coastal resistance.</p>
         </section>
 
         <section>
             <h2>II. 1926: The Anthem of a Stolen Land</h2>
-            <img src="b-monappa-thingalaya.jpg" alt="B. Monappa Thingalaya">
-            <figcaption>B. Monappa Thingalaya, composer of the century-old Land Anthem of Tulunadu.</figcaption>
-            <p>A century ago, <strong>B. Monappa Thingalaya</strong> gave Tulunadu its soul. He composed the <strong>Land Anthem</strong>, a declaration of coastal borders and pride that the administrative machine tried to erase for 100 years. It stands as the spiritual blueprint for the Tuluva Guardian movement today.</p>
+            <div class="media-block">
+                <img src="b-monappa-thingalaya.jpg" alt="B. Monappa Thingalaya">
+                <figcaption>B. Monappa Thingalaya, the visionary who composed the Tuluva Land Anthem a century ago.</figcaption>
+            </div>
+            <p>While Paniyadi built the intellectual armor, <strong>B. Monappa Thingalaya</strong> provided the soul. In 1926, he composed the Land Anthem, a declaration of geographical pride that defined the historical borders of the Tuluva people—a memory the administrative machine has tried to erase for 100 years.</p>
         </section>
 
         <section>
-            <h2>III. Sathi Kamale: The Masterpiece That Was Buried</h2>
-            <img src="sathi-kamale-cover.jpg" alt="Sathi Kamale Cover">
-            <figcaption>The cover of Sathi Kamale, a novel of Jnanpith caliber that proved Tulu's literary depth.</figcaption>
-            <p>Paniyadi’s novel <strong>Sathi Kamale</strong> proved Tulu was a high-literary language capable of profound philosophy. When his institutions were sabotaged, this book was buried to ensure Tuluvas remained "unlettered" in the eyes of the state. Reclaiming this book is reclaiming our intellectual rights.</p>
+            <h2>III. Sathi Kamale: The Buried Masterpiece</h2>
+            <div class="media-block">
+                <img src="sathi-kamale-cover.jpg" alt="Sathi Kamale Cover">
+                <figcaption>Sathi Kamale: A Jnanpith-caliber work of Tulu prose that was systematically suppressed.</figcaption>
+            </div>
+            <p>Paniyadi’s novel <strong>Sathi Kamale</strong> proved Tulu was a high-literary language. When his institutions were sabotaged, this work was buried to ensure the Tuluva people remained "intellectual orphans." Reclaiming this prose is an act of administrative defiance.</p>
         </section>
 
         <section>
-            <h2>IV. The Tuluva Mahasabha & The Great Betrayal</h2>
-            <p>In 1928, Paniyadi founded the <strong>Tuluva Mahasabha</strong>. His demands were radical: Constitutional status and the <strong>Tulu-Tigalari script</strong>. However, he was betrayed by those close to him. During the <strong>Nehru Committee</strong> meetings, figures like <strong>Jinanath Hegde</strong> were present, yet Tuluva interests were traded away. Icons like <strong>Kayyara Kinhanna Rai</strong> later realized the "Plot Shift" and the loss of Paniyadi’s vision far too late.</p>
+            <h2>IV. The Tuluva Mahasabha & The Betrayal</h2>
+            <p>Founded in 1928, the <strong>Tuluva Mahasabha</strong> demanded constitutional recognition. Yet, the movement was sabotaged from within. During the <strong>Nehru Committee</strong> meetings, figures like <strong>Jinanath Hegde</strong> were present, but the Tuluva interest was traded for political favors. Kayyara Kinhanna Rai and others realized the gravity of this "Plot Shift" only after the sovereign institutions were lost.</p>
         </section>
 
         <section>
             <h2>V. The 60-Year Blackout</h2>
-            <img src="Tulunadu-press-archive.jpg" alt="Tulunadu Press Archive">
-            <figcaption>The Tulunadu Press: Seized, Kannadigized, and silent for 60 years.</figcaption>
-            <p>After the engineered bank run, Paniyadi’s <strong>Tulunadu Press</strong> was hijacked. For <strong>60 years</strong>, not a single Tulu book reached our children. This institutional capture was the ultimate victory of those who sought to break the linguistic chain between generations.</p>
+            <div class="media-block">
+                <img src="Tulunadu-press-archive.jpg" alt="Tulunadu Press Archive">
+                <figcaption>The original Tulunadu Press: Seized, renamed, and silent for six decades.</figcaption>
+            </div>
+            <p>Following an engineered bank run, the <strong>Tulunadu Press</strong> was hijacked. For <strong>60 years</strong>, not a single Tulu book reached the hands of our children. This institutional capture ensured the breaking of the linguistic chain between generations.</p>
         </section>
 
         <blockquote>
             "We are picking up the pen he was forced to drop, singing the anthem B. Monappa Thingalaya wrote 100 years ago, and reclaiming the press that was stolen from our children."
         </blockquote>
 
-        <div class="nav-section">
+        <div style="text-align: center;">
             <a href="index.html" class="nav-btn">← RETURN TO HEADQUARTERS</a>
         </div>
     </article>
