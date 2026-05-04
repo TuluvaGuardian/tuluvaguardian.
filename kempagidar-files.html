@@ -16,113 +16,122 @@
             --bg: #fdfcf8; 
             --dark: #1a1a1a;
         }
-        body { font-family: 'Georgia', serif; line-height: 1.6; color: #333; background: var(--bg); margin: 0; padding: 0; }
-        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+        body { font-family: 'Georgia', serif; line-height: 1.8; color: #333; background: var(--bg); margin: 0; padding: 0; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 20px; }
         
-        header { text-align: center; border-bottom: 4px double var(--kemp-red); margin-bottom: 40px; padding: 40px 20px; }
-        .brand-name { font-family: sans-serif; text-transform: uppercase; font-weight: 900; letter-spacing: 3px; font-size: 1.2rem; margin: 10px 0; }
-        .logo { max-width: 100px; height: auto; margin: 0 auto; display: block; }
-        h1 { text-transform: uppercase; letter-spacing: 1px; margin: 15px 0; font-size: 2.5rem; line-height: 1; }
+        header { text-align: center; border-bottom: 4px double var(--kemp-red); margin-bottom: 60px; padding: 60px 20px; }
+        .brand-name { font-family: sans-serif; text-transform: uppercase; font-weight: 900; letter-spacing: 4px; font-size: 1.3rem; margin: 10px 0; color: var(--dark); }
+        .logo { max-width: 110px; height: auto; margin: 0 auto; display: block; filter: grayscale(100%) contrast(1.2); }
+        h1 { text-transform: uppercase; letter-spacing: 1px; margin: 20px 0; font-size: 3rem; line-height: 1; color: var(--dark); }
 
-        /* THE "DOUBLE" SECTION LAYOUT */
         .section-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr; /* Two columns */
-            gap: 30px;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
             align-items: start;
-            margin-bottom: 60px;
+            margin-bottom: 80px;
             padding-bottom: 40px;
-            border-bottom: 1px solid #eee;
+            border-bottom: 1px solid #ddd;
         }
 
-        @media (max-width: 768px) {
-            .section-grid { grid-template-columns: 1fr; } /* Stack on mobile */
+        @media (max-width: 850px) {
+            .section-grid { grid-template-columns: 1fr; gap: 20px; }
         }
 
         h2 { 
-            grid-column: 1 / -1; /* Header spans both columns */
+            grid-column: 1 / -1; 
             color: var(--kemp-red); 
-            border-left: 5px solid var(--kemp-red); 
+            border-left: 6px solid var(--kemp-red); 
             padding-left: 15px; 
-            font-family: sans-serif; 
-            font-size: 1.4rem;
-            margin-bottom: 10px;
+            font-family: 'Arial', sans-serif; 
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
         }
 
-        .media-box img { width: 100%; height: auto; box-shadow: 0 4px 10px rgba(0,0,0,0.1); border-radius: 2px; }
-        .media-box figcaption { font-size: 0.8rem; color: #666; font-style: italic; margin-top: 10px; text-align: center; }
+        .media-box img { width: 100%; height: auto; box-shadow: 0 10px 30px rgba(0,0,0,0.15); border-radius: 2px; }
+        .media-box figcaption { font-size: 0.85rem; color: #555; font-style: italic; margin-top: 15px; text-align: center; line-height: 1.4; }
 
-        .text-box { font-size: 1.05rem; }
-        .dropcap { float: left; font-size: 3.5rem; line-height: 0.8; padding-right: 10px; color: var(--kemp-red); font-weight: bold; }
+        .text-box { font-size: 1.1rem; text-align: justify; hyphens: auto; }
+        .dropcap { float: left; font-size: 4.5rem; line-height: 0.7; padding-right: 12px; padding-top: 10px; color: var(--kemp-red); font-weight: bold; }
 
         blockquote { 
             grid-column: 1 / -1; 
-            border-left: 10px solid var(--kemp-red); 
+            border-left: 12px solid var(--kemp-red); 
             background: #fff; 
-            padding: 25px; 
+            padding: 40px; 
             font-style: italic; 
-            font-size: 1.2rem; 
-            margin: 20px 0;
+            font-size: 1.4rem; 
+            margin: 40px 0;
+            box-shadow: 5px 5px 20px rgba(0,0,0,0.05);
         }
 
-        .nav-btn { display: inline-block; background: var(--dark); color: #fff; padding: 12px 25px; text-decoration: none; border-radius: 4px; font-weight: bold; }
-        footer { text-align: center; padding: 40px 0; font-size: 0.8rem; color: #888; border-top: 1px solid #ddd; margin-top: 40px; }
+        .nav-btn { display: inline-block; background: var(--dark); color: #fff; padding: 15px 35px; text-decoration: none; border-radius: 4px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
+        footer { text-align: center; padding: 60px 0; font-size: 0.9rem; color: #777; border-top: 1px solid #ccc; background: #f4f4f4; margin-top: 60px; }
     </style>
 </head>
 <body>
 
 <div class="container">
     <header>
-        <img src="logo.png" alt="Logo" class="logo">
+        <img src="logo.png" alt="Tuluva Guardian Logo" class="logo">
         <p class="brand-name">Tuluva Guardian</p>
         <h1>The Kempagidar Files</h1>
-        <p style="color: var(--kemp-red); font-weight: bold; font-style: italic;">Dossier 2026-001: The Economic Assassination of S.U. Paniyadi</p>
+        <p style="color: var(--kemp-red); font-weight: bold; font-style: italic; font-size: 1.2rem;">Dossier 2026-001: The Economic Assassination of S.U. Paniyadi</p>
     </header>
 
     <div class="section-grid">
-        <h2>I. The Man in the Red Shirt</h2>
+        <h2>I. The Man in the Red Shirt: The Architect of Defiance</h2>
         <div class="media-box">
-            <img src="kempagidar-portrait.jpg" alt="S.U. Paniyadi">
-            <figcaption>S.U. Paniyadi (1897–1942). The red shirt was his armor against the elite.</figcaption>
+            <img src="kempagidar-portrait.jpg" alt="S.U. Paniyadi Portrait">
+            <figcaption>S.U. Paniyadi (1897–1942), the 'Kempagidar' who used satire to strike back at regional administrative elites.</figcaption>
         </div>
         <div class="text-box">
-            <p><span class="dropcap">I</span>n the In the roaring 1920s, Srinivasa Upadhyaya Paniyadi did not merely wear a red shirt as a fashion choice; it was a semiotic weapon designed to signal total, uncompromising defiance against the "Shudra Bhasha" stigma—a derogatory label weaponized by the regional administrative elites to dismiss Tulu as a primitive, unlettered dialect. Having been rigorously trained in the intellectual and administrative power-centers of the Baroda Central Library under the patronage of the Gaekwads, Paniyadi mastered the "Science of Sovereignty" and understood that a culture’s survival was tied directly to its control over its own institutions. He recognized with prophetic clarity that a language without its own sovereign bank to fund its projects, and its own press to document its thoughts, was a language already marked for eventual erasure by the state machine. His return to Tulunadu was not just a homecoming but the arrival of a revolutionary architect who intended to build an intellectual fortress that would protect the Tuluva identity from being swallowed by the burgeoning "Kannadigized" bureaucracy. He was the first to realize that linguistic identity was not just about words spoken at home, but about the economic power to dictate terms in the public square. His signature Voltairean wit served as a surgical tool, cutting through the pretension of the local elites who were increasingly ashamed of their mother tongue and were eager to trade their heritage for a seat at the Mysore administrative table. By establishing the Tuluva Mahasabha, Paniyadi sought to turn a scattered community into a disciplined political force capable of demanding constitutional recognition and administrative respect. He challenged the very foundation of the "Plot Shift" that sought to relegate Tulu to the status of a kitchen dialect, arguing instead that it was a language of high-culture, law, and high-finance. Every time he stepped into a public meeting in his red shirt, he was physically manifesting a refusal to be invisible, forcing the colonial and regional authorities to acknowledge a Tuluva presence that was both intellectually superior and economically ambitious. His legacy is not just one of protest, but of institutional design—reminding us that the pen is only as powerful as the press that prints its ink and the bank that pays for the paper.
+            <p><span class="dropcap">I</span>n the roaring 1920s, Srinivasa Upadhyaya Paniyadi did not merely wear a red shirt as a fashion choice; it was a semiotic weapon designed to signal total, uncompromising defiance against the "Shudra Bhasha" stigma—a derogatory label weaponized by the regional administrative elites to dismiss Tulu as a primitive, unlettered dialect. Having been rigorously trained in the intellectual and administrative power-centers of the Baroda Central Library under the patronage of the Gaekwads, Paniyadi mastered the "Science of Sovereignty" and understood that a culture’s survival was tied directly to its control over its own institutions. He recognized with prophetic clarity that a language without its own sovereign bank to fund its projects, and its own press to document its thoughts, was a language already marked for eventual erasure by the state machine. His return to Tulunadu was not just a homecoming but the arrival of a revolutionary architect who intended to build an intellectual fortress that would protect the Tuluva identity from being swallowed by the burgeoning "Kannadigized" bureaucracy. He was the first to realize that linguistic identity was not just about words spoken at home, but about the economic power to dictate terms in the public square. His signature Voltairean wit served as a surgical tool, cutting through the pretension of the local elites who were increasingly ashamed of their mother tongue and were eager to trade their heritage for a seat at the Mysore administrative table. By establishing the Tuluva Mahasabha, Paniyadi sought to turn a scattered community into a disciplined political force capable of demanding constitutional recognition and administrative respect. He challenged the very foundation of the "Plot Shift" that sought to relegate Tulu to the status of a kitchen dialect, arguing instead that it was a language of high-culture, law, and high-finance. Every time he stepped into a public meeting in his red shirt, he was physically manifesting a refusal to be invisible, forcing the colonial and regional authorities to acknowledge a Tuluva presence that was both intellectually superior and economically ambitious. His legacy is not just one of protest, but of institutional design—reminding us that the pen is only as powerful as the press that prints its ink and the bank that pays for the paper.</p>
+        </div>
     </div>
 
     <div class="section-grid">
-        <h2>II. 1926: The Anthem of a Stolen Land and the Soul of a People
-            <p>
+        <h2>II. 1926: The Anthem of a Stolen Land and the Soul of a People</h2>
+        <div class="text-box">
+            <p>While Paniyadi was busy forging the intellectual armor of the movement, **B. Monappa Thingalaya** was providing the spiritual soul that would bind the Tuluva people together across the borders of the Chandragiri and Kalyanpur rivers. In 1926, Thingalaya composed the Land Anthem of Tulunadu, a bold and rhythmic declaration of geographical sovereignty that predated almost every modern state linguistic anthem in the Indian subcontinent. This was not merely a song; it was a cartographic claim set to music, defining the historical and cultural borders of a land that existed long before modern administrative lines were drawn by distant bureaucrats. The anthem served as a psychological anchor, preventing the Tuluva identity from drifting into the sea of larger, more aggressive linguistic identities that were beginning to dominate the southern landscape. For nearly a century, this anthem has been systematically suppressed and kept out of the public school curriculum, precisely because the state machine feared the power of a people who remembered their own geography. To sing this anthem is to engage in an act of historical reclamation, as it forces the listener to acknowledge that Tulunadu is not a sub-region of another state, but a primary civilizational entity with its own distinct borders and destiny. Thingalaya understood that a people without a song of their soil are a people who can be easily moved, easily partitioned, and easily forgotten in the archives of history. By codifying the Tuluva land in verse, he ensured that even if the institutions were seized, the idea of the land would remain alive in the breath of the people. The anthem was a direct challenge to the "monopoly of memory" held by the administrative elites, providing a counter-narrative to the official maps that sought to erase the Tuluva presence from the political landscape. Today, as we singing these verses again, we are not just engaging in nostalgia; we are asserting a century-old claim to the soil that was never formally surrendered. It is the spiritual blueprint for the modern Tuluva Guardian movement, reminding us that our roots go deeper than any legislative act and that our voice is older than any modern state.</p>
         </div>
         <div class="media-box">
-            <img src="b-monappa-thingalaya.jpg" alt="Monappa Thingalaya">
-            <figcaption>B. Monappa Thingalaya, the man who wrote the song of our soil.</figcaption>
-        
-       </div>While Paniyadi was busy forging the intellectual armor of the movement, B. Monappa Thingalaya was providing the spiritual soul that would bind the Tuluva people together across the borders of the Chandragiri and Kalyanpur rivers. In 1926, Thingalaya composed the Land Anthem of Tulunadu, a bold and rhythmic declaration of geographical sovereignty that predated almost every modern state linguistic anthem in the Indian subcontinent. This was not merely a song; it was a cartographic claim set to music, defining the historical and cultural borders of a land that existed long before modern administrative lines were drawn by distant bureaucrats. The anthem served as a psychological anchor, preventing the Tuluva identity from drifting into the sea of larger, more aggressive linguistic identities that were beginning to dominate the southern landscape. For nearly a century, this anthem has been systematically suppressed and kept out of the public school curriculum, precisely because the state machine feared the power of a people who remembered their own geography. To sing this anthem is to engage in an act of historical reclamation, as it forces the listener to acknowledge that Tulunadu is not a sub-region of another state, but a primary civilizational entity with its own distinct borders and destiny. Thingalaya understood that a people without a song of their soil are a people who can be easily moved, easily partitioned, and easily forgotten in the archives of history. By codifying the Tuluva land in verse, he ensured that even if the institutions were seized, the idea of the land would remain alive in the breath of the people. The anthem was a direct challenge to the "monopoly of memory" held by the administrative elites, providing a counter-narrative to the official maps that sought to erase the Tuluva presence from the political landscape. Today, as we singing these verses again, we are not just engaging in nostalgia; we are asserting a century-old claim to the soil that was never formally surrendered. It is the spiritual blueprint for the modern Tuluva Guardian movement, reminding us that our roots go deeper than any legislative act and that our voice is older than any modern state.
+            <img src="b-monappa-thingalaya.jpg" alt="B. Monappa Thingalaya Portrait">
+            <figcaption>B. Monappa Thingalaya, composer of the Tuluva Land Anthem, written in 1926.</figcaption>
+        </div>
     </div>
 
     <div class="section-grid">
-        <h2>III. Sathi Kamale: The Buried Masterpiece</h2>
+        <h2>III. Sathi Kamale: The Buried Masterpiece and the Intellectual Shield</h2>
         <div class="media-box">
-            <img src="sathi-kamale-cover.jpg" alt="Sathi Kamale">
-            <figcaption>The cover of Sathi Kamale, Tulu's Jnanpith-level masterpiece.</figcaption>
+            <img src="sathi-kamale-cover.jpg" alt="Sathi Kamale Book Cover">
+            <figcaption>The reconstructed cover of Sathi Kamale, a novel designed as an 'Intellectual Shield'.</figcaption>
         </div>
         <div class="text-box">
-            <p>Paniyadi’s novel <strong>Sathi Kamale</strong> proved Tulu's literary power. It wasn't just a story; it was an intellectual shield. When his institutions were sabotaged, this work was hidden from the mainstream to ensure Tuluvas remained "intellectual orphans." Reclaiming this prose is the first step in our administrative war.</p>
-       Paniyadi’s novel, Sathi Kamale, was never intended to be just a work of fiction; it was designed as a high-literary masterpiece that would serve as an "Intellectual Shield" against the persistent claim that the Tuluva people were an "unlettered" and primitive society. This work of prose, which many contemporary critics argue is of Jnanpith-caliber quality, proved that Tulu was a language capable of profound philosophical depth, complex character development, and a sophisticated narrative structure that rivaled any European or Indian literary tradition. By writing such a dense and intellectually demanding novel, Paniyadi was making a political statement: he was proving that the Tuluva mind was not limited to oral traditions or folk rituals, but was fully capable of engaging with the modern literary world. However, the tragedy of Sathi Kamale lies in its systematic suppression following the sabotage of Paniyadi’s institutional projects, as the book was intentionally kept out of print and out of the national spotlight for decades. This suppression was a key component of the cultural assassination of Tulunadu, as it ensured that subsequent generations of Tuluvas would grow up as "intellectual orphans," unaware that their ancestors had produced a world-class literary tradition in their own mother tongue. Reclaiming Sathi Kamale today is not just about reading a book; it is a vital act of administrative and cultural defiance that seeks to restore the Tuluva people to their rightful place in the global literary hierarchy. It challenges the "Shudra" label that was used to keep the language in the shadows, and it provides a foundation for the modern reclamation of the Tulu-Tigalari script. By bringing this masterpiece back into the light, we are dismantling the myth that Tulu is a secondary language, and we are showing that the Tuluva civilization possesses a literary inheritance that is both ancient in its roots and modern in its execution. The novel stands as a testament to what was lost during the "60-Year Blackout," and it serves as a rallying cry for the modern Tuluva scholar who refuses to accept the subservient status that has been forced upon our culture for the last century </div>
+            <p>Paniyadi’s novel, **Sathi Kamale**, was never intended to be just a work of fiction; it was designed as a high-literary masterpiece that would serve as an "Intellectual Shield" against the persistent claim that the Tuluva people were an "unlettered" and primitive society. This work of prose, which many contemporary critics argue is of Jnanpith-caliber quality, proved that Tulu was a language capable of profound philosophical depth, complex character development, and a sophisticated narrative structure that rivaled any European or Indian literary tradition. By writing such a dense and intellectually demanding novel, Paniyadi was making a political statement: he was proving that the Tuluva mind was not limited to oral traditions or folk rituals, but was fully capable of engaging with the modern literary world. However, the tragedy of *Sathi Kamale* lies in its systematic suppression following the sabotage of Paniyadi’s institutional projects, as the book was intentionally kept out of print and out of the national spotlight for decades. This suppression was a key component of the cultural assassination of Tulunadu, as it ensured that subsequent generations of Tuluvas would grow up as "intellectual orphans," unaware that their ancestors had produced a world-class literary tradition in their own mother tongue. Reclaiming *Sathi Kamale* today is not just about reading a book; it is a vital act of administrative and cultural defiance that seeks to restore the Tuluva people to their rightful place in the global literary hierarchy. It challenges the "Shudra" label that was used to keep the language in the shadows, and it provides a foundation for the modern reclamation of the Tulu-Tigalari script. By bringing this masterpiece back into the light, we are dismantling the myth that Tulu is a secondary language, and we are showing that the Tuluva civilization possesses a literary inheritance that is both ancient in its roots and modern in its execution. The novel stands as a testament to what was lost during the "60-Year Blackout," and it serves as a rallying cry for the modern Tuluva scholar who refuses to accept the subservient status that has been forced upon our culture for the last century.</p>
+        </div>
     </div>
-<div class="section-grid">
-        h2>4. . The Tuluva Mahasabha: The Betrayal of the Nehru Committee</h2>
-    <div class="text-box">
-        In 1928, the establishment of the Tuluva Mahasabha marked the zenith of Paniyadi’s political vision, as he moved beyond literature and finance to demand formal constitutional status and the total reclamation of the Tulu-Tigalari script. He understood that without a recognized script, the Tuluva language would always be treated as a guest in someone else’s house, dependent on the scripts of dominant neighbors for its survival. However, the movement faced a devastating decapitation from within, as the regional administrative elites—many of whom were part of Paniyadi’s own social circle—began to fear the radical nature of his demands for total Tuluva autonomy. This internal sabotage reached its peak during the Nehru Committee meetings, where the future of India’s linguistic states was being debated and where the Tuluva interest was traded away by leaders who prioritized their own standing in the larger political machine. Figures like Jinanath Hegde were present in these high-level discussions, yet the specific demands for a Tulu-centric administrative block were muffled in favor of a broader, more integrated state model that would eventually leave Tulunadu as a marginalized fringe. This was the "Plot Shift" that icons like Kayyara Kinhanna Rai would only realize the full gravity of decades later, when the sovereign institutions of the Tuluva people had already been dismantled or absorbed. The betrayal was not just a political disagreement; it was a fundamental abandonment of the Paniyadi path, as the leadership chose the safety of assimilation over the risk of sovereignty. This historical failure allowed the administrative trap to close on Tulunadu, setting the stage for the economic and cultural marginalization that has defined our existence for the last eighty years. The Mahasabha’s early demands remain the "Unfinished Business" of our generation, serving as a reminder that the rights we seek today were already articulated and then betrayed nearly a century ago by those who lacked the courage of Kempagidar.
+
     <div class="section-grid">
-        h2>V. The 60-Year Blackout</h2>
+        <h2>IV. The Tuluva Mahasabha: The Betrayal of the Nehru Committee</h2>
         <div class="text-box">
-            <p>Following an engineered bank run, the <strong>Tulunadu Press</strong> was hijacked and renamed. For <strong>60 years</strong>, not a single Tulu book reached the hands of our children. This was not a business failure; it was a deliberate cultural blackout designed to break the linguistic chain between generations.</p>
+            <p>In 1928, the establishment of the **Tuluva Mahasabha** marked the zenith of Paniyadi’s political vision, as he moved beyond literature and finance to demand formal constitutional status and the total reclamation of the **Tulu-Tigalari script**. He understood that without a recognized script, the Tuluva language would always be treated as a guest in someone else’s house, dependent on the scripts of dominant neighbors for its survival. However, the movement faced a devastating decapitation from within, as the regional administrative elites—many of whom were part of Paniyadi’s own social circle—began to fear the radical nature of his demands for total Tuluva autonomy. This internal sabotage reached its peak during the **Nehru Committee** meetings, where the future of India’s linguistic states was being debated and where the Tuluva interest was traded away by leaders who prioritized their own standing in the larger political machine. Figures like **Jinanath Hegde** were present in these high-level discussions, yet the specific demands for a Tulu-centric administrative block were muffled in favor of a broader, more integrated state model that would eventually leave Tulunadu as a marginalized fringe. This was the "Plot Shift" that icons like **Kayyara Kinhanna Rai** would only realize the full gravity of decades later, when the sovereign institutions of the Tuluva people had already been dismantled or absorbed. The betrayal was not just a political disagreement; it was a fundamental abandonment of the Paniyadi path, as the leadership chose the safety of assimilation over the risk of sovereignty. This historical failure allowed the administrative trap to close on Tulunadu, setting the stage for the economic and cultural marginalization that has defined our existence for the last eighty years. The Mahasabha’s early demands remain the "Unfinished Business" of our generation, serving as a reminder that the rights we seek today were already articulated and then betrayed nearly a century ago by those who lacked the courage of Kempagidar.</p>
         </div>
         <div class="media-box">
-            <img src="Tulunadu-press-archive.jpg" alt="Tulunadu Press">
-            <figcaption>The Tulunadu Press: Seized, renamed, and silent for six decades
-                While Paniyadi was busy forging the intellectual armor of the movement, B. Monappa Thingalaya was providing the spiritual soul that would bind the Tuluva people together across the borders of the Chandragiri and Kalyanpur rivers. In 1926, Thingalaya composed the Land Anthem of Tulunadu, a bold and rhythmic declaration of geographical sovereignty that predated almost every modern state linguistic anthem in the Indian subcontinent. This was not merely a song; it was a cartographic claim set to music, defining the historical and cultural borders of a land that existed long before modern administrative lines were drawn by distant bureaucrats. The anthem served as a psychological anchor, preventing the Tuluva identity from drifting into the sea of larger, more aggressive linguistic identities that were beginning to dominate the southern landscape. For nearly a century, this anthem has been systematically suppressed and kept out of the public school curriculum, precisely because the state machine feared the power of a people who remembered their own geography. To sing this anthem is to engage in an act of historical reclamation, as it forces the listener to acknowledge that Tulunadu is not a sub-region of another state, but a primary civilizational entity with its own distinct borders and destiny. Thingalaya understood that a people without a song of their soil are a people who can be easily moved, easily partitioned, and easily forgotten in the archives of history. By codifying the Tuluva land in verse, he ensured that even if the institutions were seized, the idea of the land would remain alive in the breath of the people. The anthem was a direct challenge to the "monopoly of memory" held by the administrative elites, providing a counter-narrative to the official maps that sought to erase the Tuluva presence from the political landscape. Today, as we singing these verses again, we are not just engaging in nostalgia; we are asserting a century-old claim to the soil that was never formally surrendered. It is the spiritual blueprint for the modern Tuluva Guardian movement, reminding us that our roots go deeper than any legislative act and that our voice is older than any modern state..</figcaption>
+            <img src="Tulunadu-press-archive.jpg" alt="Historical Evidence">
+            <figcaption>Records of the Tuluva Mahasabha's early demands for administrative autonomy.</figcaption>
+        </div>
+    </div>
+
+    <div class="section-grid" style="border-bottom: none;">
+        <h2>V. The 60-Year Blackout: The Institutional Capture of the Tulunadu Press</h2>
+        <div class="media-box">
+            <img src="Tulunadu-press-archive.jpg" alt="Tulunadu Press Archive">
+            <figcaption>The hijacked Tulunadu Press, which remained silent on Tulu matters for six decades.</figcaption>
+        </div>
+        <div class="text-box">
+            <p>The ultimate blow to the Paniyadi vision was the engineered collapse of his financial base, which facilitated the hostile institutional capture of the **Tulunadu Press**—a vital organ of Tuluva intellectual life that was subsequently "Kannadigized" and renamed to erase its original purpose. This was not a simple business failure caused by poor management; it was a calculated economic assassination, involving an artificial bank run and the withdrawal of credit by elites who wanted to see the Kempagidar movement neutralized. Once the press was seized, a deliberate and suffocating silence followed that lasted for **60 years**, during which not a single Tulu book reached the hands of the next generation of Tuluva children. This blackout was designed to break the linguistic chain between generations, turning Tulu into a language of the past rather than a language of the future, and forcing Tuluvas to become "intellectual orphans" who had to look outside their own culture for education and inspiration. During these six decades, the vibrant Tuluva literary scene that Paniyadi had built was systematically dismantled, and the Tulu-Tigalari script was pushed to the very brink of extinction as it was scrubbed from public view. The hijacking of the press was the most effective weapon in the arsenal of the administrative elite, as it allowed them to control the narrative of history and ensure that the Kempagidar Files remained buried for over half a century. We are now in the process of breaking that silence, not just by writing new books, but by documenting every single institutional failure and every act of sabotage that led to this cultural blackout. The reclamation of the Tulunadu Press is not just about a building or a machine; it is about reclaiming our right to speak to our own children without a filter and our right to document our own history without fear of being erased by the state. The blackout has ended, and the Tuluva Guardian is here to ensure that the light of Paniyadi’s vision is never extinguished again.</p>
         </div>
     </div>
 
@@ -130,12 +139,13 @@
         "We are picking up the pen he was forced to drop, singing the anthem B. Monappa Thingalaya wrote 100 years ago, and reclaiming the press that was stolen from our children."
     </blockquote>
 
-    <div style="text-align: center;">
-        <a href="index.html" class="nav-btn">← RETURN TO HEADQUARTERS</a>
+    <div style="text-align: center; margin-bottom: 60px;">
+        <a href="index.html" class="nav-btn">← Return to Headquarters</a>
     </div>
 
     <footer>
-        <p><strong>Tuluva Guardian Advocacy</strong> | 2026</p>
+        <p><strong>Tuluva Guardian Advocacy</strong> | © 2026</p>
+        <p>Documenting the manufacture of linguistic hierarchy in Coastal Karnataka.</p>
     </footer>
 </div>
 
