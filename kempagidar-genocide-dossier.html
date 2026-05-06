@@ -3,100 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TULUVA MASSACRE IN SOUTH INDIA | THE KEMPAGIDAR FILES</title>
+    <title>THE TULUVA MASSACRE | THE KEMPAGIDAR DOSSIER | TULUVA GUARDIAN</title>
     <style>
         body { font-family: 'Georgia', serif; line-height: 1.8; background-color: #050505; color: #dcdcdc; margin: 0; padding: 0; }
         
         /* Moving Headline / Marquee */
-        .marquee-container { background: #ff0000; color: #fff; padding: 5px 0; font-family: monospace; font-weight: bold; overflow: hidden; white-space: nowrap; border-bottom: 2px solid #800000; }
-        .marquee-text { display: inline-block; padding-left: 100%; animation: marquee 20s linear infinite; text-transform: uppercase; }
+        .marquee-container { background: #800000; color: #fff; padding: 10px 0; font-family: monospace; font-weight: bold; overflow: hidden; white-space: nowrap; border-bottom: 2px solid #ff0000; }
+        .marquee-text { display: inline-block; padding-left: 100%; animation: marquee 25s linear infinite; text-transform: uppercase; letter-spacing: 2px; }
         @keyframes marquee { 0% { transform: translate(0, 0); } 100% { transform: translate(-100%, 0); } }
 
-        /* Logo and Header Section */
-        .brand-header { text-align: center; padding: 40px 20px; background: linear-gradient(to bottom, #1a0000, #050505); }
-        .logo-img { width: 120px; height: auto; border: 2px solid #ff0000; border-radius: 50%; padding: 5px; margin-bottom: 15px; }
-        .brand-name { font-size: 3em; color: #fff; margin: 0; letter-spacing: 5px; text-transform: uppercase; font-family: 'Times New Roman', serif; text-shadow: 2px 2px 5px #000; }
-        .brand-tagline { color: #ff0000; font-size: 1.2em; font-weight: bold; letter-spacing: 2px; }
+        /* Brand Header Section */
+        .brand-header { text-align: center; padding: 60px 20px; background: linear-gradient(to bottom, #1a0000, #050505); border-bottom: 1px solid #333; }
+        .logo-box { max-width: 150px; margin: 0 auto 20px auto; border: 3px solid #ff0000; padding: 10px; background: #000; }
+        .logo-box img { width: 100%; height: auto; }
+        .brand-name { font-size: 3.5em; color: #fff; margin: 0; letter-spacing: 4px; text-transform: uppercase; font-family: 'Times New Roman', serif; text-shadow: 2px 2px 10px #ff0000; }
+        .brand-tagline { color: #ff0000; font-size: 1.3em; font-weight: bold; letter-spacing: 3px; margin-top: 10px; text-transform: uppercase; }
 
-        .container { max-width: 900px; margin: 0 auto; padding: 40px 25px; }
-        header { text-align: center; border-bottom: 4px solid #800000; padding-bottom: 30px; margin-bottom: 50px; }
-        h1 { color: #ff0000; font-size: 2.8em; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 10px; }
-        h2 { color: #ff4d4d; font-size: 1.8em; border-left: 5px solid #800000; padding-left: 20px; margin-top: 60px; text-transform: uppercase; }
-        p { text-align: justify; margin-bottom: 35px; font-size: 1.1em; }
+        /* Main Content Container */
+        .container { max-width: 900px; margin: 0 auto; padding: 50px 25px; }
         
-        .image-container { text-align: center; margin: 45px 0; background: #111; padding: 20px; border: 1px solid #333; box-shadow: 0 0 20px rgba(128, 0, 0, 0.3); }
-        .image-container img { max-width: 100%; height: auto; border: 1px solid #444; }
-        .caption { font-size: 0.9em; font-style: italic; color: #a0a0a0; margin-top: 15px; border-top: 1px solid #222; padding-top: 10px; }
+        /* Article Typography */
+        h1.main-title { color: #ff0000; font-size: 3em; text-transform: uppercase; letter-spacing: 4px; text-align: center; margin-bottom: 10px; }
+        p.subtitle { text-align: center; color: #888; font-style: italic; font-size: 1.2em; margin-bottom: 60px; }
         
+        h2.section-header { color: #ff4d4d; font-size: 2em; border-left: 6px solid #800000; padding-left: 20px; margin-top: 70px; text-transform: uppercase; letter-spacing: 2px; }
+        p.article-text { text-align: justify; margin-bottom: 40px; font-size: 1.15em; color: #c0c0c0; }
+        
+        /* Image Formatting */
+        .image-frame { text-align: center; margin: 50px 0; background: #111; padding: 25px; border: 1px solid #333; box-shadow: 0 0 30px rgba(255, 0, 0, 0.2); }
+        .image-frame img { max-width: 100%; height: auto; border: 1px solid #444; filter: sepia(10%) contrast(1.1); }
+        .caption { font-size: 0.95em; font-style: italic; color: #999; margin-top: 18px; border-top: 1px solid #222; padding-top: 12px; }
+        
+        /* Highlighting and Metainfo */
         .highlight { color: #ff0000; font-weight: bold; text-decoration: underline; }
-        footer { margin-top: 80px; padding: 50px; background: #000; border-top: 2px solid #800000; text-align: center; }
-        .btn-action { display: inline-block; padding: 18px 35px; background: #800000; color: #fff; text-decoration: none; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; border-radius: 3px; }
+        .dossier-meta { background: #111; padding: 15px; border: 1px dashed #444; font-family: monospace; font-size: 0.9em; margin-bottom: 50px; text-align: center; color: #888; }
+
+        /* Footer Section */
+        footer { margin-top: 100px; padding: 60px; background: #000; border-top: 3px solid #800000; text-align: center; }
+        .btn-portal { display: inline-block; padding: 20px 40px; background: #800000; color: #fff; text-decoration: none; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; border-radius: 2px; box-shadow: 0 0 15px rgba(255, 0, 0, 0.4); transition: 0.3s; }
+        .btn-portal:hover { background: #b30000; box-shadow: 0 0 25px rgba(255, 0, 0, 0.7); }
     </style>
 </head>
 <body>
 
 <div class="marquee-container">
     <div class="marquee-text">
-        URGENT: 30,000 SOULS LOST IN CHEMICAL MASSACRE ... WRIT OF MANDAMUS FILED IN HIGH COURT ... BREAK THE 60-YEAR BLACKOUT ... TULU MUST BE OFFICIAL ... JUSTICE FOR ENDOSULFAN VICTIMS ...
+        BREAK THE 60-YEAR BLACKOUT ... THE 30,000 SOULS LOST IN CHEMICAL MASSACRE DEMAND JUSTICE ... WRIT OF MANDAMUS FILED IN HIGH COURT ... TULU MUST BE OFFICIAL TO STOP MEDICAL DENIAL ... THE KEMPAGIDAR FILES ARE LIVE ... 
     </div>
 </div>
 
 <div class="brand-header">
-    <img src="Tulunadu-press-archive.jpg" alt="Tuluva Guardian Logo" class="logo-img">
+    <div class="logo-box">
+        <img src="Tulunadu-press-archive.jpg" alt="Tuluva Guardian Logo">
+    </div>
     <h1 class="brand-name">Tuluva Guardian</h1>
     <div class="brand-tagline">DIGITAL ARCHIVE OF THE RESISTANCE</div>
 </div>
 
 <div class="container">
     <header>
-        <h1>Tuluva Massacre in South India</h1>
-        <p style="font-style: italic; color: #888;">Investigation Dossier 01: The Century of Erasure (1926–2026)</p>
+        <h1 class="main-title">Tuluva Massacre in South India</h1>
+        <p class="subtitle">Investigation Dossier 01: The Century of Attrition (1926–2026)</p>
     </header>
 
-    <section>
-        <h2>I. The Linguistic Death Sentence</h2>
-        <p>The denial of official status for the Tulu language is not a mere bureaucratic oversight; it is a structural weapon of exclusion that has historically acted as a death sentence for the Tuluva nation. For over a century, the administrative machinery has functioned in tongues foreign to our soil, creating a lethal disconnect between the state and the people it claims to serve. In the rural heartlands of the cashew belt, where Tulu is the only bridge to reality, thousands were left defenseless against a healthcare system that refused to speak their language. When the "Yellow Rain" began to fall, our people sought help in the only words they knew, only to be met with the cold, uncomprehending silence of a monolingual bureaucracy. This linguistic apartheid ensured that critical warnings were never understood and medical histories were never recorded because they were expressed in a tongue that held no official currency.</p>
+    <div class="dossier-meta">
+        CLASSIFICATION: HIGH-ALERT | STATUS: LIVE INVESTIGATION | FILE REF: KEMPAGIDAR-2026-BIOLOGICAL
+    </div>
 
-        <div class="image-container">
-            <img src="Tulunadu-press-archive.jpg" alt="S.U. Paniyadi and Tulunad Press">
+    <section>
+        <h2 class="section-header">I. The Linguistic Death Sentence</h2>
+        <p class="article-text">The denial of official status for the Tulu language is not a mere bureaucratic oversight; it is a structural weapon of exclusion that has historically acted as a death sentence for the Tuluva nation. For over a century, the administrative machinery has functioned in tongues foreign to our soil, creating a lethal disconnect between the state and the people it claims to serve. In the rural heartlands of the cashew belt, where Tulu is the only bridge to reality, thousands were left defenseless against a healthcare system that refused to speak their language. When the "Yellow Rain" began to fall, our people sought help in the only words they knew, only to be met with the cold, uncomprehending silence of a monolingual bureaucracy. This linguistic apartheid ensured that critical warnings were never understood, medical histories were never recorded, and the suffering of the masses was conveniently ignored because it was expressed in a tongue that held no official currency. The state effectively performed a linguistic lobotomy on its citizens, rendering them invisible in the eyes of the law and the clinic. Today, we demand official recognition not just for cultural pride, but as a life-saving necessity for a people who have been silenced into their graves. The 30,000 souls lost to this attrition are the silent witnesses to a system that chose linguistic hegemony over human survival, and their memory demands the immediate restoration of our linguistic rights to prevent another century of medical abandonment.</p>
+
+        <div class="image-frame">
+            <img src="Tulunadu-press-archive.jpg" alt="S.U. Paniyadi and Tulunad Press Archive">
             <div class="caption">FIGURE 1: S.U. Paniyadi and the hijacked Tulunadu Press archive—the intellectual heart silenced by the 1956 blackout.</div>
         </div>
     </section>
 
     <section>
-        <h2>II. The Biological Frontier: The 30,000 Souls</h2>
-        <p>The investigation now formally documents a staggering toll: <span class="highlight">an estimated 30,000 Tuluvas sacrificed</span> on the altar of state expansionism and corporate greed. This figure represents the cumulative total of a century of systematic destruction, peaking with the "Biological Genocide" of the Endosulfan era between 1980 and 2001. For twenty years, state-owned corporations launched aerial sorties over the lush plantations of Belthangady, Sullia, and Puttur, raining down poison with total disregard for the biological integrity of the Tuluva nation. This was not a failure of agricultural policy; it was a calculated policy of attrition designed to break the rural spirit and poison the very DNA of our future generations. We saw our children born with twisted limbs and broken minds, victims of a state that valued profits more than the lives of the Tulu-speaking peasantry.</p>
+        <h2 class="section-header">II. The Biological Frontier: The 30,000 Souls</h2>
+        <p class="article-text">The investigation now formally documents a staggering toll: <span class="highlight">an estimated 30,000 Tuluvas sacrificed</span> on the altar of state expansionism and corporate greed, a body count that transforms our struggle into a primary humanitarian crisis. This figure represents the cumulative total of a century of systematic destruction, peaking with the "Biological Genocide" of the Endosulfan era between 1980 and 2001. For twenty years, state-owned corporations launched aerial sorties over the lush plantations of Belthangady, Sullia, and Puttur, raining down poison with total disregard for the biological integrity of the Tuluva nation. This was not a failure of agricultural policy; it was a calculated policy of attrition designed to break the rural spirit and poison the very DNA of our future generations. We saw our children born with twisted limbs and broken minds, victims of a state that valued profits more than the lives of the Tulu-speaking peasantry. The 30,000 souls are the martyrs of a hidden massacre that the 60-year institutional blackout tried to erase from history, treating Tuluva lives as mere disposable assets in a grander design of regional domination. Every life cut short by the "Yellow Rain" is a testament to the state’s criminal intent, an evidence of a war where the weapons were chemical and the casualties were chosen based on their language and their land. We document this genocide to fuel our resolve, ensuring that the world finally hears the cries of the poisoned who were told for decades that their suffering was a mere coincidence of nature.</p>
 
-        <div class="image-container">
-            <img src="endosulfan5.jpg" alt="Endosulfan Massacre Evidence">
-            <div class="caption">FIGURE 2: The Physical Evidence—Chemical attrition and the biological cost of the Yellow Rain.</div>
+        <div class="image-frame">
+            <img src="endosulfan5.jpg" alt="Endosulfan Biological Attrition">
+            <div class="caption">FIGURE 2: The Biological Cost—A witness to the state-sanctioned chemical attrition of our people.</div>
         </div>
     </section>
 
     <section>
-        <h2>III. The Kasaragod Betrayal and Medical Exile</h2>
-        <p>The massacre was perfected through the systematic denial of medical sovereignty in the Tulu-speaking borderlands of Kasaragod. By intentionally hollowing out the local healthcare infrastructure, the administrative machinery ensured that the victims of the chemical war had no choice but to enter a state of "Medical Exile." This forced migration turned our once-proud farmers into refugees, crossing borders that were often closed to them in their moments of greatest agony. Many were turned away from facilities simply because they spoke only Tulu, left to die in the hallways of institutions that refused to recognize their existence. This was a masterstroke of demographic dilution; by making the heartlands unlivable and the hospitals unreachable, the state cleared the soil of its traditional Tuluva guardians while our people suffered in silence.</p>
+        <h2 class="section-header">III. The Kasaragod Betrayal and Medical Exile</h2>
+        <p class="article-text">The massacre was perfected through the systematic denial of medical sovereignty in the Tulu-speaking borderlands of Kasaragod, a region that has been treated as a colonial laboratory for state-sanctioned neglect. By intentionally hollowing out the local healthcare infrastructure, the administrative machinery ensured that the victims of the chemical war had no choice but to enter a state of "Medical Exile." This forced migration turned our once-proud farmers into refugees, crossing borders that were often closed to them in their moments of greatest agony. Many were turned away from facilities simply because they spoke only Tulu, left to die in the hallways of institutions that refused to recognize their existence or their language. This was a masterstroke of demographic dilution; by making the heartlands unlivable and the hospitals unreachable, the state cleared the soil of its traditional Tuluva guardians while our people suffered in silence. The 2020 border blockades were merely the modern, visible manifestation of a siege that has been operational for over four decades, proving that to the state, a Tuluva life is only as valuable as the land it can be extracted from. The "Kempagidar" files are filled with the red ink of these betrayals—decades of committee reports that acknowledged the biological crisis only to bury the solutions under a mountain of bureaucratic red tape. We have been corralled into urban centers, stripped of our rural roots, and left to die in the hallways of foreign-language institutions. This exile is the final stage of the massacre, an attempt to dissolve the Tuluva identity by physically uprooting it from the very earth that was poisoned by the state’s own hand. Our survival now depends on reclaiming this medical sovereignty and ending the era of being treated as orphans in our own ancestral territory.</p>
 
-        <div class="image-container">
-            <img src="ec8bbd30-1d0c-11f1-8e9e-c32aff73709a.jpg" alt="Evidence of Systemic Neglect">
+        <div class="image-frame">
+            <img src="ec8bbd30-1d0c-11f1-8e9e-c32aff73709a.jpg" alt="Evidence of Forced Medical Exile">
             <div class="caption">FIGURE 3: Archive of Attrition—Documenting the forced medical exile and the betrayal of the borderlands.</div>
         </div>
     </section>
 
     <section>
-        <h2>IV. The New Front: A Writ of Mandamus</h2>
-        <p>Today, the Tuluva Guardian declares that the era of passive suffering has ended; we are moving from the hospital wards to the high courts of law. Every hidden file and every suppressed medical report is now being resurrected as primary evidence for a legal counter-offensive. We are building a dossier of defiance that links the linguistic erasure of S.U. Paniyadi’s era directly to the biological genocide of the present day. Our demand for a Writ of Mandamus is a battle cry for the restoration of a nation that has been systematically bled dry. We will no longer be the silent victims of the "Yellow Rain"; we are the prosecutors of a century-long crime. The Tuluva nation is rising from the poisoned earth to reclaim its absolute, unalienable right to exist as a sovereign and healthy people.</p>
+        <h2 class="section-header">IV. The New Front: A Writ of Mandamus</h2>
+        <p class="article-text">Today, the Tuluva Guardian declares that the era of passive suffering and the "60-Year Blackout" has officially ended; we are moving from the hospital wards and the cashew groves to the high courts of law. Every hidden file, every suppressed medical report, and every "Kempagidar" memo that sought to erase the truth of the 30,000 souls is now being resurrected as primary evidence for a digital and legal counter-offensive. We are building a dossier of defiance that links the linguistic erasure of S.U. Paniyadi’s era directly to the biological genocide of the present day, proving that the massacre is a continuous, singular event. Our demand for a Writ of Mandamus is not just a legal request; it is a battle cry for the restoration of a nation that has been systematically bled dry by an occupying administrative force. We will no longer be the silent victims of the "Yellow Rain"; we are the prosecutors of a century-long crime. The blackout is shattered, the evidence is live on the Tuluva Guardian portal, and the nation is rising from the poisoned earth to reclaim its absolute, unalienable right to exist as a sovereign and healthy people.</p>
 
-        <div class="image-container">
-            <img src="b-monappa-thingalaya.jpg" alt="B. Monappa Thingalaya">
+        <div class="image-frame">
+            <img src="b-monappa-thingalaya.jpg" alt="B. Monappa Thingalaya, Anthem Composer">
             <div class="caption">FIGURE 4: The Spiritual Vanguard—B. Monappa Thingalaya, composer of the 1926 Anthem of Sovereignty.</div>
         </div>
     </section>
 
     <footer>
         <p><strong>OFFICIAL EVIDENCE PORTAL: THE KEMPAGIDAR FILES</strong></p>
-        <a href="https://tuluvaguardian.online/kempagidar-files.html" class="btn-action">Access Evidence Locker</a>
-        <p style="font-size: 0.8em; margin-top: 25px; color: #555;">&copy; 2026 Tuluva Guardian Digital Archive | Verified Investigative Dossier</p>
+        <a href="https://tuluvaguardian.online/kempagidar-files.html" class="btn-portal">Access Evidence Locker</a>
+        <p style="font-size: 0.8em; margin-top: 30px; color: #555;">&copy; 2026 Tuluva Guardian Digital Archive | Verified Investigative Dossier</p>
     </footer>
 </div>
 
