@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+                     <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta property="og:type" content="article" />
@@ -7,14 +7,14 @@
     <meta property="og:url" content="https://tuluvaguardian.online/forgotten-tuluva-warrior-1600s.html" />
     <meta property="og:site_name" content="The Tuluva Guardian" />
     
-    <meta property="og:image" content="https://tuluvaguardian.online/warrior-hero-stone.jpg" />
+    <meta property="og:image" content="https://tuluvaguardian.online/1000134380.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="900" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="ECHOES OF THE 17TH CENTURY: Unearthing the Face of a Forgotten Tuluva Warrior" />
     <meta name="twitter:description" content="How a newly discovered Veeragallu from the Mulki-Puttige border wars challenges historical narratives and unites regional communities." />
-    <meta name="twitter:image" content="https://tuluvaguardian.online/warrior-hero-stone.jpg" />
+    <meta name="twitter:image" content="https://tuluvaguardian.online/1000134380.png" />
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -309,11 +309,10 @@
                     Beyond its remarkable artistic preservation, the monument points directly to one of the most volatile and legendary military eras in the history of the Tulu country: the historic border wars between the Savantas of Mulki Seeme and the Choutas of Puttige Seeme.
                 </p>
 
-                                <div class="article-image-container" style="text-align: center;">
+                <div class="article-image-container" style="text-align: center;">
                     <img src="1000134380.png" alt="17th Century Tuluva Bantagall Hero Stone" style="width: 100%; max-width: 600px; height: auto; border: 1px solid var(--border-line); box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
                     <p class="image-caption">Figure 1: The documented Bantagall (Hero Stone) showing the authentic 17th-century combat gear, the distinctive Patti headpiece, and the central Paricha shield currently revered by local communities.</p>
                 </div>
-
 
                 <h2>The Anatomy of a Tuluva Hero</h2>
                 <p>
@@ -400,4 +399,3 @@
 
 </body>
 </html>
-
