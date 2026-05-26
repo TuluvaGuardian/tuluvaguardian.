@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+            <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,7 @@
             --primary-color: #4A1525; /* Deep Crimson/Maroon */
             --secondary-color: #D4AF37; /* Gold Accent */
             --text-color: #2C2C2C;
-            --bg-color: #FDFBF7; /* Soft Parchment */
+            --bg-color: #FDFBF7; /* Soft Parchment background */
             --card-bg: #FFFFFF;
         }
 
@@ -33,6 +33,17 @@
             border-bottom: 2px solid var(--primary-color);
             padding-bottom: 20px;
             margin-bottom: 40px;
+        }
+
+        /* Logo Styling */
+        .logo-wrapper {
+            margin-bottom: 15px;
+        }
+
+        .logo-image {
+            max-width: 180px;
+            height: auto;
+            display: inline-block;
         }
 
         .site-title {
@@ -78,7 +89,7 @@
             text-align: justify;
         }
 
-        /* Image Styling */
+        /* Image Section Styling */
         .image-container {
             margin: 40px 0;
             background: var(--card-bg);
@@ -103,7 +114,7 @@
             padding-top: 8px;
         }
 
-        /* Quote / Callout Block */
+        /* Quote Callouts */
         blockquote {
             background-color: #F4EFE6;
             border-left: 4px solid var(--primary-color);
@@ -122,7 +133,7 @@
             font-family: sans-serif;
         }
 
-        /* Feature Flex Layout for Nexus Section */
+        /* Info Display Layout */
         .nexus-box {
             background: #FDFBF7;
             border: 2px dashed var(--secondary-color);
@@ -175,6 +186,11 @@
 
     <div class="container">
         <header>
+            <div class="logo-wrapper">
+                <a href="index.html">
+                    <img src="logo.png" alt="The Tuluva Guardian Logo" class="logo-image">
+                </a>
+            </div>
             <div class="site-title">The Tuluva Guardian</div>
             <h1>THE ROYAL INK OF VIJAYANAGARA:<br>How Immadi Harihara and Poet Arunabja Proved Tulu’s Imperial Status</h1>
             <div class="meta-info">By Special Correspondent | Heritage & History Series</div>
@@ -186,9 +202,9 @@
             <p>However, a revolutionary convergence of epigraphical art, literary discoveries, and timeline cross-verification has shattered this minimalist narrative. The evidence reveals a staggering truth: during the high medieval period, the imperial court of Vijayanagara wasn't just governing Tulu Nadu—it was utterly mesmerized by it. At the center of this cultural renaissance stands the fascinating figure of Emperor <strong>Immadi Harihara (Harihara II, r. 1377–1404 CE)</strong> and his contemporary, the brilliant local poet <strong>Arunabja of Kodavoor</strong>.</p>
 
             <div class="image-container">
-                <img src="harihara_stela.jpg" alt="Intricate Stone Sculpture of Composite Deity Harihara with Dashavatara frame">
+                <img src="1000134563.jpg" alt="Intricate Stone Sculpture of Composite Deity Harihara with Dashavatara frame">
                 <div class="image-caption">
-                    <strong>Figure 1:</strong> An intricate medieval Ekanyasa Harihara stela showing the precise vertical split between Shiva (Hara) and Vishnu (Hari), framed by the Dashavatara. This iconographic synthesis directly mirrored the Sangama dynasty's coastal statecraft.
+                    <strong>Figure 1:</strong> The intricate medieval Ekanyasa Harihara stela showing the precise vertical split between Shiva (Hara) and Vishnu (Hari), framed by the Dashavatara. This iconographic synthesis directly mirrored the Sangama dynasty's coastal statecraft.
                 </div>
             </div>
 
@@ -203,7 +219,7 @@
             <div class="image-container">
                 <img src="tulu_manuscript.jpg" alt="Ancient Tulu-Tigalari Palm-Leaf Manuscript">
                 <div class="image-caption">
-                    <strong>Figure 2:</strong> Palm-leaf manuscripts using the high-register Tulu-Tigalari script allowed local epics and state records to survive the centuries.
+                    <strong>Figure 2:</strong> Classical compositions using the high-register Tulu-Tigalari script allowed local epics and state narratives to be beautifully preserved on palm leaves.
                 </div>
             </div>
 
@@ -212,7 +228,7 @@
             <h2>The Crucial Link: Arunabja of Kodavoor</h2>
             <p>If skeptics initially viewed a royal Tulu epic as an isolated anomaly, the timeline provides an airtight rebuttal through the genius of Arunabja. Living in Kodavoor, right in the heart of the Udupi coastal belt, Arunabja composed his own magnificent <em>Tulu Mahabharato</em> around <strong>1383 CE</strong>. This date places him as an exact contemporary to the reign of Immadi Harihara.</p>
 
-            <blockquote>
+            <blockquote id="historical-quote">
                 "Teliwullakulu bhumi tulai Ramayana kavya tulu bhashe kavikulu vistaritereiyer..."
                 <footer>— Arunabja, Tulu Mahabharato (1383 CE)</footer>
             </blockquote>
@@ -242,4 +258,3 @@
 
 </body>
 </html>
-
