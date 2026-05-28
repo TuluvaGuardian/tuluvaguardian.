@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,15 +23,48 @@
     <meta name="twitter:description" content="With 65% to 70% of the Tulu population residing in the Netravati basin, an unprecedented salinity ingress crisis looms.">
     <meta name="twitter:image" content="https://tuluvaguardian.online/Screenshot_20260528-083339~2.png">
     
-    <!-- Rest of your styling remains exactly the same -->
     <style>
-        /* ... keeping your existing styles ... */
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #111; max-width: 800px; margin: 0 auto; padding: 20px; background: #fff; }
+        header { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 15px; }
+        .logo img { display: block; margin-bottom: 10px; }
+        
+        /* Navigation Links Layout matching 1000134797_2.png */
+        nav ul { list-style: none; padding: 0; margin: 0; display: flex; gap: 15px; }
+        nav ul li a { color: #3b5998; text-decoration: underline; font-size: 0.9rem; cursor: pointer; font-weight: 500; }
+        
+        .category-tag { color: #666; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; display: block; margin-top: 15px; }
+        h1 { font-family: "Georgia", serif; font-size: 2.2rem; line-height: 1.2; margin: 5px 0 15px 0; font-weight: 800; }
+        .subheading { font-size: 1.1rem; color: #444; margin-bottom: 15px; line-height: 1.4; }
+        .meta-data { font-size: 0.9rem; color: #333; margin-bottom: 25px; }
+        .meta-data strong { color: #000; }
+        
+        figure { margin: 25px 0; padding: 0; }
+        figure img { width: 100%; height: auto; display: block; }
+        figcaption { font-size: 0.85rem; color: #555; margin-top: 8px; line-height: 1.4; font-style: italic; }
+        
+        .article-body h3 { font-family: "Georgia", serif; font-size: 1.3rem; margin-top: 30px; margin-bottom: 10px; font-weight: bold; }
+        .article-body p { margin-bottom: 18px; font-size: 1.05rem; color: #222; }
+        blockquote { margin: 30px 20px; padding-left: 15px; border-left: 4px solid #ccc; font-style: italic; color: #444; font-size: 1.1rem; }
+        
+        .share-buttons { margin-top: 40px; padding-top: 15px; border-top: 1px solid #eee; font-size: 0.9rem; }
+        .share-buttons a { color: #3b5998; text-decoration: underline; margin-right: 10px; }
+        footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; font-size: 0.8rem; color: #555; }
+
+        /* Pop-up Modals for Routing Historical Archives */
+        .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1000; justify-content: center; align-items: center; }
+        .modal-content { background: #fff; padding: 25px; border-radius: 6px; max-width: 550px; width: 90%; max-height: 80vh; overflow-y: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+        .modal-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #b22222; padding-bottom: 10px; margin-bottom: 15px; }
+        .modal-header h3 { margin: 0; color: #b22222; font-family: "Georgia", serif; }
+        .close-btn { background: none; border: none; font-size: 1.5rem; font-weight: bold; cursor: pointer; color: #666; }
+        .archive-item { margin-bottom: 15px; padding-bottom: 10px; border-bottom: 1px solid #eee; }
+        .archive-item a { color: #b22222; font-weight: bold; text-decoration: none; display: block; font-size: 1rem; }
+        .archive-item a:hover { text-decoration: underline; }
+        .archive-item span { font-size: 0.8rem; color: #666; display: block; margin-top: 3px; }
     </style>
 </head>
-
 <body>
 
-    <!-- Main Website Header Container -->
+    <!-- Header System matching your verified template framework -->
     <header>
         <div class="logo">
             <a href="index.html">
@@ -39,7 +73,7 @@
         </div>
         <nav>
             <ul>
-                <!-- Trigger buttons for JavaScript Modals containing old news -->
+                <!-- Functional navigation links targeting modal content drawers -->
                 <li><a onclick="openModal('news-modal')">News</a></li>
                 <li><a onclick="openModal('history-modal')">History</a></li>
                 <li><a onclick="openModal('epigraphy-modal')">Epigraphy</a></li>
@@ -47,7 +81,7 @@
         </nav>
     </header>
 
-    <!-- Main Content Container -->
+    <!-- Main Live Journalism Feed Content -->
     <main>
         <article>
             <header class="article-header">
@@ -61,13 +95,13 @@
                 </div>
             </header>
 
-            <!-- Figure 1: Blueprint Map Image -->
+            <!-- Figure 1: Core Project Overview Map Frame -->
             <figure>
                 <img src="Screenshot_20260528-083339~2.png" alt="Satellite map showcasing Yettinahole project natural versus diverted river paths">
                 <figcaption>Figure 1: The blueprint of diversion. The blue lines mark the natural, historic flow toward the Netravati basin, while the red networks map the systematic redirection of our headwaters.</figcaption>
             </figure>
 
-            <!-- Article Content Body Section -->
+            <!-- Ground Investigation Report Body Text Section -->
             <section class="article-body">
                 <p>While the state celebrates the final countdown for the Yettinahole Integrated Drinking Water Project, a silent disaster is creeping toward coastal Karnataka.</p>
                 
@@ -78,7 +112,7 @@
                 <h3>1. The Salinity Ingress Threat</h3>
                 <p>By diverting massive volumes of monsoon water from headwaters like Yettinahole, Kadumanehole, and Kerihole, the natural freshwater pressure pushing down toward the Arabian Sea will drastically drop.</p>
 
-                <!-- Figure 2: Pipeline Invasion Image -->
+                <!-- Figure 2: Visual Pipeline Corridor Frame -->
                 <figure>
                     <img src="Yettinahole-pipeline (1).jpg" alt="Massive water diversion pipelines cut through the Western Ghats landscape">
                     <figcaption>Figure 2: Giant steel pipelines carving deep scars into the coastal periphery to funnel monsoon volumes away from the Netravati.</figcaption>
@@ -90,7 +124,7 @@
                 <h3>3. Ruined Agricultural Belts</h3>
                 <p>The ingress of saltwater doesn't just ruin drinking water; it seeps directly into the coastal groundwater table, destroying the fertile agricultural soil along the riverbanks that Tuluva farmers have cultivated for generations.</p>
 
-                <!-- Figure 3: Ghats Excavation Image -->
+                <!-- Figure 3: Mechanical Footprint Landscape Excavation Frame -->
                 <figure>
                     <img src="construction-in-western-ghats.jpg" alt="Heavy earth-moving machinery digging out hillsides in the eco-sensitive Western Ghats">
                     <figcaption>Figure 3: Heavy industrial machinery working inside the eco-sensitive terrain of the Western Ghats, altering hill-slopes that feed our perennial streams.</figcaption>
@@ -111,7 +145,7 @@
                 <p>The survival of our coastal ecosystem depends entirely on immediate, transparent hydrological assessments before the pumps go into overdrive next year.</p>
             </section>
 
-            <!-- Share Links Panel -->
+            <!-- Sharing Layout System Links Block -->
             <footer class="article-footer">
                 <div class="share-buttons">
                     <span>Share this investigation:</span>
@@ -123,17 +157,17 @@
         </article>
     </main>
 
-    <!-- Global Layout Website Footer Footer -->
+    <!-- Base Identity Site Wide Footer -->
     <footer>
         &copy; 2026 The Tuluva Guardian. Safeguarding the Heritage, Language, and Ecology of Tulunadu.
     </footer>
 
 
-    <!-- ==========================================
-         ARCHIVAL MODAL POPUPS (OLD NEWS HOOKED TO NAV)
-         ========================================== -->
+    <!-- =======================================================
+         ARCHIVAL SEMANTIC MODAL DRAWERS (PREVIOUS PAPERS HOOKED)
+         ======================================================= -->
 
-    <!-- NEWS ARCHIVE DROPDOWN/MODAL -->
+    <!-- CATEGORY BACKLOG DRAWER: NEWS & ADVOCACY -->
     <div id="news-modal" class="modal" onclick="closeModalOnOuterClick(event, 'news-modal')">
         <div class="modal-content">
             <div class="modal-header">
@@ -155,7 +189,7 @@
         </div>
     </div>
 
-    <!-- HISTORY ARCHIVE DROPDOWN/MODAL -->
+    <!-- CATEGORY BACKLOG DRAWER: REGIONAL HISTORY RESEARCH -->
     <div id="history-modal" class="modal" onclick="closeModalOnOuterClick(event, 'history-modal')">
         <div class="modal-content">
             <div class="modal-header">
@@ -181,7 +215,7 @@
         </div>
     </div>
 
-    <!-- EPIGRAPHY ARCHIVE DROPDOWN/MODAL -->
+    <!-- CATEGORY BACKLOG DRAWER: EPIGRAPHY, FONT & SCRIPTS PROJECTS -->
     <div id="epigraphy-modal" class="modal" onclick="closeModalOnOuterClick(event, 'epigraphy-modal')">
         <div class="modal-content">
             <div class="modal-header">
@@ -208,7 +242,7 @@
     </div>
 
 
-    <!-- INTERACTIVE EVENT UTILITIES -->
+    <!-- MODAL DRAWER FUNCTIONALITY ROUTINES USING VANILLA DOM JS -->
     <script>
         function openModal(id) {
             document.getElementById(id).style.display = 'flex';
@@ -224,4 +258,5 @@
     </script>
 
 </body>
-</html>
+    </html>
+
