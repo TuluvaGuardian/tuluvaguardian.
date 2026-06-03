@@ -1,4 +1,4 @@
-        <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,6 +12,7 @@
             --bg-color: #fdfcf7;
             --font-serif: 'Georgia', 'Times New Roman', serif;
             --font-sans: 'Helvetica Neue', Arial, sans-serif;
+            --accent-gold: #ffcc00;
         }
 
         body {
@@ -23,34 +24,83 @@
             padding: 0;
         }
 
+        /* PORTAL HEADER IMPLEMENTATION */
+        .portal-header {
+            background: var(--primary-color);
+            color: #ffffff;
+            padding: 15px 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            border-bottom: 5px solid var(--accent-color);
+        }
+        
+        .header-container {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .portal-logo-link {
+            text-decoration: none;
+            display: inline-flex;
+        }
+        
+        .portal-logo-img {
+            width: 55px;
+            height: 55px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid var(--accent-gold);
+        }
+        
+        .brand-text {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .brand-text a {
+            text-decoration: none;
+        }
+        
+        .brand-name {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 2rem;
+            font-weight: 900;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: #ffffff;
+            margin: 0;
+            line-height: 1;
+        }
+        
+        .brand-tagline {
+            font-size: 0.75rem;
+            color: var(--accent-gold);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 5px;
+            font-weight: bold;
+        }
+
         .container {
             max-width: 800px;
             margin: 0 auto;
             padding: 40px 20px;
         }
 
-        header {
+        header.article-header {
             text-align: center;
             border-bottom: 2px solid var(--primary-color);
             padding-bottom: 30px;
             margin-bottom: 40px;
         }
 
-        .site-title {
-            font-family: var(--font-sans);
-            font-size: 1.2rem;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            color: var(--accent-color);
-            font-weight: 700;
-            margin: 0 0 20px 0;
-        }
-
-        h1 {
+        h1.article-title {
             font-size: 2.5rem;
             color: var(--primary-color);
             line-height: 1.3;
-            margin: 0 0 20px 0;
+            margin: 20px 0 20px 0;
         }
 
         .meta-info {
@@ -182,7 +232,8 @@
         }
 
         @media (max-width: 650px) {
-            h1 { font-size: 2rem; }
+            .brand-name { font-size: 1.5rem; }
+            h1.article-title { font-size: 2rem; }
             .container { padding: 20px 15px; }
             .action-grid { grid-template-columns: 1fr; gap: 25px; }
         }
@@ -190,10 +241,22 @@
 </head>
 <body>
 
+    <!-- BRAND TOP SECTION HEADER (REDIRECTS TO INDEX.HTML ON TOUCH) -->
+    <header class="portal-header">
+        <div class="header-container">
+            <a href="index.html" class="portal-logo-link">
+                <img src="logo.png" alt="Tuluva Guardian Logo" class="portal-logo-img">
+            </a>
+            <div class="brand-text">
+                <a href="index.html"><h2 class="brand-name">Tuluva Guardian</h2></a>
+                <span class="brand-tagline">The Voice of Regional Sovereignty &amp; Heritage</span>
+            </div>
+        </div>
+    </header>
+
     <article class="container">
-        <header>
-            <p class="site-title">Tuluva Guardian</p>
-            <h1>The Imperial Charter of Tuluva Sovereignty: How the Keladi Era Shattered the Myth of the Spoken Dialect</h1>
+        <header class="article-header">
+            <h1 class="article-title">The Imperial Charter of Tuluva Sovereignty: How the Keladi Era Shattered the Myth of the Spoken Dialect</h1>
             <div class="meta-info">
                 <span>Category: History &amp; Linguistic Sovereignty</span> | <span>Published: June 2026</span>
             </div>
@@ -312,17 +375,115 @@
             
             <ul>
                 <li><strong>Sri Bhagavato (1626 CE):</strong> Composed by the legendary scholar <strong>Vishnu Tunga</strong>, this monumental text stands as the premier poetic epic of the region. Exactly four centuries ago, this work weaponized complex <em>Shatpadi</em> meters to translate the dense, multi-layered philosophical discourses of the <em>Bhagavata Purana</em>. It stands as the definitive proof that Tulu possessed an elite vocabulary capable of carrying the absolute highest forms of metaphysical human thought.</li>
-                <li><strong>Kaveri (17th Century):</strong> This extensive geographic, historical, and mythological poem meticulously details the sacred origins of the Kaveri River. Composed entirely in the Tulu language using the formal Tulu-Tigalari script, it demonstrates that the intellectuals of the era were using our native script to map the sacred geography of Southern India, claiming a high-cultural space entirely independent of outside linguistic monopolies.</li>
-            </ul>
+                <li><strong>Kaveri (17th Century):</strong> This extensive geographic, historical, and mythological poem meticulously details the sacred origins of the Kaveri River. Composed entirely in the Tulu language using the formal Tulu-Tigalari script, it demonstrates that the intellectuals of the era were using our native script to map the sacred geography of Southern India, claiming a high-cultural space entirely independent of outside influences.</p>
 
-            <h2>Three Markers of Linguistic Royalty</h2>
-            <p>To understand why these texts represent absolute proof of civilizational sovereignty, one must analyze them through the three definitive pillars of linguistic royalty:</p>
+            <!-- CONTEMPORARY SOCIAL & COMMUNITY INSIGHTS SECTION -->
+            <h2>Linguistic Erasure and the Modern Narrative Battle</h2>
+            <p>The systematic effort to reduce classical languages to minor, regional oral variants is not a new tactic—it is a continuous digital and cultural phenomenon. In contemporary spaces, we often witness grassroots information battles where historical connections are stripped out by misinformed commentary or malicious intent. Authentic lineages are routinely targeted to muddy the waters of cultural custody and ancestral truths.</p>
 
-            <h3>1. Metrical Sophistication (Shatpadi Metrics)</h3>
-            <p>Adopting the rigid mathematical rules of <strong>Shatpadi (six-line stanza) poetry</strong>—as seen in Vishnu Tunga's masterpiece—proved beyond doubt that ancient Tulu possessed an elite vocabulary and a highly evolved structural discipline. Writing in Shatpadi requires an immense command over vocabulary to maintain precise meter, strict initial rhyme schemes (<em>prasa</em>), and mid-line pauses (<em>yati</em>) across complex stanzas. The fact that classical Tulu literature effortlessly utilized these demanding frameworks proves it was a sophisticated literary tongue capable of carrying dense, complex, and philosophical narratives without relying on external linguistic crutches.</p>
+            <!-- VERBATIM SOCIAL RECORD PROOF IMAGE -->
+            <div class="image-container">
+                <img src="1000135854.png" alt="Digital dialogue exchange discussing record integrity and verification of accounts">
+                <span class="image-caption">Figure 6: A documented case file (Ref: 1000135854.png) showcasing modern community dialogues regarding the systematic defense of regional accounts, record integrity, and narrative transparency against malicious digital edits.</span>
+            </div>
 
-            <h3>2. The Script of the Sovereigns (Tulu-Tigalari Preservation)</h3>
-            <p>Language is only half the battle; preservation is the ultimate victory. Recording expansive works like the <em>Kaveri</em> epic using the formal, elegant <strong>Tulu-Tigalari script</strong> permanently elevated Tulu from an unwritten spoken tongue to a highly preserved, sacred literary medium. As the administrative and spiritual technology of regional royals, priests, and scholars, this distinct script was used to commit deep historical narratives to palm-leaf manuscripts, ensuring that Tuluva thought was granted permanent, imperial preservation.</p>
+            <p>As illustrated above, modern platforms serve as critical battlegrounds where watchful preservation forces actively confront false claims and wrong captions. Protecting textual and scriptural evidence is the only defense against structural heritage theft—ensuring that external revisionist groups cannot fabricate narratives to break down traditional legacies.</p>
 
-            <h3>3. Geopolitical Autonomy (Sovereign Foundations)</h3>
-            <p>Great literature requires economic stability and peace to flourish. The geopolitical autonomy and trade security generated during the golden era of 
+            <!-- RETURN NAVIGATION DISPATCH TRIGGER -->
+            <div style="margin: 45px 0 25px 0; text-align: center;">
+                <hr style="border: 0; border-top: 1px solid #dcd7ca; margin-bottom: 40px;">
+                <a href="index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 14px;
+                    background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+                    color: #ffffff;
+                    font-family: var(--font-sans);
+                    font-size: 0.9rem;
+                    font-weight: 700;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    padding: 18px 36px;
+                    border-radius: 4px;
+                    border: 2px solid var(--accent-color);
+                    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+                    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+                    width: 100%;
+                    max-width: 380px;
+                "
+                onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 24px rgba(177, 39, 4, 0.3)'; this.style.background='linear-gradient(135deg, #b12704 0%, #d03a10 100%)'; this.style.borderColor='#1a1a1a';"
+                onmouseout="this.style.transform='translateY(0px)'; this.style.boxShadow='0 6px 20px rgba(0, 0, 0, 0.15)'; this.style.background='linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%)'; this.style.borderColor='#b12704';">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                        <polyline points="12 19 5 12 12 5"></polyline>
+                    </svg>
+                    <span>Return to Tuluva Guardian</span>
+                </a>
+            </div>
+
+            <!-- COMMUNITY INTERACTION ACTION GRID -->
+            <div class="action-grid">
+                
+                <!-- WHATSAPP INTEL CHANNEL -->
+                <div class="action-card whatsapp">
+                    <div>
+                        <span style="color: #25D366; font-family: var(--font-sans); font-size: 0.75rem; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; display: block; margin-bottom: 8px;">
+                            ⚡ INTELLIGENCE STREAM
+                        </span>
+                        <h3 style="color: #ffffff; font-family: var(--font-sans); font-size: 1.1rem; margin: 0 0 10px 0; font-weight: 700;">
+                            WhatsApp Dispatch
+                        </h3>
+                        <p style="color: #999999; font-size: 0.85rem; line-height: 1.5; margin: 0 0 20px 0;">
+                            Get real-time historical research, script developments, and unedited archives.
+                        </p>
+                    </div>
+                    <a href="https://whatsapp.com/channel/0029Vb7Yxsg7Noa9O0Ik2k3b" target="_blank" style="
+                        background: #25D366; color: #ffffff; font-family: var(--font-sans); font-size: 0.8rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; text-decoration: none; padding: 12px 20px; border-radius: 4px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; transition: all 0.2s ease;
+                    "
+                    onmouseover="this.style.background='#20ba5a'; this.style.boxShadow='0 4px 12px rgba(37, 211, 102, 0.4)';"
+                    onmouseout="this.style.background='#25D366'; this.style.boxShadow='none';">
+                        <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.503-5.714-1.458L0 24zm6.59-4.846c1.66.986 3.288 1.478 4.756 1.479 5.433 0 9.85-4.388 9.854-9.785.002-2.615-1.001-5.074-2.825-6.899C16.551 2.124 14.114 1.12 11.583 1.12c-5.438 0-9.855 4.387-9.86 9.785-.002 1.83.477 3.62 1.39 5.2l-.23.84-.943 3.443 3.535-.924.742.44zm11.367-5.593c-.31-.154-1.834-.905-2.115-1.007-.28-.102-.485-.153-.69.154-.204.307-.79.153-.943-1.007-.153-.153-.306-.23-.616-.385-1.353-.674-2.155-1.637-2.613-2.427-.2-.342-.023-.526.149-.697.154-.154.343-.41.513-.615.172-.205.23-.35.343-.58.115-.23.057-.43-.028-.583-.086-.154-.685-1.654-.938-2.26-.247-.594-.5-.513-.685-.523-.177-.01-.38-.01-.582-.01-.203 0-.533.077-.812.384-.28.308-1.066 1.043-1.066 2.544s1.091 2.95 1.243 3.155c.153.205 2.147 3.28 5.2 4.6c.725.313 1.291.5 1.732.64.73.232 1.395.2 1.92.122.585-.087 1.834-.75 2.09-1.473.256-.723.256-1.344.179-1.473-.077-.13-.28-.205-.59-.36z"/></svg>
+                        <span>Subscribe</span>
+                    </a>
+                </div>
+
+                <!-- TELEGRAM ADVOCACY HUB -->
+                <div class="action-card telegram">
+                    <div>
+                        <span style="color: #0088cc; font-family: var(--font-sans); font-size: 0.75rem; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; display: block; margin-bottom: 8px;">
+                            ⚖️ ADVOCACY HUB
+                        </span>
+                        <h3 style="color: #ffffff; font-family: var(--font-sans); font-size: 1.1rem; margin: 0 0 10px 0; font-weight: 700;">
+                            Telegram Petition
+                        </h3>
+                        <p style="color: #999999; font-size: 0.85rem; line-height: 1.5; margin: 0 0 20px 0;">
+                            Join our active mobilization forces for official recognition and script integration.
+                        </p>
+                    </div>
+                    <a href="https://t.me/Tuluvagela" target="_blank" style="
+                        background: #0088cc; color: #ffffff; font-family: var(--font-sans); font-size: 0.8rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; text-decoration: none; padding: 12px 20px; border-radius: 4px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; transition: all 0.2s ease;
+                    "
+                    onmouseover="this.style.background='#0077b3'; this.style.boxShadow='0 4px 12px rgba(0, 136, 204, 0.4)';"
+                    onmouseout="this.style.background='#0088cc'; this.style.boxShadow='none';">
+                        <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.565 8.161c-.156 1.425-.85 5.517-1.205 7.412-.15.801-.445 1.07-.732 1.096-.623.056-1.096-.411-1.698-.806-.944-.619-1.477-.977-2.393-1.581-1.059-.697-.373-1.08.232-1.71.158-.164 2.904-2.664 2.957-2.893.006-.028.012-.135-.05-.19-.063-.056-.156-.037-.223-.022-.095.021-1.61 1.026-4.546 3.011-.43.296-.82.441-1.172.433-.387-.008-1.13-.219-1.683-.399-.679-.221-1.219-.338-1.172-.714.025-.196.293-.397.803-.604 3.143-1.371 5.241-2.276 6.294-2.715 2.993-1.253 3.616-1.471 4.021-1.478.09 0 .29.022.419.128.111.089.141.211.151.297.01.091.023.291.012.437z"/></svg>
+                        <span>Join Petition</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="conclusion-block">
+            <h2>Conclusion: A Legacy Restored</h2>
+            <p>The discovery, timeline dating, and physical archival documentation of these classical texts prove a historic truth that has been obscured for centuries: <strong>ancient Tulu was never a minor, localized tongue.</strong></p>
+            <p>It was an elite language of high culture—a language that sat in royal courts, moved the pens of kings, and matched the structural and philosophical complexity of Sanskrit line for line. The alliance between the Keladi rulers and the Tuluva aristocracy proved that our heritage was not built on subjugation, but on structural, economic, and literary partnership. For the modern Tuluva community, these palm-leaf manuscripts are not merely dusty relics of a bygone era. They are the undeniable, historic charter of Tulu's enduring imperial identity and a sovereign literary legacy restored.</p>
+        </section>
+    </article>
+
+</body>
+</html>
+
+                        
