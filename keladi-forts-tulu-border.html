@@ -1,57 +1,44 @@
-<!DOCTYPE html>
+       <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Imperial Charter of Tuluva Sovereignty - Tuluva Guardian</title>
     
-    <!-- LINK IDENTIFIER -->
     <link rel="canonical" href="https://tuluvaguardian.com/keladi-forts-tulu-border.html" />
 
-    <!-- TWITTER CARD SPECIFIC CORE -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@Tuluvagela">
-    <meta name="twitter:creator" content="@Tuluvagela">
+    <meta name="twitter:site" content="@Tuluvaguardian">
+    <meta name="twitter:creator" content="@Tuluvaguardian">
     <meta name="twitter:title" content="The Imperial Charter of Tuluva Sovereignty: How the Keladi Era Shattered the Myth of the Spoken Dialect">
-    <meta name="twitter:description" content="Explore how the absolute geopolitical stability of the Keladi Kingdom fostered a dense concentration of high-courtly, written masterpieces in the Tulu-Tigalari script.">
-    <!-- Twitter Primary Default Fallback Asset -->
+    <meta name="twitter:description" content="Explore how the absolute geopolitical stability of the Keladi Kingdom fostered a dense concentration of high-courtly, written masterpieces in the native Tulu script.">
     <meta name="twitter:image" content="https://tuluvaguardian.com/1000135696.jpg">
 
-    <!-- OPEN GRAPH CORE -->
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://tuluvaguardian.com/keladi-forts-tulu-border.html">
     <meta property="og:title" content="The Imperial Charter of Tuluva Sovereignty: How the Keladi Era Shattered the Myth of the Spoken Dialect">
-    <meta property="og:description" content="Explore how the absolute geopolitical stability of the Keladi Kingdom fostered a dense concentration of high-courtly, written masterpieces in the Tulu-Tigalari script.">
+    <meta property="og:description" content="Explore how the absolute geopolitical stability of the Keladi Kingdom fostered a dense concentration of high-courtly, written masterpieces in the native Tulu script.">
     <meta property="og:site_name" content="Tuluva Guardian">
     
-    <!-- COMPLETE OPEN GRAPH IMAGE ARRAY (Mapped to 1000135874.png) -->
-    
-    <!-- Image 1: Manuscripts (Primary Feature) -->
     <meta property="og:image" content="https://tuluvaguardian.com/1000135696.jpg">
     <meta property="og:image:secure_url" content="https://tuluvaguardian.com/1000135696.jpg">
     <meta property="og:image:type" content="image/jpeg">
 
-    <!-- Image 2: Shivappa Nayaka Statue -->
     <meta property="og:image" content="https://tuluvaguardian.com/1000135692.png">
     <meta property="og:image:secure_url" content="https://tuluvaguardian.com/1000135692.png">
     <meta property="og:image:type" content="image/png">
 
-    <!-- Image 3: Venkatappa Nayaka Painting -->
     <meta property="og:image" content="https://tuluvaguardian.com/1000135693.jpg">
     <meta property="og:image:secure_url" content="https://tuluvaguardian.com/1000135693.jpg">
     <meta property="og:image:type" content="image/jpeg">
 
-    <!-- Image 4: Chandragiri Fort Watchtower -->
     <meta property="og:image" content="https://tuluvaguardian.com/1000135697.jpg">
     <meta property="og:image:secure_url" content="https://tuluvaguardian.com/1000135697.jpg">
     <meta property="og:image:type" content="image/jpeg">
 
-    <!-- Image 5: Bekal Fort Observation Portals -->
     <meta property="og:image" content="https://tuluvaguardian.com/1000135706.png">
     <meta property="og:image:secure_url" content="https://tuluvaguardian.com/1000135706.png">
     <meta property="og:image:type" content="image/png">
-    
-    <
 
     <style>
         :root {
@@ -62,6 +49,7 @@
             --font-serif: 'Georgia', 'Times New Roman', serif;
             --font-sans: 'Helvetica Neue', Arial, sans-serif;
             --accent-gold: #ffcc00;
+            --table-border: #dcd7ca;
         }
 
         body {
@@ -73,7 +61,6 @@
             padding: 0;
         }
 
-        /* PORTAL HEADER IMPLEMENTATION */
         .portal-header {
             background: var(--primary-color);
             color: #ffffff;
@@ -142,7 +129,7 @@
             text-align: center;
             border-bottom: 2px solid var(--primary-color);
             padding-bottom: 30px;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
 
         h1.article-title {
@@ -218,6 +205,50 @@
             padding: 0 10px;
         }
 
+        .historical-table-wrapper {
+            overflow-x: auto;
+            margin: 35px 0;
+            border: 1px solid var(--table-border);
+            border-radius: 6px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+        }
+
+        table.historical-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: var(--font-sans);
+            font-size: 0.95rem;
+            background-color: #ffffff;
+            text-align: left;
+        }
+
+        table.historical-table th {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            padding: 14px 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
+            border-bottom: 3px solid var(--accent-color);
+        }
+
+        table.historical-table td {
+            padding: 14px 16px;
+            border-bottom: 1px solid var(--table-border);
+            color: #333333;
+            line-height: 1.5;
+            vertical-align: top;
+        }
+
+        table.historical-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        table.historical-table tr:nth-child(even) {
+            background-color: #fcfbvar #f9f8f3;
+        }
+
         .pipeline-box {
             background-color: #f4f1ea;
             border: 1px solid #dcd7ca;
@@ -240,18 +271,17 @@
             text-align: justify;
         }
 
-        /* Community Action Grid Layout */
         .action-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 20px;
-            margin: 40px 0;
+            margin: 30px 0 40px 0;
         }
 
         .action-card {
             background: #111111;
             border-radius: 6px;
-            padding: 25px;
+            padding: 20px 25px;
             text-align: center;
             box-shadow: 0 10px 30px rgba(0,0,0,0.2);
             display: flex;
@@ -290,7 +320,6 @@
 </head>
 <body>
 
-    <!-- BRAND TOP SECTION HEADER (REDIRECTS TO INDEX.HTML ON TOUCH) -->
     <header class="portal-header">
         <div class="header-container">
             <a href="index.html" class="portal-logo-link">
@@ -310,10 +339,57 @@
                 <span>Category: History &amp; Linguistic Sovereignty</span> | <span>Published: June 2026</span>
             </div>
             
-            <!-- SCRIPT EVIDENCE IMAGE -->
+            <div class="action-grid">
+                
+                <div class="action-card whatsapp">
+                    <div>
+                        <span style="color: #25D366; font-family: var(--font-sans); font-size: 0.75rem; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; display: block; margin-bottom: 8px;">
+                            ⚡ INTELLIGENCE STREAM
+                        </span>
+                        <h3 style="color: #ffffff; font-family: var(--font-sans); font-size: 1.1rem; margin: 0 0 10px 0; font-weight: 700;">
+                            WhatsApp Dispatch
+                        </h3>
+                        <p style="color: #999999; font-size: 0.85rem; line-height: 1.5; margin: 0 0 20px 0;">
+                            Get real-time historical research, script developments, and unedited archives.
+                        </p>
+                    </div>
+                    <a href="https://whatsapp.com/channel/0029Vb7Yxsg7Noa9O0Ik2k3b" target="_blank" style="
+                        background: #25D366; color: #ffffff; font-family: var(--font-sans); font-size: 0.8rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; text-decoration: none; padding: 12px 20px; border-radius: 4px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; transition: all 0.2s ease;
+                    "
+                    onmouseover="this.style.background='#20ba5a'; this.style.boxShadow='0 4px 12px rgba(37, 211, 102, 0.4)';"
+                    onmouseout="this.style.background='#25D366'; this.style.boxShadow='none';">
+                        <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.503-5.714-1.458L0 24zm6.59-4.846c1.66.986 3.288 1.478 4.756 1.479 5.433 0 9.85-4.388 9.854-9.785.002-2.615-1.001-5.074-2.825-6.899C16.551 2.124 14.114 1.12 11.583 1.12c-5.438 0-9.855 4.387-9.86 9.785-.002 1.83.477 3.62 1.39 5.2l-.23.84-.943 3.443 3.535-.924.742.44zm11.367-5.593c-.31-.154-1.834-.905-2.115-1.007-.28-.102-.485-.153-.69.154-.204.307-.79.153-.943-1.007-.153-.153-.306-.23-.616-.385-1.353-.674-2.155-1.637-2.613-2.427-.2-.342-.023-.526.149-.697.154-.154.343-.41.513-.615.172-.205.23-.35.343-.58.115-.23.057-.43-.028-.583-.086-.154-.685-1.654-.938-2.26-.247-.594-.5-.513-.685-.523-.177-.01-.38-.01-.582-.01-.203 0-.533.077-.812.384-.28.308-1.066 1.043-1.066 2.544s1.091 2.95 1.243 3.155c.153.205 2.147 3.28 5.2 4.6c.725.313 1.291.5 1.732.64.73.232 1.395.2 1.92.122.585-.087 1.834-.75 2.09-1.473.256-.723.256-1.344.179-1.473-.077-.13-.28-.205-.59-.36z"/></svg>
+                        <span>Subscribe</span>
+                    </a>
+                </div>
+
+                <div class="action-card telegram">
+                    <div>
+                        <span style="color: #0088cc; font-family: var(--font-sans); font-size: 0.75rem; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; display: block; margin-bottom: 8px;">
+                            ⚖️ ADVOCACY HUB
+                        </span>
+                        <h3 style="color: #ffffff; font-family: var(--font-sans); font-size: 1.1rem; margin: 0 0 10px 0; font-weight: 700;">
+                            Telegram Petition
+                        </h3>
+                        <p style="color: #999999; font-size: 0.85rem; line-height: 1.5; margin: 0 0 20px 0;">
+                            Join our active mobilization forces for official recognition and script integration.
+                        </p>
+                    </div>
+                    <a href="https://t.me/Tuluvagela" target="_blank" style="
+                        background: #0088cc; color: #ffffff; font-family: var(--font-sans); font-size: 0.8rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; text-decoration: none; padding: 12px 20px; border-radius: 4px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; transition: all 0.2s ease;
+                    "
+                    onmouseover="this.style.background='#0077b3'; this.style.boxShadow='0 4px 12px rgba(0, 136, 204, 0.4)';"
+                    onmouseout="this.style.background='#0088cc'; this.style.boxShadow='none';">
+                        <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.565 8.161c-.156 1.425-.85 5.517-1.205 7.412-.15.801-.445 1.07-.732 1.096-.623.056-1.096-.411-1.698-.806-.944-.619-1.477-.977-2.393-1.581-1.059-.697-.373-1.08.232-1.71.158-.164 2.904-2.664 2.957-2.893.006-.028.012-.135-.05-.19-.063-.056-.156-.037-.223-.022-.095.021-1.61 1.026-4.546 3.011-.43.296-.82.441-1.172.433-.387-.008-1.13-.219-1.683-.399-.679-.221-1.219-.338-1.172-.714.025-.196.293-.397.803-.604 3.143-1.371 5.241-2.276 6.294-2.715 2.993-1.253 3.616-1.471 4.021-1.478.09 0 .29.022.419.128.111.089.141.211.151.297.01.091.023.291.012.437z"/></svg>
+                        <span>Join Petition</span>
+                    </a>
+                </div>
+
+            </div>
+            
             <div class="image-container">
-                <img src="1000135696.jpg" alt="Classical Tulu Tigalari script written on palm leaf manuscripts">
-                <span class="image-caption">Figure 1: Authentic palm-leaf manuscripts documenting historical regional literature, demonstrating the highly structured classical nature of the Tulu script (Tigalari Lipi).</span>
+                <img src="1000135696.jpg" alt="Classical Tulu script written on palm leaf manuscripts">
+                <span class="image-caption">Figure 1: Authentic palm-leaf manuscripts documenting historical regional literature, demonstrating the highly structured classical nature of the native Tulu script.</span>
             </div>
         </header>
 
@@ -325,15 +401,13 @@
             <h2>The Crown and the Script: Venkatappa the Catalyst &amp; Shivappa the Grand Preserver</h2>
             <p>The golden age of written Tulu literature did not occur by accident; it was a sustained, state-sponsored imperial project. While the spark of this literary renaissance was lit during the reign of <strong>Hiriya Venkatappa Nayaka</strong>—under whose rule the monumental <em>Sri Bhagavato</em> was composed in 1626 CE—it was his legendary successor, <strong>Keladi Shivappa Nayaka</strong>, who transformed the royal court into a massive preservation sanctuary for the Tulu language and its unique script.</p>
 
-            <!-- KING HIRIYA VENKATAPPA NAYAKA IMAGE -->
             <div class="image-container portrait">
                 <img src="1000135693.jpg" alt="Historical painting depicting Hiriya Venkatappa Nayaka on horseback">
                 <span class="image-caption">Figure 2: Hiriya Venkatappa Nayaka, the sovereign under whose foundational reign the classical Tulu renaissance was ignited with courtly literary backing.</span>
             </div>
 
-            <p>If critics demand unarguable material evidence of this linguistic royalty, they need only look to the surviving archives of the kingdom. To this day, visitors to regional archives will find the undeniable fruits of this royal patronage: <strong>over 75% of the ancient palm-leaf manuscripts preserved from his royal treasury and archives are written in the Tulu script (Tigalari Lipi).</strong> Amidst an era of heavy regional warfare, Shivappa Nayaka systematically collected, cataloged, and protected these coastal manuscripts—spanning classical literature, Vedic sciences, and local lore—saving a civilization's intellectual wealth from permanent destruction.</p>
+            <p>If critics demand unarguable material evidence of this linguistic royalty, they need only look to the surviving archives of the kingdom. To this day, visitors to regional archives will find the undeniable fruits of this royal patronage: <strong>over 75% of the ancient palm-leaf manuscripts preserved from his royal treasury and archives are written in the native Tulu script.</strong> Amidst an era of heavy regional warfare, Shivappa Nayaka systematically collected, cataloged, and protected these coastal manuscripts—spanning classical literature, Vedic sciences, and local lore—saving a civilization's intellectual wealth from permanent destruction.</p>
 
-            <!-- KING KELADI SHIVAPPA NAYAKA IMAGE -->
             <div class="image-container portrait">
                 <img src="1000135692.png" alt="Equestrian bronze statue of Keladi Shivappa Nayaka">
                 <span class="image-caption">Figure 3: The iconic statue of Keladi Shivappa Nayaka (Reign: 1645–1660 CE), the master strategist, economic reformer, and military guardian of the West Coast.</span>
@@ -358,22 +432,39 @@
                     │
                     ▼
 ┌────────────────────────────────────────┐
-│  Classical Literary &amp; Manuscript Boom  │ (Scribes ink epics in Tulu Lipi)
+│  Classical Literary &amp; Manuscript Boom  │ (Scribes ink epics in Native Tulu Lipi)
 └────────────────────────────────────────┘</div>
 
             <p>Because the coastal ports of Barkur and Mangalore were the global epicenters of the highly lucrative pepper and rice trade, Shivappa Nayaka systematically tailored the <em>Sistu</em> system to match the unique coastal ecology of Tulunadu. Rather than imposing blind imperial taxes, the <em>Sistu</em> was calculated using local agricultural parameters.</p>
 
-            <h3>1. Scripting the Economy in Tulu (Administrative Validity)</h3>
-            <p>To execute this monumental land reform on the ground, the Keladi administration had to speak the language of the soil. Government land records, tax receipts, and imperial revenue charts distributed to coastal landlords were recorded using the Tulu-Tigalari script. By integrating <em>Sistu</em> into the local written medium, the Keladi state gave Tulu official, administrative, and legal validity.</p>
-
-            <h3>2. Empowering the Guthu and Beedu Families (The Custodians of Capital)</h3>
-            <p>Because the <em>Sistu</em> system protected agrarian yields from erratic over-taxation, it allowed the traditional Tuluva elite—the Guthu and Beedu feudal families—to accumulate unprecedented generational wealth. This surplus revenue directly fueled the golden age of coastal culture. The very families who managed the <em>Sistu</em> lands used their wealth directly to fund the arts:</p>
-            
-            <ul>
-                <li><strong>Commission Masterpiece Manuscripts:</strong> They hired elite scribes to meticulously ink foundational epics onto high-grade palm leaves using the sacred Tulu-Tigalari script.</li>
-                <li><strong>Establish Script Sanctuaries:</strong> The massive, sprawling wooden architecture of the Guthu Manes became regional repositories and private archives, protecting sacred literature and Vedic sciences from the humid coastal climate and wartime plunder.</li>
-                <li><strong>Endow Ritual and Folk Arts:</strong> The financial security provided by the Keladi revenue reforms allowed these feudal manors to patronize and scale grand regional traditions, cementing a distinct cultural identity that stood proudly and independently of outside influences.</li>
-            </ul>
+            <div class="historical-table-wrapper">
+                <table class="historical-table">
+                    <thead>
+                        <tr>
+                            <th>Sistu Dynamic</th>
+                            <th>Administrative &amp; Cultural Impact</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Scripting the Economy</strong></td>
+                            <td>Government land records, tax receipts, and imperial revenue charts distributed to coastal landlords were strictly recorded using the <strong>native Tulu script</strong>, granting the written medium structural, official validity.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Empowering Guthu Manes</strong></td>
+                            <td>Protected agrarian yields allowed the traditional Tuluva elite to accumulate unprecedented capital, converting feudal manors into private script sanctuaries.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Manuscript Endowments</strong></td>
+                            <td>Surplus trade revenues funded elite scribes to ink foundational epics onto high-grade palm leaves, preserving sacred literature and regional sciences.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ritual Patronage</strong></td>
+                            <td>Financial security allowed long-standing coastal traditions and performance arts to scale, establishing a distinct civilizational identity.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
             <h2>The Natural Border: The Chandragiri River</h2>
             <p>In ancient times, the Chandragiri River (also known as the Payaswini) served as the ultimate cultural and political boundary line. To the north of the river lay Tulunadu, the vibrant core of the Tulu-speaking world. To the south lay Kolathunadu, the Malayalam-speaking domains of the Chirakkal and Malabar kingdoms. </p>
@@ -387,7 +478,6 @@
                 <li><strong>Chandragiri Fort:</strong> Built 150 feet high, right on the southern bank of the Chandragiri estuary, this fortress was designed specifically to guard the river mouth and monitor maritime entry.</li>
             </ul>
 
-            <!-- CHANDRAGIRI FORT IMAGE -->
             <div class="image-container">
                 <img src="1000135697.jpg" alt="Stone watchtower brick bastion of Chandragiri Fort overlooking green canopies">
                 <span class="image-caption">Figure 4: The fortified vantage architecture of Chandragiri Fort, built directly along the south bank of the river to anchor the defensive line.</span>
@@ -398,40 +488,50 @@
                 <li><strong>Hosdurg (Kanhangad) Fort:</strong> Serving as another vital link in the same defensive network, this fortress secured internal land routes from hostile incursions.</li>
             </ul>
 
-            <!-- BEKAL FORT IMAGE -->
             <div class="image-container">
                 <img src="1000135706.png" alt="Observation post arch inside Bekal Fort looking out onto the ocean">
                 <span class="image-caption">Figure 5: The sea-facing defensive observation portals at Bekal Fort, completed under Shivappa Nayaka as the ultimate headquarters to defend the southern Tulu border.</span>
             </div>
 
-            <div class="pipeline-box">
-<strong>THE KELADI DEFENSE LINE (KASARAGOD BORDER)</strong>
-  [TULUNADU / KELADI EMPIRE]
-              │
-              ▼   (Tulu Administration &amp; Cultured Wealth)
-  ═════════════════════════════════════════════════════════════════
-  [THE BORDER LINE] -> CHANDRAGIRI RIVER 
-                  ═════════════════════════════════════════════════════════════════
-              ▲   (Defense against Portuguese &amp; Malabar Kings)
-              │
-  [KOLATHUNADU / MALABAR REGION]</div>
+            <div class="historical-table-wrapper">
+                <table class="historical-table">
+                    <thead>
+                        <tr>
+                            <th>Fortress Asset</th>
+                            <th>Strategic Frontier Purpose</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Chandragiri Fort</strong></td>
+                            <td>Erected 150 feet high along the southern estuary line to track and intercept foreign maritime incursions entering Tuluva territory.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Bekal Fort</strong></td>
+                            <td>Massive keyhole stronghold serving as the supreme military headquarters to lock down the southern land blocks.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Hosdurg Fort</strong></td>
+                            <td>Secured internal fallback lines and trade paths against coordinated multi-front assaults.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
             <h3>Why This Matters Today: Sapthabhasha Sangamabhoomi</h3>
-            <p>The geopolitical boundaries drawn by the Keladi Nayakas in the 17th century are the exact reason why modern Kasaragod is celebrated as <em>Sapthabhasha Sangamabhoomi</em>—the land of seven languages. Because the Keladi kings held the northern half of Kasaragod tightly under their protection, the Tulu language, Tulu-Tigalari script traditions, Yakshagana, and Tuluva cultural structures remained deeply rooted in the soil, blending harmoniously over centuries with neighboring Malayalam traditions rather than being overwritten by them.</p>
+            <p>The geopolitical boundaries drawn by the Keladi Nayakas in the 17th century are the exact reason why modern Kasaragod is celebrated as <em>Sapthabhasha Sangamabhoomi</em>—the land of seven languages. Because the Keladi kings held the northern half of Kasaragod tightly under their protection, the Tulu language, native Tulu script traditions, Yakshagana, and Tuluva cultural structures remained deeply rooted in the soil, blending harmoniously over centuries with neighboring Malayalam traditions rather than being overwritten by them.</p>
 
             <h2>The Tulu Literary Monopolies of the Keladi Era</h2>
             <p>Through this economic and geopolitical empowerment, Tulu ceased to be just the language of daily trade; it became the language of the high courts, producing a dense concentration of highly demanding, written masterpieces:</p>
             
             <ul>
                 <li><strong>Sri Bhagavato (1626 CE):</strong> Composed by the legendary scholar <strong>Vishnu Tunga</strong>, this monumental text stands as the premier poetic epic of the region. Exactly four centuries ago, this work weaponized complex <em>Shatpadi</em> meters to translate the dense, multi-layered philosophical discourses of the <em>Bhagavata Purana</em>. It stands as the definitive proof that Tulu possessed an elite vocabulary capable of carrying the absolute highest forms of metaphysical human thought.</li>
-                <li><strong>Kaveri (17th Century):</strong> This extensive geographic, historical, and mythological poem meticulously details the sacred origins of the Kaveri River. Composed entirely in the Tulu language using the formal Tulu-Tigalari script, it demonstrates that the intellectuals of the era were using our native script to map the sacred geography of Southern India, claiming a high-cultural space entirely independent of outside influences.</li>
+                <li><strong>Kaveri (17th Century):</strong> This extensive geographic, historical, and mythological poem meticulously details the sacred origins of the Kaveri River. Composed entirely in the Tulu language using the formal native Tulu script, it demonstrates that the intellectuals of the era were using our native script to map the sacred geography of Southern India, claiming a high-cultural space entirely independent of outside influences.</li>
             </ul>
 
-            <!-- CONTEMPORARY SOCIAL & COMMUNITY INSIGHTS SECTION -->
             <h2>Linguistic Erasure and the Modern Narrative Battle</h2>
             <p>The systematic effort to reduce classical languages to minor, regional oral variants is not a new tactic—it is a continuous digital and cultural phenomenon. In contemporary spaces, we often witness grassroots information battles where historical connections are stripped out by misinformed commentary or malicious intent. Authentic lineages are routinely targeted to muddy the waters of cultural custody and ancestral truths.</p>
 
-            <!-- VERBATIM SOCIAL RECORD PROOF IMAGE -->
             <div class="image-container">
                 <img src="1000135854.png" alt="Digital dialogue exchange discussing record integrity and verification of accounts">
                 <span class="image-caption">Figure 6: A documented case file (Ref: 1000135854.png) showcasing modern community dialogues regarding the systematic defense of regional accounts, record integrity, and narrative transparency against malicious digital edits.</span>
@@ -439,7 +539,6 @@
 
             <p>As illustrated above, modern platforms serve as critical battlegrounds where watchful preservation forces actively confront false claims and wrong captions. Protecting textual and scriptural evidence is the only defense against structural heritage theft—ensuring that external revisionist groups cannot fabricate narratives to break down traditional legacies.</p>
 
-            <!-- RETURN NAVIGATION DISPATCH TRIGGER -->
             <div style="margin: 45px 0 25px 0; text-align: center;">
                 <hr style="border: 0; border-top: 1px solid #dcd7ca; margin-bottom: 40px;">
                 <a href="index.html" style="
@@ -473,57 +572,6 @@
                 </a>
             </div>
 
-            <!-- COMMUNITY INTERACTION ACTION GRID -->
-            <div class="action-grid">
-                
-                <!-- WHATSAPP INTEL CHANNEL -->
-                <div class="action-card whatsapp">
-                    <div>
-                        <span style="color: #25D366; font-family: var(--font-sans); font-size: 0.75rem; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; display: block; margin-bottom: 8px;">
-                            ⚡ INTELLIGENCE STREAM
-                        </span>
-                        <h3 style="color: #ffffff; font-family: var(--font-sans); font-size: 1.1rem; margin: 0 0 10px 0; font-weight: 700;">
-                            WhatsApp Dispatch
-                        </h3>
-                        <p style="color: #999999; font-size: 0.85rem; line-height: 1.5; margin: 0 0 20px 0;">
-                            Get real-time historical research, script developments, and unedited archives.
-                        </p>
-                    </div>
-                    <a href="https://whatsapp.com/channel/0029Vb7Yxsg7Noa9O0Ik2k3b" target="_blank" style="
-                        background: #25D366; color: #ffffff; font-family: var(--font-sans); font-size: 0.8rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; text-decoration: none; padding: 12px 20px; border-radius: 4px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; transition: all 0.2s ease;
-                    "
-                    onmouseover="this.style.background='#20ba5a'; this.style.boxShadow='0 4px 12px rgba(37, 211, 102, 0.4)';"
-                    onmouseout="this.style.background='#25D366'; this.style.boxShadow='none';">
-                        <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.503-5.714-1.458L0 24zm6.59-4.846c1.66.986 3.288 1.478 4.756 1.479 5.433 0 9.85-4.388 9.854-9.785.002-2.615-1.001-5.074-2.825-6.899C16.551 2.124 14.114 1.12 11.583 1.12c-5.438 0-9.855 4.387-9.86 9.785-.002 1.83.477 3.62 1.39 5.2l-.23.84-.943 3.443 3.535-.924.742.44zm11.367-5.593c-.31-.154-1.834-.905-2.115-1.007-.28-.102-.485-.153-.69.154-.204.307-.79.153-.943-1.007-.153-.153-.306-.23-.616-.385-1.353-.674-2.155-1.637-2.613-2.427-.2-.342-.023-.526.149-.697.154-.154.343-.41.513-.615.172-.205.23-.35.343-.58.115-.23.057-.43-.028-.583-.086-.154-.685-1.654-.938-2.26-.247-.594-.5-.513-.685-.523-.177-.01-.38-.01-.582-.01-.203 0-.533.077-.812.384-.28.308-1.066 1.043-1.066 2.544s1.091 2.95 1.243 3.155c.153.205 2.147 3.28 5.2 4.6c.725.313 1.291.5 1.732.64.73.232 1.395.2 1.92.122.585-.087 1.834-.75 2.09-1.473.256-.723.256-1.344.179-1.473-.077-.13-.28-.205-.59-.36z"/></svg>
-                        <span>Subscribe</span>
-                    </a>
-                </div>
-
-                <!-- TELEGRAM ADVOCACY HUB -->
-                <div class="action-card telegram">
-                    <div>
-                        <span style="color: #0088cc; font-family: var(--font-sans); font-size: 0.75rem; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; display: block; margin-bottom: 8px;">
-                            ⚖️ ADVOCACY HUB
-                        </span>
-                        <h3 style="color: #ffffff; font-family: var(--font-sans); font-size: 1.1rem; margin: 0 0 10px 0; font-weight: 700;">
-                            Telegram Petition
-                        </h3>
-                        <p style="color: #999999; font-size: 0.85rem; line-height: 1.5; margin: 0 0 20px 0;">
-                            Join our active mobilization forces for official recognition and script integration.
-                        </p>
-                    </div>
-                    <a href="https://t.me/Tuluvagela" target="_blank" style="
-                        background: #0088cc; color: #ffffff; font-family: var(--font-sans); font-size: 0.8rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; text-decoration: none; padding: 12px 20px; border-radius: 4px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; transition: all 0.2s ease;
-                    "
-                    onmouseover="this.style.background='#0077b3'; this.style.boxShadow='0 4px 12px rgba(0, 136, 204, 0.4)';"
-                    onmouseout="this.style.background='#0088cc'; this.style.boxShadow='none';">
-                        <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.565 8.161c-.156 1.425-.85 5.517-1.205 7.412-.15.801-.445 1.07-.732 1.096-.623.056-1.096-.411-1.698-.806-.944-.619-1.477-.977-2.393-1.581-1.059-.697-.373-1.08.232-1.71.158-.164 2.904-2.664 2.957-2.893.006-.028.012-.135-.05-.19-.063-.056-.156-.037-.223-.022-.095.021-1.61 1.026-4.546 3.011-.43.296-.82.441-1.172.433-.387-.008-1.13-.219-1.683-.399-.679-.221-1.219-.338-1.172-.714.025-.196.293-.397.803-.604 3.143-1.371 5.241-2.276 6.294-2.715 2.993-1.253 3.616-1.471 4.021-1.478.09 0 .29.022.419.128.111.089.141.211.151.297.01.091.023.291.012.437z"/></svg>
-                        <span>Join Petition</span>
-                    </a>
-                </div>
-
-            </div>
-
         </section>
 
         <section class="conclusion-block">
@@ -534,4 +582,4 @@
     </article>
 
 </body>
-</html>
+</html>               
