@@ -4,16 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPECIAL REPORT | The Sidelined Language and the Choked Leader</title>
-    <style>
+    
+    <!-- Social Network Preview Controls (Open Graph & Twitter Assets) -->
+    <meta property="og:title" content="SPECIAL REPORT | Why National Parties Fail Tulunadu">
+    <meta property="og:description" content="An investigative exposure tracking the 90-day bureaucratic blackout of the Gayathri Report and the strategic sidelining of grassroots autonomy.">
+    <meta property="og:image" content="Screenshot_20260606-183152~2.png">
+    <meta property="og:image:alt" content="TGIK Official Movement Seal">
+    <meta property="og:image" content="Screenshot_20260606-182943~2.png">
+    <meta property="og:image:alt" content="Political Leadership Profile Analysis">
+    <meta property="og:type" content="article">
+    <meta name="twitter:card" content="summary_large_image">
 
+    <style>
         *, *::before, *::after {
             box-sizing: border-box;
         }
-<meta property="og:title" content="SPECIAL REPORT | Why National Parties Fail Tulunadu">
-<meta property="og:description" content="The 90-day silence on the Gayatri Report and the political choking of regional leaders. Read the official TGIK manifesto.">
-<meta property="og:image" content="1000136353.png">
-<meta property="og:type" content="article">
-<meta name="twitter:card" content="summary_large_image">
 
         body {
             margin: 0;
@@ -36,19 +41,34 @@
             color: #f3ede6;
             border-bottom: 5px solid #c99a49; /* Antique Gold accent line */
             text-align: center;
-            padding: 40px 20px;
+            padding: 45px 20px;
             margin-bottom: 30px;
             border-radius: 4px;
         }
 
-        /* Platform Logo Styling */
-        .header-emblem {
-            width: 110px;
-            height: 110px;
-            border-radius: 50%;
-            border: 3px solid #c99a49;
+        /* Massive, Interactive Portal Brand Header */
+        .brand-link {
+            text-decoration: none;
+            color: #ffffff;
+            display: inline-block;
             margin-bottom: 15px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            transition: transform 0.2s ease, color 0.2s ease;
+        }
+
+        .brand-link:hover {
+            transform: scale(1.02);
+            color: #f3ede6;
+        }
+
+        .main-brand-title {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 2.8rem;
+            font-weight: 900;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin: 0;
+            line-height: 1;
+            text-shadow: 2px 3px 0px rgba(0, 0, 0, 0.4);
         }
 
         .bureau-tag {
@@ -56,25 +76,39 @@
             text-transform: uppercase;
             font-weight: 800;
             letter-spacing: 2px;
-            font-size: 0.8rem;
+            font-size: 0.85rem;
             color: #c99a49;
-            margin-bottom: 12px;
+            margin-top: 5px;
+            margin-bottom: 25px;
             display: block;
         }
 
+        /* Revised Layout Circular Seal */
+        .header-emblem {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid #c99a49;
+            margin: 0 auto 20px auto;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+            display: block;
+            object-fit: cover;
+        }
+
         h1 {
-            font-size: 1.8rem;
+            font-size: 1.9rem;
             line-height: 1.3;
-            margin: 0 0 12px 0;
+            margin: 15px 0 12px 0;
             font-weight: normal;
             letter-spacing: -0.5px;
+            color: #f3ede6;
         }
 
         .byline {
             font-style: italic;
             font-size: 0.95rem;
             color: #d9ceb9;
-            margin-top: 5px;
+            margin-top: 10px;
             display: block;
         }
 
@@ -103,12 +137,12 @@
             padding-bottom: 6px;
         }
 
-        /* Inline Media Box Styling */
+        /* Inline Media / Analysis Blocks */
         .media-container {
             text-align: center;
-            margin: 30px 0;
+            margin: 35px 0;
             background: #f4efe6;
-            padding: 15px;
+            padding: 18px;
             border: 1px solid #dfd6c2;
             border-radius: 4px;
         }
@@ -117,15 +151,16 @@
             max-width: 100%;
             height: auto;
             border-radius: 4px;
-            box-shadow: 0 4px 12 rgba(0,0,0,0.15);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         }
 
         .media-caption {
             font-size: 0.9rem;
             font-style: italic;
             color: #4a1519;
-            margin-top: 10px;
+            margin-top: 12px;
             text-align: center;
+            line-height: 1.4;
         }
 
         /* Bullet lists styling */
@@ -220,6 +255,10 @@
         }
 
         @media (max-width: 600px) {
+            .main-brand-title {
+                font-size: 2rem;
+                letter-spacing: 2px;
+            }
             h1 {
                 font-size: 1.5rem;
             }
@@ -230,8 +269,8 @@
                 font-size: 1rem;
             }
             .header-emblem {
-                width: 90px;
-                height: 90px;
+                width: 100px;
+                height: 100px;
             }
             .social-links-container {
                 flex-direction: column;
@@ -243,9 +282,15 @@
 
     <div class="container">
         <div class="header-banner">
-            <!-- Platform Logo File Embedded -->
-            <img src="logo.png" alt="Tuluva Guardian Logo" class="header-emblem">
-            <span class="bureau-tag">Tuluva Guardian Exclusive Special Report</span>
+            <!-- Large Clickable Header Linking to Home Index -->
+            <a href="index.html" class="brand-link">
+                <h2 class="main-brand-title">Tuluva Guardian</h2>
+            </a>
+            <span class="bureau-tag">Exclusive Special Report</span>
+            
+            <!-- REVISED ASSET 1: TGIK Round Logo -->
+            <img src="Screenshot_20260606-183152~2.png" alt="Taulava Gēl Inayo Koolya Seal" class="header-emblem">
+            
             <h1>The Sidelined Language and the Choked Leader:<br>Why National Parties Fail Tulunadu</h1>
             <span class="byline">By Tuluva Guardian Bureau Desk</span>
         </div>
@@ -258,11 +303,11 @@
 
         <p>Nowhere is this calculated suppression more evident than in the absolute bureaucratic sabotage of the <strong>Gayathri Report</strong>—the definitive administrative blueprint meant to grant Tulu its constitutional right as an official language.</p>
 
-        <p>Exactly 90 days ago, this historic report was officially submitted to the state. Since then? A total, institutional blackout. The Department of Kannada & Culture assumed the file would gather dust in a dark corner, forgotten by a passive populace. They underestimated independent journalism.</p>
+        <p>Exactly 90 days ago, this report was officially submitted to the state. Since then? A total, institutional blackout. The Department of Kannada & Culture assumed the file would gather dust in a dark corner, forgotten by a passive populace. They underestimated independent journalism.</p>
 
         <p>The Tuluva Guardian Bureau refused to let our heritage be quietly erased by red tape. Our team launched a strategic Right to Information (RTI) offensive, demanding the immediate release of the <strong>Action Taken Report (ATR)</strong> and internal file notings.</p>
 
-        <p>The response was telling: complete silence. By blowing past the mandatory 30-day statutory window, the government committed a flagrant, illegal "Deemed Refusal" under registration number <span class="tracker-id">SECKC/R/2026/000032</span>. This is a blatant constitutional violation. When a governance system routinely violates its own transparency laws to suppress a regional language, it fractures the very contract between the state and the people. A government operating on fractured legitimacy cannot stand.</p>
+        <p>The response was telling: complete silence. By blowing past the mandatory 30-day statutory window, the government committed a flagrant, illegal "Deemed Refusal" under registration number <span class="tracker-id">SECKC/R/2026/000032</span>. This is a blatant constitutional violation. When a governance system routinely violates its own transparency laws to suppress a regional language, it fractures the very contract between the state and the people.</p>
 
         <p>In response, our bureau has escalated this conflict into an absolute legal showdown, officially registering a formal <strong>First Appeal</strong> under registration number <span class="tracker-id">SECKC/A/2026/00004</span>. We have officially ended the era of passive waiting.</p>
 
@@ -272,6 +317,12 @@
 
         <p>Annamalai—a fierce former IPS officer whose uncompromising style was forged right here in the coastal belt as the SP of Udupi—built an aggressive, grassroots counter-offensive that completely reshaped the southern political grammar. He didn't rely on backroom coalition deals; he relied on the people.</p>
 
+        <!-- REVISED ASSET 2: Annamalai Analysis Segment -->
+        <div class="media-container">
+            <img src="Screenshot_20260606-182943~2.png" alt="Annamalai Leadership Transformation Profile" class="media-image" style="max-height: 480px; object-fit: cover;">
+            <div class="media-caption">Strategic Analysis: Grassroots mass frameworks built from below remain fundamentally incompatible with rigid, top-down bureaucratic control structures.</div>
+        </div>
+
         <p>But national parties do not tolerate independent power centers. The moment regional leaders stand tall enough to challenge top-down dictates, the high command machinery moves to compromise them through shifting alliance formulas and mathematical seat-sharing equations. Annamalai’s resignation from primary membership—formally accepted by national president Nitin Nabin—was a direct rebellion against this exact subjugation. By walking away to launch an independent, principles-driven political movement inspired by Dr. A.P.J. Abdul Kalam, he proved that the era of swallowing high command mandates is officially over.</p>
 
         <h2>The Awakened Front: Taulava Gēl Inayo Koolya (TGIK)</h2>
@@ -280,9 +331,9 @@
 
         <p>But the era of waiting for handouts is officially over. This structural vacuum is exactly why an independent regional consciousness is awakening.</p>
 
-        <!-- Official TGIK Flag Image Embedded -->
+        <!-- REVISED ASSET 3: TGIK Flag Display -->
         <div class="media-container">
-            <img src="1000136353.png" alt="TGIK Regional Front Flag" class="media-image" style="max-height: 500px; object-fit: cover;">
+            <img src="Screenshot_20260606-183048~2.png" alt="TGIK Regional Front Flag" class="media-image" style="max-height: 500px; object-fit: cover;">
             <div class="media-caption">The standard of Taulava Gēl Inayo Koolya (TGIK) raised as an assertive ideological front for coastal self-reliance.</div>
         </div>
 
@@ -314,11 +365,11 @@
             <div class="social-links-container">
                 <a href="https://t.me/+lEZy-TBySYo0MGY1" class="social-btn btn-tg" target="_blank">Join TGIK Telegram</a>
                 <a href="https://whatsapp.com/channel/0029Vb7Yxsg7Noa9O0Ik2k3b" class="social-btn btn-wa" target="_blank">Tuluva Guardian WhatsApp</a>
-                <a href="https://tuluvaguardian.online" class="social-btn btn-site" target="_blank">Central Web Portal</a>
+                <a href="index.html" class="social-btn btn-site">Central Web Portal</a>
             </div>
         </div>
     </div>
 
 </body>
-</html>
-
+    </html>
+    
