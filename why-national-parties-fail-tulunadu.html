@@ -8,8 +8,6 @@
     <!-- Social Network Preview Controls (Open Graph & Twitter Assets) -->
     <meta property="og:title" content="SPECIAL REPORT | Why National Parties Fail Tulunadu">
     <meta property="og:description" content="An investigative exposure tracking the 90-day bureaucratic blackout of the Gayathri Report and the strategic sidelining of grassroots autonomy.">
-    <meta property="og:image" content="Screenshot_20260606-183152~2.png">
-    <meta property="og:image:alt" content="TGIK Official Movement Seal">
     <meta property="og:image" content="Screenshot_20260606-182943~2.png">
     <meta property="og:image:alt" content="Political Leadership Profile Analysis">
     <meta property="og:type" content="article">
@@ -46,29 +44,40 @@
             border-radius: 4px;
         }
 
-        /* Massive, Interactive Portal Brand Header */
+        /* Interactive Portal Brand Header with Illuminated Lightings Effect */
         .brand-link {
             text-decoration: none;
-            color: #ffffff;
             display: inline-block;
-            margin-bottom: 15px;
-            transition: transform 0.2s ease, color 0.2s ease;
-        }
-
-        .brand-link:hover {
-            transform: scale(1.02);
-            color: #f3ede6;
+            margin-bottom: 10px;
         }
 
         .main-brand-title {
             font-family: 'Helvetica Neue', Arial, sans-serif;
-            font-size: 2.8rem;
+            font-size: 3rem;
             font-weight: 900;
             letter-spacing: 4px;
             text-transform: uppercase;
             margin: 0;
-            line-height: 1;
-            text-shadow: 2px 3px 0px rgba(0, 0, 0, 0.4);
+            line-height: 1.1;
+            color: #ffffff;
+            /* Multi-layered text-shadow creating an illuminated gold neon glow */
+            text-shadow: 
+                0 0 4px rgba(255, 255, 255, 0.6),
+                0 0 10px #c99a49,
+                0 0 20px #c99a49,
+                0 0 30px #c99a49,
+                2px 3px 5px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease;
+        }
+
+        .brand-link:hover .main-brand-title {
+            color: #fff9e6;
+            text-shadow: 
+                0 0 6px rgba(255, 255, 255, 0.8),
+                0 0 15px #e6bd6f,
+                0 0 25px #e6bd6f,
+                0 0 40px #e6bd6f,
+                2px 3px 8px rgba(0, 0, 0, 0.6);
         }
 
         .bureau-tag {
@@ -78,15 +87,15 @@
             letter-spacing: 2px;
             font-size: 0.85rem;
             color: #c99a49;
-            margin-top: 5px;
+            margin-top: 8px;
             margin-bottom: 25px;
             display: block;
         }
 
-        /* Revised Layout Circular Seal */
+        /* Editorial Independence News Logo Styling */
         .header-emblem {
-            width: 120px;
-            height: 120px;
+            width: 110px;
+            height: 110px;
             border-radius: 50%;
             border: 3px solid #c99a49;
             margin: 0 auto 20px auto;
@@ -256,7 +265,7 @@
 
         @media (max-width: 600px) {
             .main-brand-title {
-                font-size: 2rem;
+                font-size: 2.1rem;
                 letter-spacing: 2px;
             }
             h1 {
@@ -282,14 +291,14 @@
 
     <div class="container">
         <div class="header-banner">
-            <!-- Large Clickable Header Linking to Home Index -->
+            <!-- Large Clickable Header with Illuminated Gold Neon Glow Linking to Home Index -->
             <a href="index.html" class="brand-link">
-                <h2 class="main-brand-title">Tuluva Guardian</h2>
+                <h1 class="main-brand-title">Tuluva Guardian</h1>
             </a>
             <span class="bureau-tag">Exclusive Special Report</span>
             
-            <!-- REVISED ASSET 1: TGIK Round Logo -->
-            <img src="Screenshot_20260606-183152~2.png" alt="Taulava Gēl Inayo Koolya Seal" class="header-emblem">
+            <!-- Universal Independent News Logo Asset -->
+            <img src="logo.png" alt="Tuluva Guardian News Logo" class="header-emblem">
             
             <h1>The Sidelined Language and the Choked Leader:<br>Why National Parties Fail Tulunadu</h1>
             <span class="byline">By Tuluva Guardian Bureau Desk</span>
@@ -317,7 +326,7 @@
 
         <p>Annamalai—a fierce former IPS officer whose uncompromising style was forged right here in the coastal belt as the SP of Udupi—built an aggressive, grassroots counter-offensive that completely reshaped the southern political grammar. He didn't rely on backroom coalition deals; he relied on the people.</p>
 
-        <!-- REVISED ASSET 2: Annamalai Analysis Segment -->
+        <!-- Dynamic Asset Integration: Annamalai Analysis Segment -->
         <div class="media-container">
             <img src="Screenshot_20260606-182943~2.png" alt="Annamalai Leadership Transformation Profile" class="media-image" style="max-height: 480px; object-fit: cover;">
             <div class="media-caption">Strategic Analysis: Grassroots mass frameworks built from below remain fundamentally incompatible with rigid, top-down bureaucratic control structures.</div>
@@ -331,7 +340,7 @@
 
         <p>But the era of waiting for handouts is officially over. This structural vacuum is exactly why an independent regional consciousness is awakening.</p>
 
-        <!-- REVISED ASSET 3: TGIK Flag Display -->
+        <!-- Dynamic Asset Integration: TGIK Flag Display -->
         <div class="media-container">
             <img src="Screenshot_20260606-183048~2.png" alt="TGIK Regional Front Flag" class="media-image" style="max-height: 500px; object-fit: cover;">
             <div class="media-caption">The standard of Taulava Gēl Inayo Koolya (TGIK) raised as an assertive ideological front for coastal self-reliance.</div>
@@ -371,5 +380,5 @@
     </div>
 
 </body>
-    </html>
-    
+                    </html>
+                    .
