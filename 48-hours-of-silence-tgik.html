@@ -1,4 +1,4 @@
-            <!DOCTYPE html>
+                                    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,7 +14,7 @@
             --crimson-glow: rgba(102, 17, 17, 0.4);
             --gold: #AA771C;
             --gold-light: #f3e5ab;
-            --text-main: #e5e5e5;
+            --text-main: #dddddd;
             --text-title: #ffffff;
             --text-muted: #999999;
             --sans-serif: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -27,7 +27,7 @@
             color: var(--text-main);
             margin: 0;
             padding: 0;
-            line-height: 1.75;
+            line-height: 1.8;
             -webkit-font-smoothing: antialiased;
         }
 
@@ -77,67 +77,47 @@
 
         /* Container & Layout */
         .container {
-            max-width: 760px; /* Golden reading width for premium readability */
+            max-width: 740px; /* Golden reading layout line width */
             margin: 40px auto;
             padding: 0 24px;
         }
 
-        /* Premium Social Hero Feature Card */
-        .social-hero-card {
+        /* Inline Contextual Article Images */
+        .editorial-image-container {
             background-color: var(--panel-dark);
             border: 1px solid var(--panel-border);
             border-radius: 12px;
             overflow: hidden;
-            margin-bottom: 24px;
+            margin: 35px 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+        }
+
+        .editorial-image-container.hero-main {
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7), 0 0 40px var(--crimson-glow);
-            transition: transform 0.3s ease;
+            margin-top: 10px;
         }
 
-        .social-hero-card img {
+        .editorial-image-container img {
             width: 100%;
-            max-height: 440px;
+            max-height: 420px;
             object-fit: cover;
-            display: block;
-        }
-
-        /* Secondary Grid Media Dashboard */
-        .image-dashboard {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            margin-bottom: 45px;
-        }
-
-        .image-card {
-            background-color: var(--panel-dark);
-            border: 1px solid var(--panel-border);
-            border-radius: 10px;
-            overflow: hidden;
-            padding: 8px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-        }
-
-        .image-card img {
-            width: 100%;
-            height: 160px;
-            object-fit: cover;
-            border-radius: 6px;
             display: block;
         }
 
         .image-caption {
             font-size: 11px;
             color: var(--text-muted);
-            margin-top: 10px;
+            padding: 12px;
             text-align: center;
             text-transform: uppercase;
             letter-spacing: 1.5px;
             font-weight: 600;
+            background-color: #0e0e0e;
+            border-top: 1px solid rgba(255, 255, 255, 0.03);
         }
 
         /* Editorial Content & Typography */
         h1 {
-            font-family: var(--sans-serif);
             font-size: 38px;
             color: var(--text-title);
             line-height: 1.25;
@@ -152,7 +132,7 @@
             gap: 15px;
             border-left: 2px solid var(--gold);
             padding-left: 15px;
-            margin-bottom: 40px;
+            margin-bottom: 35px;
             color: var(--text-muted);
             font-size: 13px;
             text-transform: uppercase;
@@ -163,26 +143,21 @@
             color: var(--gold-light);
         }
 
-        /* Styled Separator */
         .editorial-divider {
             border: 0;
             height: 1px;
-            background: linear-gradient(to right, transparent, rgba(170, 119, 28, 0.4), transparent);
+            background: linear-gradient(to right, transparent, rgba(170, 119, 28, 0.3), transparent);
             margin: 40px 0;
         }
 
-        /* Typography Flow */
         p {
             font-family: var(--serif);
             font-size: 19px;
             color: #dddddd;
             margin-bottom: 28px;
-            word-spacing: 1px;
         }
 
-        /* Sub-headings */
         h3 {
-            font-family: var(--sans-serif);
             font-size: 22px;
             color: var(--gold-light);
             margin-top: 45px;
@@ -209,7 +184,7 @@
             margin-bottom: 0;
         }
 
-        /* Utility Case Accent Highlights */
+        /* Case Reference Tags */
         .case-highlight {
             background-color: rgba(170, 119, 28, 0.1);
             color: var(--gold-light);
@@ -221,7 +196,6 @@
             border: 1px solid rgba(170, 119, 28, 0.2);
         }
 
-        /* Editorial Footer */
         footer {
             background-color: #030303;
             text-align: center;
@@ -233,7 +207,6 @@
             letter-spacing: 0.5px;
         }
 
-        /* Precise Mobile Responsiveness adjustments */
         @media (max-width: 600px) {
             header { padding: 12px 15px; }
             header .logo { font-size: 19px; letter-spacing: 1.5px; }
@@ -241,8 +214,8 @@
             .container { margin: 25px auto; padding: 0 20px; }
             h1 { font-size: 28px; line-height: 1.3; }
             p { font-size: 17px; margin-bottom: 22px; }
-            .image-dashboard { grid-template-columns: 1fr; gap: 15px; }
-            .image-card img { height: 180px; }
+            .editorial-image-container { margin: 25px 0; }
+            .editorial-image-container img { max-height: 280px; }
             blockquote { padding: 18px 20px; }
             blockquote p { font-size: 18px; }
         }
@@ -250,7 +223,7 @@
 </head>
 <body>
 
-    <!-- Header Block (Links Back to Home Page Layout) -->
+    <!-- Header Navigation -->
     <header>
         <a href="index.html" class="header-link-wrapper">
             <div class="brand-container">
@@ -264,34 +237,22 @@
 
     <div class="container">
         
-        <!-- Primary Social Feature Image (Hero) -->
-        <div class="social-hero-card">
-            <img src="Screenshot_20260606-183048~2.png" alt="Annamalai speaking at microphone alignment">
-            <div class="image-caption">Frontline Focus: Demanding Autonomy & Accountability</div>
-        </div>
-
-        <!-- Secondary Campaign Evidence Grid Block -->
-        <section class="image-dashboard">
-            <div class="image-card">
-                <img src="Screenshot_20260606-182943~2.png" alt="TGIK Flag Hanging">
-                <div class="image-caption">The Flag Raised: TGIK Ideology</div>
-            </div>
-            <div class="image-card">
-                <img src="Screenshot_20260606-183152~2.png" alt="Official TGIK Movement Seal">
-                <div class="image-caption">Constitutional Resistance Front</div>
-            </div>
-        </section>
-
-        <!-- Main Editorial Content -->
         <main>
+            <!-- Title and Metas -->
             <h1>48 HOURS OF SILENCE: Constitutional Clock Ticking as Government Ignores TGIK First Appeal on Buried Language Report</h1>
             
             <div class="meta-box">
-                <span>By <strong>TULUva Guardian Bureau</strong></span>
+                <span>By <strong>Tuluva Guardian Bureau</strong></span>
                 <span>•</span>
                 <span>June 7, 2026</span>
                 <span>•</span>
                 <span><strong>Udupi</strong></span>
+            </div>
+
+            <!-- Contextual Layout Part 1: Hero Banner Placement -->
+            <div class="editorial-image-container hero-main">
+                <img src="Screenshot_20260606-183048~2.png" alt="Annamalai speaking at microphone alignment">
+                <div class="image-caption">Frontline Focus: Demanding Autonomy & Accountability</div>
             </div>
 
             <p>It has been exactly 48 hours since Taulava Gēl Inayo Koolya (TGIK) officially escalated its legal offensive against the Department of Kannada & Culture, and the state administration has lapsed into absolute silence.</p>
@@ -304,6 +265,12 @@
 
             <p>The escalating legal battle centers on the Tulu language Gayathri Report. Exactly 92 days ago, the report was officially submitted to the state government. Under mandatory statutory provisions, the department was legally obligated to provide transparency and access within a strict 30-day window.</p>
 
+            <!-- Contextual Layout Part 2: Official Seal Placement -->
+            <div class="editorial-image-container">
+                <img src="Screenshot_20260606-183152~2.png" alt="Official TGIK Movement Seal">
+                <div class="image-caption">The Constitutional Front: Taulava Gēl Inayo Koolya</div>
+            </div>
+
             <p>Instead, the government chose a total administrative blackout. By blowing past its legal deadlines without a word, the state bureaucracy committed a flagrant <span class="case-highlight">Deemed Refusal (Case Reference: SECKC/R/2026/000032)</span>.</p>
 
             <h3>Moving from Political Compromise to Constitutional Showdown</h3>
@@ -313,6 +280,12 @@
             <blockquote>
                 <p>"National parties fundamentally fail to understand the local tongue. When centralized entities view a distinct coastal identity, an ancient language, and its native script as a threat to central control rather than regional wealth, the system breaks. They expect submissive regional actors to wait quietly for crumbs from high commands. That era is officially over."</p>
             </blockquote>
+
+            <!-- Contextual Layout Part 3: Banner Flag Placement -->
+            <div class="editorial-image-container">
+                <img src="Screenshot_20260606-182943~2.png" alt="TGIK Flag Hanging">
+                <div class="image-caption">The Flag Raised: Asserting Coastal Self-Reliance</div>
+            </div>
 
             <p>Rather than engaging in empty political rhetoric or shifting alliance compromises, TGIK has weaponized the framework of the Constitution. By launching a formal formal <span class="case-highlight">First Appeal (Case Reference: SECKC/A/2026/00004)</span>, the movement has placed the Appellate Authority under strict legal deadlines.</p>
 
