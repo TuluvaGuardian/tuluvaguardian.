@@ -1,19 +1,32 @@
-<!DOCTYPE html>
+            <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Railed in Crisis: The Tulunadu Suburban Railway Demand | Tuluva Guardian</title>
+    <title>RAILED IN CRISIS: Commuters Trapped in Bus Fare Hike Demand Suburban Railway | Tuluva Guardian</title>
+
+    <!-- Essential SEO & Social Media Meta Tags (Twitter / OpenGraph Cards) -->
+    <meta name="description" content="A sudden ₹100 fare hike on the Udupi–Mangaluru corridor sparks public fury. TGIK outlines the blueprint for an urgent local sub-urban railway system.">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="RAILED IN CRISIS: Tulunadu Demands Local Sub-Urban Railway System">
+    <meta property="og:description" content="Commuters trapped in a predatory private highway monopoly rally for low-cost morning and evening MEMU train loops.">
+    <meta property="og:image" content="Screenshot_20260610-174313~2.png">
+    <meta property="og:url" content="https://tuluvaguardian.online/tulunadu-suburban-railway.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="RAILED IN CRISIS: Tulunadu Demands Local Sub-Urban Rail Network">
+    <meta name="twitter:description" content="Working professionals and students call for an immediate Ministry of Railways intervention to break the transit monopoly.">
+    <meta name="twitter:image" content="Screenshot_20260610-174313~2.png">
+
     <style>
         :root {
-            --bg-color: #0d0d0d;
-            --surface-color: #161616;
-            --accent-color: #AA771C;
-            --accent-light: #e6a832;
-            --text-main: #e0e0e0;
-            --text-muted: #a0a0a0;
-            --border-color: rgba(170, 119, 28, 0.2);
-            --alert-red: #8b1e1e;
+            --bg-main: #ffffff;
+            --bg-header: #0a0e14;
+            --bg-accent-box: #f4f6f9;
+            --text-dark: #111111;
+            --text-muted: #555555;
+            --tg-blue: #1b365d;
+            --tg-gold: #bfa15f;
+            --border-muted: #e1e4e8;
         }
 
         * {
@@ -23,343 +36,319 @@
         }
 
         body {
-            background-color: var(--bg-color);
-            color: var(--text-main);
+            background-color: #f0f2f5;
+            color: var(--text-dark);
             font-family: 'Georgia', serif;
             line-height: 1.6;
-            padding: 20px;
         }
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: var(--surface-color);
-            padding: 40px;
-            border-radius: 12px;
-            border: 1px solid var(--border-color);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+        /* Global Sticky Top Header from Sample 2 */
+        .global-header {
+            background-color: var(--bg-header);
+            padding: 12px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 3px solid var(--tg-gold);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
-        /* Header Elements */
-        header {
-            border-bottom: 2px solid var(--accent-color);
-            padding-bottom: 20px;
-            margin-bottom: 30px;
+        .header-left {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
         }
 
-        .brand {
+        .logo-img {
+            height: 42px;
+            width: auto;
+            margin-right: 12px;
+        }
+
+        .brand-text {
+            color: #ffffff;
             font-family: 'Helvetica Neue', Arial, sans-serif;
-            font-size: 13px;
+            font-weight: 900;
+            font-size: 20px;
+            letter-spacing: 1px;
+            line-height: 1;
             text-transform: uppercase;
-            letter-spacing: 4px;
-            color: var(--accent-color);
+        }
+
+        .brand-subtext {
+            color: var(--tg-gold);
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 8px;
             font-weight: bold;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            max-width: 240px;
+            text-align: right;
+            line-height: 1.3;
+        }
+
+        /* Article Wrapper Layout */
+        .page-wrapper {
+            max-width: 760px;
+            margin: 30px auto;
+            background-color: var(--bg-main);
+            padding: 35px 45px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        .badge {
+            background-color: var(--tg-blue);
+            color: #ffffff;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 11px;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 4px 8px;
+            letter-spacing: 1px;
+            display: inline-block;
             margin-bottom: 15px;
-            display: block;
         }
 
         h1 {
-            font-size: 36px;
+            font-size: 32px;
+            font-weight: 800;
+            color: var(--text-dark);
             line-height: 1.2;
-            color: #ffffff;
             margin-bottom: 15px;
         }
 
-        .metadata {
+        .byline {
             font-family: 'Helvetica Neue', Arial, sans-serif;
-            font-size: 12px;
+            font-size: 11px;
             color: var(--text-muted);
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 0.5px;
+            border-bottom: 1px solid var(--border-muted);
+            padding-bottom: 15px;
+            margin-bottom: 25px;
         }
 
-        /* Text Styling */
         p {
-            margin-bottom: 22px;
             font-size: 17px;
+            margin-bottom: 20px;
+            color: #222222;
             text-align: justify;
-        }
-
-        p::first-letter {
-            font-size: 20px;
-            font-weight: bold;
-            color: var(--accent-color);
-        }
-
-        .lead-paragraph {
-            font-size: 19px;
-            color: #ffffff;
-            line-height: 1.5;
         }
 
         h2 {
             font-family: 'Helvetica Neue', Arial, sans-serif;
-            font-size: 22px;
-            color: var(--accent-color);
+            font-size: 20px;
+            font-weight: bold;
+            color: var(--tg-blue);
             margin: 35px 0 15px 0;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            border-left: 4px solid var(--accent-color);
-            padding-left: 12px;
+            border-bottom: 1px solid var(--tg-blue);
+            padding-bottom: 5px;
         }
 
         h3 {
             font-family: 'Helvetica Neue', Arial, sans-serif;
-            font-size: 18px;
-            color: #ffffff;
-            margin: 25px 0 10px 0;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 20px 0 10px 0;
+            color: var(--text-dark);
         }
 
-        /* Diagram / Schematic Box */
-        .schematic-box {
-            background-color: #090909;
-            border: 1px dashed var(--accent-color);
-            padding: 20px;
-            border-radius: 6px;
-            margin: 30px 0;
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 14px;
-            color: #ced4da;
-            overflow-x: auto;
+        /* Editorial Image Enclosures */
+        .editorial-image-frame {
+            background-color: #fafafa;
+            border: 1px solid var(--border-muted);
+            padding: 10px;
+            margin: 25px 0;
         }
 
-        /* Embedded Meme Block */
-        .meme-container {
-            text-align: center;
-            margin: 40px 0;
-            background-color: #090909;
-            padding: 25px;
-            border-radius: 8px;
-            border: 1px solid var(--border-color);
-        }
-
-        .meme-image {
-            max-width: 100%;
+        .editorial-image {
+            width: 100%;
             height: auto;
-            border-radius: 6px;
-            border: 1px solid var(--accent-color);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            display: block;
         }
 
-        .meme-caption {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            font-size: 14px;
-            color: var(--text-muted);
-            text-align: center;
-            margin-top: 15px;
-            letter-spacing: 0.5px;
-        }
-
-        /* Blockquote styling */
-        blockquote {
-            border-left: 4px solid var(--accent-color);
-            background-color: rgba(170, 119, 28, 0.05);
-            padding: 20px;
-            margin: 30px 0;
+        .image-caption {
+            font-size: 12px;
             font-style: italic;
-            color: #cbcbcb;
-            border-radius: 0 8px 8px 0;
+            color: var(--text-muted);
+            margin-top: 8px;
+            line-height: 1.4;
+            border-left: 2px solid var(--tg-gold);
+            padding-left: 8px;
         }
 
-        /* Lists */
-        ul {
-            margin-bottom: 25px;
-            padding-left: 20px;
+        /* Mono Diagram Box styling */
+        .schematic-container {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            padding: 15px;
+            border-radius: 4px;
+            font-size: 13px;
+            overflow-x: auto;
+            margin: 25px 0;
+        }
+
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 25px;
         }
 
         li {
-            margin-bottom: 12px;
             font-size: 16px;
-            color: #dcdcdc;
+            margin-bottom: 8px;
+            color: #333333;
         }
 
-        li strong {
-            color: #ffffff;
+        /* Callout Document Box from Sample 2 */
+        .document-callout {
+            background-color: var(--bg-accent-box);
+            border-left: 4px solid var(--tg-blue);
+            padding: 20px;
+            margin: 30px 0;
         }
 
-        /* Action/Callout Box */
-        .action-card {
-            background: linear-gradient(135deg, #1a1a1a 0%, #111111 100%);
-            border: 1px solid var(--border-color);
-            padding: 25px;
-            border-radius: 8px;
-            margin-top: 40px;
-        }
-
-        .action-card h2 {
+        .document-callout h3 {
             margin-top: 0;
-            border-left: 4px solid var(--accent-light);
-            color: var(--accent-light);
+            color: var(--tg-blue);
         }
 
         .action-link {
-            color: var(--accent-light);
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.2s ease;
-        }
-
-        .action-link:hover {
-            color: #ffffff;
+            color: var(--tg-blue);
             text-decoration: underline;
+            font-weight: bold;
         }
 
-        /* Footer Slogan */
-        .slogan-footer {
+        .footer-slogan {
             text-align: center;
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid rgba(255,255,255,0.1);
             font-family: 'Helvetica Neue', Arial, sans-serif;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: bold;
             letter-spacing: 1px;
+            margin-top: 40px;
+            padding-top: 25px;
+            border-top: 1px solid var(--border-muted);
         }
 
-        .slogan-color {
-            color: #ff4d4d;
-        }
-
-        /* Responsive Design */
+        /* Responsive Breakpoints */
         @media (max-width: 600px) {
-            body {
-                padding: 10px;
-            }
-            .container {
+            .page-wrapper {
                 padding: 20px;
+                margin: 0;
             }
             h1 {
-                font-size: 26px;
+                font-size: 24px;
             }
-            p {
-                font-size: 15px;
+            .brand-subtext {
+                display: none;
             }
         }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <header>
-        <span class="brand">Tuluva Guardian Special Report</span>
-        <h1>RAILED IN CRISIS: Commuters Trapped in ₹100 Bus Fare Hike Monopoly Demand Urgent Udupi–Mangaluru–Puttur Sub-Urban Railway System</h1>
-        <div class="metadata">
-            Investigative Desk &bull; Mangaluru / Udupi / Puttur &bull; Published June 2026
-        </div>
+    <!-- Global Header Layout Linking Back to Homepage Index -->
+    <header class="global-header">
+        <a href="index.html" class="header-left" title="Return to Homepage">
+            <img src="logo.png" alt="Tuluva Guardian Logo" class="logo-img">
+            <div class="brand-text">Tuluva<br>Guardian</div>
+        </a>
+        <div class="brand-subtext">The Voice of Regional Sovereignty & Heritage</div>
     </header>
 
-    <p class="lead-paragraph">
-        A silent economic crisis is unfolding across the landscape of Tulunadu. Over the past month, a sudden, crushing transit price hike on the 58-to-60-kilometer corridor between Udupi and Mangaluru has seen express bus fares surge by ₹100. This sharp escalation has triggered widespread public fury among working professionals, low-income daily wage earners, and university students who now find themselves economically cornered by a predatory private highway monopoly.
-    </p>
+    <!-- Main Content Container Block -->
+    <main class="page-wrapper">
+        <span class="badge">Transit Crisis</span>
+        <h1>RAILED IN CRISIS: Commuters Trapped in ₹100 Bus Fare Hike Monopoly Demand Urgent Udupi–Mangaluru–Puttur Sub-Urban Railway System</h1>
+        <div class="byline">BY INVESTIGATIVE DESK | MANGALURU / UDUPI / PUTTUR | PUBLISHED: JUNE 10, 2026</div>
 
-    <p>
-        In response, an aggressive, grassroots public movement is rapidly consolidating across Dakshina Kannada and Udupi districts. The singular, unified demand of the public is clear: the immediate intervention of the Ministry of Railways to establish a dedicated, low-cost <strong>Udupi–Mangaluru–Puttur Local Sub-Urban Rail Network</strong> for Tulunadu.
-    </p>
+        <!-- Primary Context Action Field Image -->
+        <div class="editorial-image-frame">
+            <img src="Screenshot_20260610-174313~2.png" alt="TGIK Protesters demanding local sub-urban railway tracks layout" class="editorial-image">
+            <div class="image-caption">Ground Realities: Local taxpayers and TGIK representatives congregate along regional tracks demanding low-cost commuter scheduling integration.</div>
+        </div>
 
-    <h2>The Anatomy of a Monopoly: The Crushing Reality of a ₹100 Fare Hike</h2>
-    
-    <p>
-        The transport corridor connecting Udupi, Mangaluru, and Puttur represents one of the densest economic and educational arteries in the coastal belt. Every morning, tens of thousands of citizens commute across this stretch. Students rely on it to reach world-class educational hubs, patients travel to major medical academies, and professionals commute to corporate offices.
-    </p>
+        <p>A silent economic crisis is unfolding across the landscape of Tulunadu. Over the past month, a sudden, crushing transit price hike on the 58-to-60-kilometer corridor between Udupi and Mangaluru has seen express bus fares surge by ₹100. This sharp escalation has triggered widespread public fury among working professionals, low-income daily wage earners, and university students who now find themselves economically cornered by a predatory private highway monopoly.</p>
 
-    <div class="schematic-box">
-       [ UDUPI ] 
-           |  ~ 60 KM Corridor 
-           |  (Bus: Fares up by ₹100 / Train: Non-existent morning slots)
-           v
-     [ MANGALURU ]
-           |  ~ 52 KM Corridor
-           |  (Underutilized rail links / High commuter traffic)
-           v
-      [ PUTTUR ]
-    </div>
+        <p>In response, an aggressive, grassroots public movement is rapidly consolidating across Dakshina Kannada and Udupi districts. The singular, unified demand of the public is clear: the immediate intervention of the Ministry of Railways to establish a dedicated, low-cost <strong>Udupi–Mangaluru–Puttur Local Sub-Urban Rail Network</strong> for Tulunadu.</p>
 
-    <!
-        With no viable transport alternatives, commuters have historically been left entirely dependent on private and public express buses running along National Highway 66 (NH-66). The recent price hike of ₹100 per ticket has dealt a catastrophic blow to middle-class and working-class household budgets.
-    </p>
+        <h2>The Anatomy of a Monopoly: The Crushing Reality of a ₹100 Fare Hike</h2>
+        <p>The transport corridor connecting Udupi, Mangaluru, and Puttur represents one of the densest economic and educational arteries in the coastal belt. Every morning, tens of thousands of citizens commute across this stretch. Students rely on it to reach world-class educational hubs, patients travel to major medical academies, and professionals commute to corporate offices.</p>
 
-    <p>
-        For a daily commuter, a ₹100 increase per single trip translates directly to an additional ₹4,000 to ₹5,000 i    <!-- Main Investigative Campaign Image -->
-    <div style="text-align: center; margin-bottom: 30px;">
-        <img src="Screenshot_20260610-174313~2.png" alt="TGIK Demands Tulunadu Suburban Rail" style="width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--border-color); box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
-        <p style="font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 13px; color: var(--text-muted); margin-top: 10px;">
-            <em>Ground Report: Taxpayers and TGIK activists unite at the platform demanding immediate scheduling overhauls.</em>
-        </p>
-    </div>
-    n monthly travel expenses. For students and young professionals earning entry-level salaries, this artificial inflation makes commuting to work or college financially unviable.
-    </p>
+        <div class="schematic-container">
+ [ UDUPI ] 
+     |  ~ 60 KM Corridor 
+     |  (Bus: Fares up by ₹100 / Train: Non-existent morning slots)
+     v
+ [ MANGALURU ]
+     |  ~ 52 KM Corridor
+     |  (Underutilized rail links / High commuter traffic)
+     v
+ [ PUTTUR ]
+        </div>
 
-    <h2>The "Ghost Hours" Rail Timetable: A Bureaucratic Failure</h2>
-    
-    <p>
-        The true tragedy of this economic exploitation is that a robust, multi-crore railway infrastructure already exists right alongside the highway. The tracks are laid, the stations are built, and the line is fully electrified. Yet, current train timetables seem deliberately designed to be useless for local taxpayers.
-    </p>
+        <p>With no viable transport alternatives, commuters have historically been left entirely dependent on private and public express buses running along National Highway 66 (NH-66). The recent price hike of ₹100 per ticket has dealt a catastrophic blow to middle-class and working-class household budgets.</p>
 
-    <p>
-        A review of the current daily schedules under the Konkan Railway Corporation Limited (KRCL) and Southern Railway highlights a stark systemic failure:
-    </p>
+        <p>For a daily commuter, a ₹100 increase per single trip translates directly to an additional ₹4,000 to ₹5,000 in monthly travel expenses. For students and young professionals earning entry-level salaries, this artificial inflation makes commuting to work or college financially unviable.</p>
 
-    <ul>
-        <li><strong>The Dead-of-Night Corridor:</strong> Key daily express trains traveling from Udupi toward Mangaluru Central (MAQ) arrive either during the dead of night (such as the Netravati Express at 3:02 AM) or long after the working day has already begun (such as the Mangaluru Express at 11:28 AM).</li>
-        <li><strong>The Missing Link to Puttur:</strong> While the Ministry of Railways recently extended the Mangaluru–Kabaka Puttur passenger service up to Subrahmanya Road, the timings fail to integrate with trains arriving from Udupi. This lack of coordination leaves the vital Udupi–Mangaluru–Puttur commercial triangle completely fractured.</li>
-    </ul>
+        <!-- Satirical Institutional Reality Layout Meme -->
+        <div class="editorial-image-frame">
+            <img src="Screenshot_20260610-180452~2.png" alt="Institutional resistance corporate boardroom schematic" class="editorial-image">
+            <div class="image-caption">Systemic Bureaucracy: An inside satirical breakdown of administrative stall tactics used to suppress regional transit autonomy. Credit: TGIK</div>
+        </div>
 
-    <blockquote>
-        "We are cleaning the tracks and handling the heavy maintenance workload for long-distance trains bound for Mumbai, Kerala, and Delhi, but our own local taxpayers cannot get a basic, low-cost morning commuter train to get to college or work," stated a prominent regional railway activist on a Tulunadu community forum.
-    </blockquote>
-
-    <h2>The Blueprint for the Tulunadu Sub-Urban System</h2>
-    
-    <p>
-        Regional passenger welfare associations, including the <em>Paschima Karavali Railway Yatri Abhivriddhi Samiti</em>, argue that a suburban rail network could transport commuters for a fraction of current bus fares. A single MEMU (Mainline Electric Multiple Unit) ticket for 60 km would cost merely ₹15 to ₹30, completely undercutting the exorbitant bus fares now being charged on the highway.
-    </p>
-
-    <p>
-        Activists have laid out a three-pronged structural blueprint to resolve this crisis:
-    </p>
-
-    <h3>1. The Synchronized Morning & Evening MEMU Loop</h3>
-    <ul>
-        <li><strong>Morning Rush:</strong> A high-capacity MEMU train must depart Udupi at 7:15 AM, hitting intermediate stations like Suratkal, arriving at Mangaluru Central by 8:30 AM, and providing an immediate forward connection to Puttur by 9:45 AM.</li>
-        <li><strong>Evening Return:</strong> An identical reverse loop must depart Puttur at 5:30 PM, clear Mangaluru by 6:45 PM, and return commuters safely to Udupi by 8:00 PM.</li>
-    </ul>
-
-    <h3>2. Resolving the Thokur Jurisdictional Bottleneck</h3>
-    <p>
-        A major administrative roadblock is the operational handover point at Thokur, where jurisdiction switches from Konkan Railway (KRCL) to the Palakkad Division of Southern Railway. Public memorandums demand that both railway zones establish a unified regional scheduling desk to ensure local commuter trains are never delayed or sidelined in favor of national long-distance trains.
-    </p>
-
-    <h3>3. Accelerated Track Doubling and Automatic Signaling</h3>
-    <p>
-        Because the Konkan line is primarily a single-track network, local trains are frequently delayed to allow oncoming express trains to pass. Completing the long-delayed track doubling across the region and upgrading to automatic block signaling is essential to increase local train frequency safely.
-    </p>
-
-    <h2>Political Pressure Mounts: Citizens Demand Accountability</h2>
-    
-    <p>
-        The public outcry over the bus fare hike has rapidly evolved into a political litmus test for local elected representatives. Citizen groups, student unions, and trade associations are actively organizing to lobby Dakshina Kannada MP Captain Brijesh Chowta and the Udupi-Chikmagalur parliamentary delegation.
-    </p>
-
-    <p>
-        The immediate objective of the campaign is to force a joint, bipartisan presentation directly to Union Railway Minister Ashwini Vaishnaw. The petition will demand the immediate sanction of a Tulunadu Sub-Urban Rail Network, structured similarly to successful suburban networks operating in Bengaluru and Mumbai.
-    </p>
-
-    <p>
-        For a region that serves as the economic powerhouse of the state's coast, an affordable, safe, and efficient local train loop is no longer a luxury. It is an absolute economic necessity to dismantle a predatory transport monopoly and give the youth of Tulunadu the affordable mobility they deserve.
-    </p>
-
-    <div class="action-card">
-        <h2>How to Join the Movement</h2>
+        <h2>The "Ghost Hours" Rail Timetable: A Bureaucratic Failure</h2>
+        <p>The true tragedy of this economic exploitation is that a robust, multi-crore railway infrastructure already exists right alongside the highway. The tracks are laid, the stations are built, and the line is fully electrified. Yet, current train timetables seem deliberately designed to be useless for local taxpayers.</p>
+        
+        <p>A review of the current daily schedules under the Konkan Railway Corporation Limited (KRCL) and Southern Railway highlights a stark systemic failure:</p>
         <ul>
-            <li><strong>Log Your Grievance:</strong> File a formal demand for an Udupi–Mangaluru–Puttur morning MEMU train on the central <a href="https://railmadad.indianrailways.gov.in/" class="action-link" target="_blank">RailMadad Portal</a> under the "Suggestions / Passenger Amenities" tab.</li>
-            <li><strong>Submit a Public Petition:</strong> Sign the ongoing regional memorandum being compiled by local passenger welfare associations to be submitted to the Divisional Railway Manager (DRM) of the Palakkad Division.</li>
+            <li><strong>The Dead-of-Night Corridor:</strong> Key daily express trains traveling from Udupi toward Mangaluru Central (MAQ) arrive either during the dead of night (such as the Netravati Express at 3:02 AM) or long after the working day has already begun (such as the Mangaluru Express at 11:28 AM).</li>
+            <li><strong>The Missing Link to Puttur:</strong> While the Ministry of Railways recently extended the Mangaluru–Kabaka Puttur passenger service up to Subrahmanya Road, the timings fail to integrate with trains arriving from Udupi. This lack of coordination leaves the vital Udupi–Mangaluru–Puttur commercial triangle completely fractured.</li>
         </ul>
-    </div>
 
-    <div class="slogan-footer">
-        Taulava Gēl! <span class="slogan-color">❤🤍</span>
-    </div>
-</div>
+        <h2>The Blueprint for the Tulunadu Sub-Urban System</h2>
+        <p>Regional passenger welfare associations, including the <em>Paschima Karavali Railway Yatri Abhivriddhi Samiti</em>, argue that a suburban rail network could transport commuters for a fraction of current bus fares. A single MEMU (Mainline Electric Multiple Unit) ticket for 60 km would cost merely ₹15 to ₹30, completely undercutting the exorbitant bus fares now being charged on the highway.</p>
 
+        <h3>1. The Synchronized Morning & Evening MEMU Loop</h3>
+        <p>The Ministry of Railways must introduce a dedicated local commuter loop with fixed timings: Morning rush hour departures should leave Udupi at 7:15 AM clearing intermediate stations like Suratkal to reach Mangaluru Central by 8:30 AM, with corresponding evening returns clearing Puttur by 5:30 PM to preserve structural baseline pricing options.</p>
+
+        <h3>2. Resolving the Thokur Jurisdictional Bottleneck</h3>
+        <p>A major administrative roadblock is the operational handover point at Thokur, where jurisdiction switches from Konkan Railway (KRCL) to the Palakkad Division of Southern Railway. Public memorandums demand that both railway zones establish a unified regional scheduling desk to ensure local commuter trains are never delayed or sidelined in favor of national long-distance trains.</p>
+
+        <div class="document-callout">
+            <h3>How to Join the Movement</h3>
+            <ul>
+                <li><strong>Log Your Grievance:</strong> File a formal demand for an Udupi–Mangaluru–Puttur morning MEMU train on the central <a href="https://railmadad.indianrailways.gov.in/" class="action-link" target="_blank">RailMadad Portal</a> under the "Suggestions / Passenger Amenities" tab.</li>
+                <li><strong>Submit a Public Petition:</strong> Sign the ongoing regional memorandum being compiled by local passenger welfare associations to be submitted to the Divisional Railway Manager (DRM) of the Palakkad Division.</li>
+            </ul>
+        </div>
+
+        <div class="footer-slogan">
+            TAULAVA GĒL! <span style="color:#d93838;">❤🤍</span>
+        </div>
+    </main>
+
+    <!-- Native Web Push Notification Permission Logic Block -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Trigger browser native opt-in dialogue box on page initialization
+            if ("Notification" in window) {
+                // Check if permission state hasn't been determined yet
+                if (Notification.permission === "default") {
+                    // Delay execution slightly to ensure visual layout renders smoothly first
+                    setTimeout(function() {
+                        Notification.requestPermission().then(function(permission) {
+                            if (permission === "granted") {
+                                console.log("Push notification structural linkage authorized by user.");
+                            }
+                        });
+                    }, 2500);
+                }
+            }
+        });
+    </script>
 </body>
-</html>
+            </html>
+            
