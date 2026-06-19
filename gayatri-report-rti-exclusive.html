@@ -20,179 +20,293 @@
     <meta name="twitter:image" content="https://tuluvaguardian.online/logo.png">
 
     <style>
-        /* Base Styling */
+        /* Base Styling to match the premium layout */
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
             color: #222;
             margin: 0;
             padding: 0;
-            background-color: #fff;
+            background-color: #f0f2f5; /* Light grey background like pic 2 */
         }
 
-        /* Clickable Navigation Header Banner */
+        /* Dark Premium Navigation Header Banner */
         .site-header {
-            background-color: #ffffff;
-            border-bottom: 1px solid #eaeaea;
+            background-color: #111111; /* Dark theme black */
             padding: 12px 20px;
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+        }
+        .header-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
         .header-link {
-            display: inline-block;
+            display: flex;
+            align-items: center;
             text-decoration: none;
         }
         .header-logo {
-            height: 45px; /* Adjust height to fit your logo size gracefully */
-            max-width: 100%;
+            height: 40px; /* Aligns with the layout look */
+            max-width: auto;
             display: block;
-            margin: 0 auto;
         }
-
-        /* Main Content Container */
-        .main-container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .meta-info {
-            font-size: 14px;
-            color: #666;
+        .header-tagline {
+            color: #ffd700; /* Gold accent color text */
+            font-size: 11px;
+            font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 1px;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #333;
-            padding-bottom: 8px;
+            text-align: right;
+            max-width: 250px;
+            line-height: 1.3;
         }
+
+        @media (max-width: 600px) {
+            .header-tagline {
+                display: none; /* Hides on tiny mobile screens to stay clean */
+            }
+        }
+
+        /* Centered Article Layout Paper */
+        .article-wrapper {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 0 15px;
+        }
+        
+        .main-article-card {
+            background-color: #ffffff;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.05);
+            padding: 40px;
+        }
+
+        @media (max-width: 600px) {
+            .main-article-card {
+                padding: 20px;
+            }
+            .article-wrapper {
+                margin: 12px auto;
+            }
+        }
+
+        /* Category Badge Tag */
+        .category-tag {
+            background-color: #0d233a;
+            color: #ffffff;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 4px 10px;
+            display: inline-block;
+            letter-spacing: 0.5px;
+            margin-bottom: 15px;
+            border-radius: 2px;
+        }
+
+        /* Typography */
         h1 {
-            font-size: 32px;
-            line-height: 1.2;
+            font-size: 30px;
+            line-height: 1.25;
             color: #111;
             margin-top: 0;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
+            font-weight: 700;
         }
+        
+        .byline-author {
+            font-size: 12px;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 25px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 12px;
+        }
+
         .lead-text {
-            font-size: 20px;
-            line-height: 1.5;
-            color: #444;
-            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #222;
             margin-bottom: 25px;
         }
+
+        /* Image Display Framework */
+        .image-frame-container {
+            background-color: #f9f9f9;
+            border: 1px solid #eef0f2;
+            padding: 10px;
+            margin: 25px 0;
+            border-radius: 4px;
+        }
+        .image-frame-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .image-caption-text {
+            font-size: 12px;
+            color: #666;
+            margin-top: 10px;
+            padding-left: 8px;
+            border-left: 2px solid #ccc;
+            font-style: italic;
+            line-height: 1.4;
+        }
+
+        p {
+            font-size: 15px;
+            color: #222;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
         h2 {
-            font-size: 22px;
+            font-size: 20px;
             color: #111;
             margin-top: 35px;
             margin-bottom: 15px;
-            border-left: 4px solid #d32f2f;
-            padding-left: 12px;
+            font-weight: 700;
         }
+
+        /* Blockquote Callout Box */
         blockquote {
-            background: #f9f9f9;
-            border-left: 4px solid #666;
+            background: #fdfdfd;
+            border-left: 4px solid #444;
             margin: 25px 0;
             padding: 15px 20px;
             font-style: italic;
             color: #333;
+            box-shadow: inset 0 0 4px rgba(0,0,0,0.01);
         }
-        .timeline-box {
-            background-color: #fff5f5;
-            border: 1px solid #ffe3e3;
-            border-radius: 6px;
-            padding: 20px;
-            margin: 30px 0;
+
+        /* Beautiful Blue Tinted Feature Layout Box from Image 2 */
+        .premium-feature-box {
+            background-color: #f4f7fa; /* Classic soft blue-gray container */
+            border-left: 4px solid #1a365d; /* Dark slate blue accent line */
+            padding: 24px;
+            margin: 35px 0;
+            border-radius: 0 4px 4px 0;
         }
-        .timeline-box ul {
+        .feature-box-title {
+            margin-top: 0;
+            color: #1a365d;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        .premium-feature-box ul {
             list-style-type: none;
             padding-left: 0;
             margin: 0;
         }
-        .timeline-box li {
+        .premium-feature-box li {
             margin-bottom: 12px;
-            padding-left: 20px;
+            padding-left: 18px;
             position: relative;
+            font-size: 14.5px;
         }
-        .timeline-box li::before {
+        .premium-feature-box li::before {
             content: "•";
-            color: #d32f2f;
+            color: #1a365d;
             font-weight: bold;
-            font-size: 20px;
+            font-size: 18px;
             position: absolute;
             left: 0;
-            top: -2px;
+            top: -1px;
         }
     </style>
 </head>
 <body>
 
-    <!-- Header Banner: Clicking anywhere on the logo redirects to index.html -->
+    <!-- Dark Interactive Header Banner mimicking image 2 layout -->
     <header class="site-header">
-        <a href="index.html" class="header-link" title="Go to Homepage">
-            <img src="logo.png" alt="Tuluva Guardian Logo" class="header-logo">
-        </a>
-    </header>
-
-    <!-- Core Content Body -->
-    <div class="main-container">
-
-        <div class="meta-info">
-            Exclusive Investigation • Tuluva Guardian Bureau • June 18, 2026
-        </div>
-
-        <h1>EXCLUSIVE: Gov’t Admits 'Gayatri Report' on Tulu Language Exists, But Uses RTI Loophole to Conceal It from Public</h1>
-
-        <p class="lead-text">In a major development regarding the official recognition of the Tulu language, documents obtained by <em>The Tuluva Guardian</em> have revealed a deliberate attempt by state authorities to keep the highly anticipated 'Gayatri Report' under wraps.</p>
-
-        <!-- Document Block (Fixed Image Filename Path) -->
-        <div class="article-image-container" style="margin: 24px 0 32px 0; text-align: center;">
-            <img src="Screenshot_20260618-190217~2.png" alt="Official Government Endorsement Rejection Letter" style="width: 100%; height: auto; max-width: 760px; border: 1px solid #ddd; display: block; margin: 0 auto;">
-            <div class="image-caption" style="font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 12px; color: #666; margin-top: 10px; text-transform: uppercase; letter-spacing: 0.5px; text-align: left; line-height: 1.4;">
-                Figure 1: The official endorsement issued by the Department of Kannada and Culture on June 18, 2026, explicitly confirming possession of the report while denying public access.
+        <div class="header-container">
+            <a href="index.html" class="header-link" title="Go to Homepage">
+                <img src="logo.png" alt="Tuluva Guardian Logo" class="header-logo">
+            </a>
+            <div class="header-tagline">
+                The Voice of Regional Sovereignty & Heritage
             </div>
         </div>
+    </header>
 
-        <p>While explicitly confirming that the report is physically in their possession, the Department of Kannada and Culture has officially rejected a Right to Information (RTI) request seeking the Action Taken Report (ATR) and official file logs, citing procedural loopholes to delay public disclosure.</p>
+    <!-- Content Outer Layer -->
+    <div class="article-wrapper">
+        <main class="main-article-card">
 
-        <h2>The Smoking Gun Endorsement</h2>
-        <p>According to an official government endorsement (Letter No: ಕಸಂವಾ 59 ಕೆಎಂಎಲ್ ಆಕ 2026) issued on June 18, 2026, by the Public Information Officer (PIO) at Vikasa Soudha, the state has formally acknowledged the physical existence of the report.</p>
-        
-        <p>However, instead of providing transparency, the department has blocked access. The official Kannada response states:</p>
+            <!-- Category Section Label Box -->
+            <div class="category-tag">RTI Investigation</div>
 
-        <blockquote>
-            "ಮಾಹಿತಿ ಹಕ್ಕು ಅಧಿನಿಯಮ 2(ಎಫ್) ರನ್ವಯ ಇದು ಇನ್ನೂ ಪರಿಪೂರ್ಣವಾಗಿ ದಾಖಲೆ ಎನಿಸಿಕೊಳ್ಳುವ ಹಂತಕ್ಕೆ ಬಾರದಿರುವುದರಿಂದ, ತಾವು ಕೋರಿರುವ ಮಾಹಿತಿಯನ್ನು ಪ್ರಸ್ತುತ ಹಂತದಲ್ಲಿ ನೀಡಲು ಸಾಧ್ಯವಾಗುವುದಿಲ್ಲ"
-            <br><br>
-            <strong>Translation:</strong> <em>"The information requested in the application is a report that is currently under verification, and no final decision has been taken by the Government yet... Therefore, it cannot be provided at this stage."</em>
-        </blockquote>
+            <h1>EXCLUSIVE: Gov’t Admits 'Gayatri Report' on Tulu Language Exists, But Uses RTI Loophole to Conceal It from Public</h1>
+            
+            <div class="byline-author">
+                By Investigative Bureau | Published: June 18, 2026
+            </div>
 
-        <p>The authorities have actively leveraged Section 2(f) of the RTI Act, 2005, to argue that because the government has not made a "final decision" on the committee's findings, the records do not yet qualify as disclosable public information.</p>
+            <p class="lead-text">In a major development regarding the official recognition of the Tulu language, documents obtained by <em>The Tuluva Guardian</em> have revealed a deliberate attempt by state authorities to keep the highly anticipated 'Gayatri Report' under wraps.</p>
 
-        <div class="timeline-box">
-            <h3 style="margin-top: 0; color: #b71c1c; font-size: 18px;">⏳ The 100-Day Standard: Passive Inaction or Deliberate Delay?</h3>
-            <p>The timeline of the file's movement exposes a deeply concerning pattern of bureaucratic inertia:</p>
-            <ul>
-                <li><strong>March 4, 2026:</strong> The Gayatri Committee formally concludes its research and submits its definitive report on Tulu’s official language status to the Department of Kannada and Culture.</li>
-                <li><strong>June 18, 2026:</strong> The Public Information Officer (PIO) issues a blanket rejection, claiming the file is still in the "preliminary stages of verification."</li>
-            </ul>
-            <p style="margin-bottom: 0; margin-top: 12px; font-weight: 500;">More than 100 days have elapsed since a dedicated panel of experts handed over their findings. A standard committee report does not require over three months of internal vetting simply to determine if it can be read by the public. By shielding the <strong>File Notings</strong>, the department is actively hiding <em>who</em> has been holding the file, <em>which</em> tables it has been sitting on, and <em>why</em> not a single administrative step has been finalized in over 100 days.</p>
-        </div>
+            <!-- Document Framework Wrapper Container -->
+            <div class="image-frame-container">
+                <img src="Screenshot_20260618-190217~2.png" alt="Official Government Endorsement Rejection Letter">
+                <div class="image-caption-text">
+                    Figure 1: The official endorsement issued by the Department of Kannada and Culture on June 18, 2026, explicitly confirming possession of the report while denying public access.
+                </div>
+            </div>
 
-        <h2>Dissecting the Bureaucracy: Why the Rejection Fails</h2>
-        <p>The state's reliance on Section 2(f) is drawing sharp criticism from legal observers and cultural advocates. The RTI application specifically sought the <strong>Action Taken Report (ATR)</strong> and the day-to-day <strong>File Notings</strong> recorded by bureaucrats since the Gayatri Committee submitted its report on March 4, 2026.</p>
+            <p>While explicitly confirming that the report is physically in their possession, the Department of Kannada and Culture has officially rejected a Right to Information (RTI) request seeking the Action Taken Report (ATR) and official file logs, citing procedural loopholes to delay public disclosure.</p>
 
-        <p>By law, file notings represent existing, finalized records of administrative processing. Denying access to these logs under the guise that a "final decision is pending" contradicts established legal precedents set by various High Courts, which state that internal deliberations cannot be blankly hidden from the public.</p>
+            <h2>The Smoking Gun Endorsement</h2>
+            <p>According to an official government endorsement (Letter No: ಕಸಂವಾ 59 ಕೆಎಂಎಲ್ ಆಕ 2026) issued on June 18, 2026, by the Public Information Officer (PIO) at Vikasa Soudha, the state has formally acknowledged the physical existence of the report.</p>
+            
+            <p>However, instead of providing transparency, the department has blocked access. The official Kannada response states:</p>
 
-        <h2>What is the Gov't Hiding?</h2>
-        <p>The Gayatri Committee Report holds the key to the long-standing demand for declaring Tulu as an official state language in Karnataka. The report was expected to outline the administrative, linguistic, and constitutional pathway forward.</p>
+            <blockquote>
+                "ಮಾಹಿತಿ ಹಕ್ಕು ಅಧಿನಿಯಮ 2(ಎಫ್) ರನ್ವಯ ಇದು ಇನ್ನೂ ಪರಿಪೂರ್ಣವಾಗಿ ದಾಖಲೆ ಎನಿಸಿಕೊಳ್ಳುವ ಹಂತಕ್ಕೆ ಬಾರದಿರುವುದರಿಂದ, ತಾವು ಕೋರಿರುವ ಮಾಹಿತಿಯನ್ನು ಪ್ರಸ್ತುತ ಹಂತದಲ್ಲಿ ನೀಡಲು ಸಾಧ್ಯವಾಗುವುದಿಲ್ಲ"
+                <br><br>
+                <strong>Translation:</strong> <em>"The information requested in the application is a report that is currently under verification, and no final decision has been taken by the Government yet... Therefore, it cannot be provided at this stage."</em>
+            </blockquote>
 
-        <p>By keeping the processing files hidden, the department leaves the public in the dark regarding whether any actual progress has been made since March, or if the file is simply gathering dust in Bengaluru's administrative corridors.</p>
+            <p>The authorities have actively leveraged Section 2(f) of the RTI Act, 2005, to argue that because the government has not made a "final decision" on the committee's findings, the records do not yet qualify as disclosable public information.</p>
 
-        <h2>The Fight Continues</h2>
-        <p><em>The Tuluva Guardian</em> can confirm that this rejection will not stand unchallenged. A formal appeal has already escalated the matter to the First Appellate Authority. A high-level hearing has been slated for <strong>June 30, 2026, at 3:30 PM</strong> inside Vikasa Soudha, Bengaluru, where senior officials will be forced to answer for this administrative stonewalling.</p>
+            <!-- Transformed blue tint info box layout from picture 2 style -->
+            <div class="premium-feature-box">
+                <h3 class="feature-box-title">⏳ The 100-Day Standard: Passive Inaction or Deliberate Delay?</h3>
+                <p style="font-size: 14.5px; margin-bottom: 15px;">The timeline of the file's movement exposes a deeply concerning pattern of bureaucratic inertia:</p>
+                <ul>
+                    <li><strong>March 4, 2026:</strong> The Gayatri Committee formally concludes its research and submits its definitive report on Tulu’s official language status to the Department of Kannada and Culture.</li>
+                    <li><strong>June 18, 2026:</strong> The Public Information Officer (PIO) issues a blanket rejection, claiming the file is still in the "preliminary stages of verification."</li>
+                </ul>
+                <p style="margin-bottom: 0; margin-top: 12px; font-size: 14.5px; font-weight: 500;">More than 100 days have elapsed since a dedicated panel of experts handed over their findings. A standard committee report does not require over three months of internal vetting simply to determine if it can be read by the public. By shielding the <strong>File Notings</strong>, the department is actively hiding <em>who</em> has been holding the file, <em>which</em> tables it has been sitting on, and <em>why</em> not a single administrative step has been finalized in over 100 days.</p>
+            </div>
 
-        <p><em>The Tuluva Guardian</em> will continue to track this file closely. The language and heritage of millions cannot be locked behind bureaucratic red tape.</p>
+            <h2>Dissecting the Bureaucracy: Why the Rejection Fails</h2>
+            <p>The state's reliance on Section 2(f) is drawing sharp criticism from legal observers and cultural advocates. The RTI application specifically sought the <strong>Action Taken Report (ATR)</strong> and the day-to-day <strong>File Notings</strong> recorded by bureaucrats since the Gayatri Committee submitted its report on March 4, 2026.</p>
 
+            <p>By law, file notings represent existing, finalized records of administrative processing. Denying access to these logs under the guise that a "final decision is pending" contradicts established legal precedents set by various High Courts, which state that internal deliberations cannot be blankly hidden from the public.</p>
+
+            <h2>What is the Gov't Hiding?</h2>
+            <p>The Gayatri Committee Report holds the key to the long-standing demand for declaring Tulu as an official state language in Karnataka. The report was expected to outline the administrative, linguistic, and constitutional pathway forward.</p>
+
+            <p>By keeping the processing files hidden, the department leaves the public in the dark regarding whether any actual progress has been made since March, or if the file is simply gathering dust in Bengaluru's administrative corridors.</p>
+
+            <h2>The Fight Continues</h2>
+            <p><em>The Tuluva Guardian</em> can confirm that this rejection will not stand unchallenged. A formal appeal has already escalated the matter to the First Appellate Authority. A high-level hearing has been slated for <strong>June 30, 2026, at 3:30 PM</strong> inside Vikasa Soudha, Bengaluru, where senior officials will be forced to answer for this administrative stonewalling.</p>
+
+            <p><em>The Tuluva Guardian</em> will continue to track this file closely. The language and heritage of millions cannot be locked behind bureaucratic red tape.</p>
+
+        </main>
     </div>
+
 </body>
 </html>
