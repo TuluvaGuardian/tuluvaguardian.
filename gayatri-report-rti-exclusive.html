@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+       <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -27,16 +27,13 @@
             color: #222;
             margin: 0;
             padding: 0;
-            background-color: #f0f2f5; /* Light grey background like pic 2 */
+            background-color: #f0f2f5; 
         }
 
         /* Dark Premium Navigation Header Banner */
         .site-header {
-            background-color: #111111; /* Dark theme black */
+            background-color: #111111; 
             padding: 12px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -54,15 +51,32 @@
             display: flex;
             align-items: center;
             text-decoration: none;
+            gap: 12px; /* Space between emblem image and brand text */
         }
         .header-logo {
-            height: 40px; /* Aligns with the layout look */
-            max-width: auto;
+            height: 40px; 
+            width: auto;
             display: block;
         }
+        
+        /* Brand Title Styling */
+        .brand-text-wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+        .brand-title {
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            line-height: 1.1;
+            font-family: "Times New Roman", Times, serif, -apple-system; /* Clean editorial font weight */
+        }
+        
         .header-tagline {
             color: #ffd700; /* Gold accent color text */
-            font-size: 11px;
+            font-size: 10px;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -71,9 +85,12 @@
             line-height: 1.3;
         }
 
-        @media (max-width: 600px) {
+        @media (max-width: 650px) {
             .header-tagline {
-                display: none; /* Hides on tiny mobile screens to stay clean */
+                display: none; /* Hides gold text on small screens to prioritize the title */
+            }
+            .brand-title {
+                font-size: 18px;
             }
         }
 
@@ -190,10 +207,10 @@
             box-shadow: inset 0 0 4px rgba(0,0,0,0.01);
         }
 
-        /* Beautiful Blue Tinted Feature Layout Box from Image 2 */
+        /* Blue Tinted Feature Layout Box */
         .premium-feature-box {
-            background-color: #f4f7fa; /* Classic soft blue-gray container */
-            border-left: 4px solid #1a365d; /* Dark slate blue accent line */
+            background-color: #f4f7fa; 
+            border-left: 4px solid #1a365d; 
             padding: 24px;
             margin: 35px 0;
             border-radius: 0 4px 4px 0;
@@ -229,11 +246,14 @@
 </head>
 <body>
 
-    <!-- Dark Interactive Header Banner mimicking image 2 layout -->
+    <!-- Updated Header Banner: Combining the emblem image and text dynamically -->
     <header class="site-header">
         <div class="header-container">
             <a href="index.html" class="header-link" title="Go to Homepage">
-                <img src="logo.png" alt="Tuluva Guardian Logo" class="header-logo">
+                <img src="logo.png" alt="Emblem" class="header-logo">
+                <div class="brand-text-wrapper">
+                    <span class="brand-title">Tuluva Guardian</span>
+                </div>
             </a>
             <div class="header-tagline">
                 The Voice of Regional Sovereignty & Heritage
@@ -279,7 +299,7 @@
 
             <p>The authorities have actively leveraged Section 2(f) of the RTI Act, 2005, to argue that because the government has not made a "final decision" on the committee's findings, the records do not yet qualify as disclosable public information.</p>
 
-            <!-- Transformed blue tint info box layout from picture 2 style -->
+            <!-- Blue tint info box layout -->
             <div class="premium-feature-box">
                 <h3 class="feature-box-title">⏳ The 100-Day Standard: Passive Inaction or Deliberate Delay?</h3>
                 <p style="font-size: 14.5px; margin-bottom: 15px;">The timeline of the file's movement exposes a deeply concerning pattern of bureaucratic inertia:</p>
@@ -309,4 +329,5 @@
     </div>
 
 </body>
-</html>
+    </html>
+    
