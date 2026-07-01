@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAULAVA GĒL: TGIK Knocks on Vidhana Sabha Doors to Demand Transparency</title>
+    <style>
+        :root {
+            --primary-color: #111111;
+            --accent-red: #b12704;
+            --accent-gold: #ffcc00;
+            --text-dark: #222222;
+            --text-muted: #555555;
+            --bg-cream: #fdfcf7;
+            --card-bg: #ffffff;
+            --border-color: #dcd7ca;
+            --font-serif: 'Georgia', 'Times New Roman', serif;
+            --font-sans: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-serif);
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-cream);
+            margin: 0;
+            padding: 0;
+        }
+
+        .portal-header {
+            background: var(--primary-color);
+            color: #ffffff;
+            padding: 15px 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            border-bottom: 5px solid var(--accent-red);
+        }
+        
+        .header-container {
+            max-width: 1050px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .portal-logo-link {
+            text-decoration: none;
+            display: inline-flex;
+        }
+        
+        .portal-logo-img {
+            width: 55px;
+            height: 55px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid var(--accent-gold);
+        }
+        
+        .brand-text {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .brand-text a {
+            text-decoration: none;
+        }
+        
+        .brand-name {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 2rem;
+            font-weight: 900;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: #ffffff;
+            margin: 0;
+            line-height: 1;
+        }
+        
+        .brand-tagline {
+            font-family: var(--font-sans);
+            font-size: 0.75rem;
+            color: var(--accent-gold);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 5px;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1050px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+
+        .ticker-tape {
+            background: #fff8e7;
+            border: 1px solid #e6dbb8;
+            border-radius: 4px;
+            padding: 12px 20px;
+            margin-bottom: 30px;
+            font-family: var(--font-sans);
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .ticker-badge {
+            background: var(--accent-red);
+            color: white;
+            font-weight: bold;
+            padding: 2px 8px;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 1px;
+            border-radius: 2px;
+        }
+
+        .article-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+
+        @media (min-width: 850px) {
+            .article-grid {
+                grid-template-columns: 2fr 1fr;
+            }
+        }
+
+        .main-content {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 40px;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .article-title {
+            font-size: 2.3rem;
+            line-height: 1.15;
+            font-weight: 900;
+            color: #000000;
+            margin: 0 0 20px 0;
+        }
+
+        .article-meta {
+            font-family: var(--font-sans);
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            padding: 10px 0;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .author-name {
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .lead-paragraph {
+            font-size: 1.25rem;
+            line-height: 1.6;
+            font-weight: 500;
+            color: #000000;
+            margin-bottom: 25px;
+        }
+
+        .section-heading {
+            font-family: var(--font-sans);
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent-red);
+            border-bottom: 2px solid var(--accent-red);
+            padding-bottom: 5px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
+
+        .highlight-box {
+            background: #fafafa;
+            border-left: 4px solid var(--accent-red);
+            padding: 20px;
+            margin: 25px 0;
+            font-style: italic;
+        }
+
+        .sidebar-panel {
+            background: #fdfdfd;
+            border: 1px solid var(--border-color);
+            padding: 25px;
+            border-radius: 4px;
+            height: fit-content;
+        }
+
+        .sidebar-title {
+            font-family: var(--font-sans);
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin-top: 0;
+            margin-bottom: 20px;
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 5px;
+        }
+
+        .timeline {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            position: relative;
+        }
+
+        .timeline-item {
+            margin-bottom: 25px;
+            padding-left: 20px;
+            border-left: 2px solid var(--border-color);
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -6px;
+            top: 5px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--text-muted);
+        }
+
+        .timeline-item.active {
+            border-left-color: var(--accent-red);
+        }
+
+        .timeline-item.active::before {
+            background: var(--accent-red);
+            box-shadow: 0 0 0 3px rgba(177, 39, 4, 0.2);
+        }
+
+        .timeline-date {
+            font-family: var(--font-sans);
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: var(--accent-red);
+            text-transform: uppercase;
+        }
+
+        .timeline-desc {
+            font-size: 0.95rem;
+            margin: 5px 0 0 0;
+        }
+
+        .evidence-gallery {
+            margin-top: 30px;
+            border-top: 1px dashed var(--border-color);
+            padding-top: 25px;
+        }
+
+        .evidence-card {
+            background: #ffffff;
+            border: 1px solid var(--border-color);
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+
+        .evidence-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border: 1px solid #eeeeee;
+        }
+
+        .evidence-caption {
+            font-family: var(--font-sans);
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-top: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="portal-header">
+        <div class="header-container">
+            <a href="index.html" class="portal-logo-link">
+                <img src="logo.png" alt="Tuluva Guardian Seal" class="portal-logo-img" onerror="this.style.display='none'">
+            </a>
+            <div class="brand-text">
+                <a href="index.html">
+                    <h1 class="brand-name">Tuluva Guardian</h1>
+                </a>
+                <span class="brand-tagline">Independent Regional Journalism &amp; Archives</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <div class="ticker-tape">
+            <span class="ticker-badge">LEGISLATIVE OFFENSIVE</span>
+            <div><strong>TGIK Action:</strong> Comprehensive institutional representation delivered directly to Vidhana Sabha desks.</div>
+        </div>
+
+        <div class="article-grid">
+            
+            <main class="main-content">
+                <h2 class="article-title">TAULAVA GĒL: TGIK Knocks on Vidhana Sabha Doors to Demand Transparency</h2>
+                
+                <div class="article-meta">
+                    <div>By <span class="author-name">Tuluva Guardian Desk</span></div>
+                    <div>Published: July 1, 2026</div>
+                </div>
+
+                <p class="lead-paragraph">
+                    <strong>BENGALURU:</strong> The institutional struggle for the official status of the Tulu language has scaled the highest walls of state governance. Yesterday, June 30, 2026, the <strong>Taulava Gēl Inaya Koolya (TGIK)</strong> transitioned public interest research into an aggressive institutional offensive, dispatching a comprehensive legislative representation directly to the floor of the <strong>Vidhana Sabha</strong>.
+                </p>
+
+                <p>
+                    The strategic delivery arrives precisely at a critical juncture, as the First Appellate Authority reviews the high-stakes transparency battle surrounding First Appeal No. <strong><code>SECKC/A/2026/60004</code></strong>.
+                </p>
+
+                <p>
+                    By bypassing traditional administrative delays and sending these formal arguments directly to the legislative core, TGIK has placed the state's highest decision-makers on notice. The campaign demands that the case be evaluated strictly on its unyielding legal merits under the Right to Information Act, 2005.
+                </p>
+
+                <h3 class="section-heading">The Legal Groundwork: Public Interest Over Corporate Exemption</h3>
+                
+                <p>
+                    The formal TGIK representation tears through months of bureaucratic silence with absolute statutory precision:
+                </p>
+
+                <ul>
+                    <li><strong>No Exemption Under Section 8:</strong> TGIK forcefully argues that the <strong>Gayatri Committee Report</strong>—the comprehensive study evaluating the parameters for the officialization of the Tulu language—is a matter of immense cultural, linguistic, and historical importance to millions of citizens. It fails to meet any statutory criteria for secrecy or exemption.</li>
+                    <li><strong>Public Funds Mandate Public Access:</strong> Because this critical report was compiled using public funds, TGIK asserts that a democratic framework strictly requires citizens to have unhindered access to the policy assessments and structural feasibility metrics regarding regional language recognition.</li>
+                    <li><strong>The Ultimate Relief Demanded:</strong> The prayer before the state authorities is absolute: direct the Public Information Officer (PIO) to immediately provide an unedited, complete copy of the Gayatri Committee Report originally demanded in RTI Application No. <strong><code>SECKC/R/2026/60032</code></strong>.</li>
+                </ul>
+
+                <div class="highlight-box">
+                    The formal institutional documentation has successfully landed on the record. The state framework must now directly answer the statutory parameters raised by TGIK.
+                </div>
+
+                <h3 class="section-heading">From Historical Foundations to Modern Accountability</h3>
+                
+                <p>
+                    This move marks a significant transition for the campaign, driving the core mission of <strong>Taulava Gēl</strong> straight into the halls of power. TGIK continues to track all legislative updates regarding the linguistic status and the preservation of the historic script.
+                </p>
+
+                <p><strong>The ultimate hearing has begun. The paper war has hit the record.</strong></p>
+            </main>
+
+            <aside class="sidebar-panel">
+                <h3 class="sidebar-title">Campaign Milestones</h3>
+                <ul class="timeline">
+                    <li class="timeline-item">
+                        <div class="timeline-date">March 4, 2026</div>
+                        <p class="timeline-desc">Gayatri Committee Report officially submitted to the state government.</p>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-date">April 30, 2026</div>
+                        <p class="timeline-desc">Initial RTI filed (No. SECKC/R/2026/60032) to extract file logs.</p>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-date">June 17, 2026</div>
+                        <p class="timeline-desc">Notice of Hearing No. 12 2025 issued following state non-compliance.</p>
+                    </li>
+                    <li class="timeline-item active">
+                        <div class="timeline-date">June 30, 2026</div>
+                        <p class="timeline-desc"><strong>TGIK ACTION:</strong> Formal representation dispatched directly to Vidhana Sabha authorities.</p>
+                    </li>
+                </ul>
+
+                <div class="evidence-gallery">
+                    <h3 class="sidebar-title">Hearing Evidence</h3>
+                    <div class="evidence-card">
+                        <img src="Assembly.webp" alt="TGIK Legislative Representation">
+                        <div class="evidence-caption">Fig 1: Official institutional representation submitted by TGIK to the Vidhana Sabha authorities.</div>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+    </div>
+
+</body>
+  </html>
+  
