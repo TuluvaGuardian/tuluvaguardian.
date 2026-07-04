@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The West Coast’s First Poet King: A Legacy Built on Ink and Iron">
+    <meta name="twitter:image" content="Screenshot_20260704-111019~2.png">
+    <meta property="og:title" content="The West Coast’s First Poet King: A Legacy Built on Ink and Iron">
+    <meta property="og:image" content="Screenshot_20260704-111019~2.png">
+    <style>
+        .tuluva-article { font-family: 'Georgia', serif; line-height: 1.8; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; }
+        .tuluva-article h1 { color: #8b0000; border-bottom: 2px solid #8b0000; padding-bottom: 10px; }
+        .tuluva-article h2 { color: #2c3e50; margin-top: 30px; }
+        .tuluva-article .highlight { background-color: #f9f9f9; border-left: 5px solid #8b0000; padding: 15px; font-style: italic; margin: 20px 0; }
+        .gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 20px 0; }
+        .gallery img { width: 100%; border: 1px solid #ddd; }
+        .site-header { text-align: center; margin-bottom: 30px; }
+        .site-header a { text-decoration: none; color: #8b0000; font-weight: bold; font-size: 1.5em; }
+        .site-header img { display: block; margin: 0 auto 10px; max-width: 150px; }
+    </style>
+</head>
+<body>
+
+<article class="tuluva-article">
+    <header class="site-header">
+        <a href="index.html">
+            <img src="logo.png" alt="Tuluva Guardian Logo">
+            Tuluva Guardian
+        </a>
+    </header>
+
+    <h1>The West Coast’s First Poet King: A Legacy Built on Ink and Iron</h1>
+
+    <div style="text-align: center; margin: 20px 0;">
+        <img src="Screenshot_20260704-111019~2.png" alt="Kavi Alupendra - The Poet King" style="max-width: 100%; border: 1px solid #8b0000;">
+    </div>
+
+    <p>King Kavi Alupendra, a staunch devotee of Tuluveshwari and Mukambika, stands as the <em>Aadhi Kavi</em>—the First Poet—and the first Poet King of the entire West Coast. His vision elevated Tulu to become the first literary language of our coastal civilization.</p>
+
+    <h2>The Significance of Devi Mahatme</h2>
+    <p>A crowning achievement of his era was the formal recording of the <em>Devi Mahatme</em>. Tulu holds the distinction of being the first Dravidian language to formally record this significant work, proving its sophistication as a literary vehicle.</p>
+    
+    <div style="text-align: center; margin: 20px 0;">
+        <img src="Screenshot_20260704-085947-2.png" alt="Tulu font for Devi Mahatme" style="max-width: 100%; border: 1px solid #ddd;">
+        <p><em>The script used to formalize the Devi Mahatme.</em></p>
+    </div>
+
+    <h2>Historical Evidence</h2>
+    <div class="gallery">
+        <img src="Screenshot_20260628-181513~2.png" alt="Alupa Territory">
+        <img src="Screenshot_20240921-072959 (1).png" alt="Inscription">
+        <img src="HMWG4erbEAAGjxQ.jpg" alt="Barkur stone temple">
+    </div>
+
+    <p>Through the <em>Tuluva Guardian</em>, we continue the sacred path of our ancestors, reclaiming the dignity of the language that first sang the praises of our coast.</p>
+</article>
+
+</body>
+</html>
+
